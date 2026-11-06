@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inkit | Products by Brand - Laser Toners, Ink Bottles & Drums</title>
+  <meta name="description" content="Browse certified remanufactured printer ink cartridges, laser toner cartridges, and bulk ink bottles by brand: HP, Canon, Epson, Brother, Xerox, Samsung.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Common & Page Stylesheets -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVBAR (Unified Color: #0b1120)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo redirects to index.html -->
+           <a href="index.html"
+   class="footer-brand-logo"
+   title="Inkit - Home"
+   style="display:inline-flex;
+          align-items:center;
+          gap:8px;
+          text-decoration:none;
+          margin-bottom:15px;">
+
+    <img src="assets/images/logo.png"
+         alt="Inkit Logo"
+         style="width:52px;
+                height:52px;
+                object-fit:contain;
+                display:block;">
+
+    <span style="font-size:29px;
+                 font-weight:800;
+                 letter-spacing:-1px;
+                 line-height:1;
+                 color:#dadee0;">
+        In<span style="color:#00d4ff;"> kit.</span>
+    </span>
+
+</a>
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu">
+          <!-- Home Dropdown with Home 1 & Home 2 -->
+          <li class="nav-item dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle">
+              <span>Home</span>
+              <svg class="svg-icon chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-item">
+                <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                <div>
+                  <span class="item-title">Home 1: Eco Refill Hub</span>
+                  <span class="item-desc">Consumer & Small Business Refills</span>
+                </div>
+              </a>
+              <a href="home2.html" class="dropdown-item">
+                <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6"/><path d="M12 22s6-3 6-7v-4l-6-2-6 2v4c0 4 6 7 6 7Z"/></svg>
+                <div>
+                  <span class="item-title">Home 2: Corporate & Express</span>
+                  <span class="item-desc">30-Min Walk-in & Fleet Contracts</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link active">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="bulk-plans.html" class="nav-link">Bulk Plans</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Navbar Controls & Action -->
+        <div class="nav-actions">
+          <!-- RTL to LTR Mode Button with Icon -->
+          <button id="rtlToggleBtn" class="icon-btn" title="Toggle RTL / LTR text direction" aria-label="Toggle Text Direction">
+            <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+          </button>
+
+          <!-- Dark to Light Mode Button with Icon -->
+          <button id="themeToggleBtn" class="icon-btn" title="Toggle Dark / Light mode" aria-label="Toggle Theme Mode">
+            <svg class="svg-icon theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+
+          <!-- CTA Button going to Contact Page Enquiry Form -->
+          <a href="contact.html#enquiry-form" class="nav-cta-btn">
+            <svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z"/></svg>
+            <span>Refill Enquiry</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobileMenuToggle" class="icon-btn mobile-nav-toggle" title="Open Menu" aria-label="Toggle mobile menu">
+            <svg class="svg-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> Home 1: Eco Refill Hub</a>
+      <a href="home2.html"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/></svg> Home 2: Corporate & Express</a>
+      <a href="products.html" class="active"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v8.88a1.78 1.78 0 0 0 2.5 1.55L16.5 11"/></svg> Products by Brand</a>
+      <a href="bulk-plans.html"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/></svg> Bulk Plans & Corporate</a>
+      <a href="contact.html"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Contact & Locations</a>
+    </div>
+    <div class="mobile-actions">
+      <div style="display:flex; gap: 0.5rem;">
+        <button onclick="document.getElementById('rtlToggleBtn').click()" class="icon-btn" title="RTL Switch">
+          <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+        </button>
+        <button onclick="document.getElementById('themeToggleBtn').click()" class="icon-btn" title="Theme Switch">
+          <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
+      <a href="contact.html#enquiry-form" class="btn btn-primary btn-sm">
+        <svg class="svg-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z"/></svg>
+        Refill Enquiry
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: PRODUCTS HERO BANNER
+         ========================================================================== -->
+   <section
+  class="hero-section"
+  style="
+    position: relative;
+    padding: 5rem 1.5rem 4rem;
+    color: #fff;
+    text-align: center;
+    background:
+      linear-gradient(rgba(10, 20, 35, 0.72), rgba(10, 20, 35, 0.72)),
+      url('https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1600&q=85')
+      center / cover no-repeat;
+  "
+>
+  <div
+    class="container text-center"
+    style="max-width: 820px; margin: 0 auto; text-align: center;"
+  >
+    <div
+      class="hero-pill"
+      style="
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-bottom: 1.25rem;
+        padding: 0.65rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        color: #fff;
+      "
+    >
+      <i class="fa-solid fa-boxes-packing" aria-hidden="true"></i>
+      <span>Over 2,400 Cartridge Models In Stock &amp; Ready to Refill</span>
+    </div>
+
+    <h1
+      class="hero-title"
+      style="
+        margin: 0 0 1rem;
+        color: #fff;
+        font-size: clamp(2.25rem, 5vw, 3.5rem);
+        line-height: 1.15;
+      "
+    >
+      Premium Toners &amp; Inks
+      <span style="color: #8be0b0;">by Brand</span>
+    </h1>
+
+    <p
+      class="hero-desc"
+      style="
+        max-width: 760px;
+        margin: 0 auto;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      "
+    >
+      Select your brand below to filter factory-remanufactured laser cartridges,
+      continuous EcoTank refill inks, and replacement imaging drums. All backed
+      by our 100% money-back print guarantee.
+    </p> 
+    <br>
+     <a
+      href="contact.html"
+      class="btn btn-primary btn-lg"
+      style="display: inline-flex; align-items: center; gap: 0.6rem;"
+    >
+      <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+      Send an Enquiry
+    </a>
+  </div>
+</section>
+
+    <!-- ==========================================================================
+         SECTION 2: BRAND DIRECTORY QUICK-FILTER BAR
+         ========================================================================== -->
+    <section class="section-py-sm" style="background: var(--bg-surface-alt); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="brand-filters">
+          <button class="filter-btn active" data-brand="all"><i class="fa-solid fa-border-all"></i> All Brands</button>
+          <button class="filter-btn" data-brand="hp"><i class="fa-solid fa-print"></i> HP</button>
+          <button class="filter-btn" data-brand="canon"><i class="fa-solid fa-print"></i> Canon</button>
+          <button class="filter-btn" data-brand="epson"><i class="fa-solid fa-print"></i> Epson</button>
+          <button class="filter-btn" data-brand="brother"><i class="fa-solid fa-print"></i> Brother</button>
+          <button class="filter-btn" data-brand="xerox"><i class="fa-solid fa-print"></i> Xerox</button>
+          <button class="filter-btn" data-brand="samsung"><i class="fa-solid fa-print"></i> Samsung</button>
+          <button class="filter-btn" data-brand="pantum"><i class="fa-solid fa-print"></i> Pantum</button>
+          <button class="filter-btn" data-brand="ricoh"><i class="fa-solid fa-print"></i> Ricoh</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: LIVE SEARCH & MULTI-ATTRIBUTE FILTER CONSOLE
+         ========================================================================== -->
+    <section class="section-py-sm">
+      <div class="container">
+        <div class="card" style="padding: 1.5rem; margin-bottom: 2.5rem;">
+          <div style="display: grid; grid-template-columns: 2fr 1fr auto; gap: 1rem; align-items: center;">
+            <div style="position: relative;">
+              <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+              <input type="text" id="productSearchInput" class="form-input" style="padding-left: 2.75rem;" placeholder="Search cartridge code or printer model (e.g. 12A, TN-2420, EcoTank 003, PG-245)...">
+            </div>
+
+            <div>
+              <select id="productCategorySelect" class="form-select">
+                <option value="all">All Product Categories</option>
+                <option value="toner">Laser Toner Cartridges</option>
+                <option value="bottle">EcoTank / Bottled Inks</option>
+                <option value="drum">Imaging Drums & Kits</option>
+              </select>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Color:</span>
+              <div class="cmyk-dot-row" style="margin: 0;">
+                <span class="cmyk-dot cyan" title="Cyan"></span>
+                <span class="cmyk-dot magenta" title="Magenta"></span>
+                <span class="cmyk-dot yellow" title="Yellow"></span>
+                <span class="cmyk-dot black" title="Black"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="noProductsNotice" style="display: none; text-align: center; padding: 4rem 1rem;">
+          <i class="fa-solid fa-box-open" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
+          <h3>No matching products found</h3>
+          <p style="color: var(--text-muted);">Try a different brand, cartridge number, or request a custom refill below.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: BEST-SELLING LASER TONER CARTRIDGES
+         ========================================================================== -->
+ <section class="section-py" style="padding-top: 0">
+  <div class="container">
+    <div class="section-header text-start">
+      <div class="section-badge">
+        <i class="fa-solid fa-fire"></i> High Demand
+      </div>
+      <h2 class="section-title">Best-Selling Remanufactured Laser Toners</h2>
+      <p class="section-subtitle">
+        Precision factory refilled with new smart chips, fresh OPC drums, and
+        German magnetic developer powders.
+      </p>
+    </div>
+
+    <div class="grid-3" id="productsCatalogGrid">
+      <!-- Product 1: HP 12A / Q2612A -->
+      <div class="product-card" data-brand="hp" data-category="toner">
+        <div class="product-img-wrap">
+          <img
+            src="https://hp.widen.net/content/fma7balbsm/png/fma7balbsm.png?w=800&h=600"
+            alt="HP 12A LaserJet Remanufactured Toner"
+          />
+          <span class="product-badge">HP</span>
+          <span class="product-savings-tag">Save 74%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">HP LaserJet</span>
+          <h3 class="product-name">HP 12A (Q2612A) Black Toner</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> Yield: 2,500 Pages • For
+            1010, 1020, 3050
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$18.50</div>
+              <div class="oem-price">OEM $72.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Refill Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: Brother TN-2420 / TN-2410 -->
+      <div class="product-card" data-brand="brother" data-category="toner">
+        <div class="product-img-wrap">
+          <img
+            src="https://www.tintenmarkt.ch/media/image/35/f2/6d/TN-2420-1_600x600.jpg"
+            alt="Brother TN-2420 High Yield Toner"
+          />
+          <span class="product-badge">Brother</span>
+          <span class="product-savings-tag">Save 71%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Brother MFC</span>
+          <h3 class="product-name">Brother TN-2420 High-Yield</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> Yield: 3,000 Pages • For
+            HL-L2350DW, MFC-L2710
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$22.00</div>
+              <div class="oem-price">OEM $79.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Refill Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Canon 057 / CRG-057 -->
+      <div class="product-card" data-brand="canon" data-category="toner">
+        <div class="product-img-wrap">
+          <img
+            src="https://i1.adis.ws/i/canon/3009C002_Canon-Cartridge-057_02?w=800&fmt=jpg"
+            alt="Canon 057 imageCLASS Toner"
+          />
+          <span class="product-badge">Canon</span>
+          <span class="product-savings-tag">Save 68%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Canon imageCLASS</span>
+          <h3 class="product-name">Canon 057 (CRG-057) Black</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> Yield: 3,100 Pages • For
+            LBP226dw, MF445dw
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$26.50</div>
+              <div class="oem-price">OEM $84.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Refill Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: Xerox Phaser 3020 / WorkCentre 3025 -->
+      <div class="product-card" data-brand="xerox" data-category="toner">
+        <div class="product-img-wrap">
+          <img
+            src="https://cdn.microless.com/products/a53655d28160dd11ee88b9994e748a1c-hi.jpg"
+            alt="Xerox 106R02773 Toner"
+          />
+          <span class="product-badge">Xerox</span>
+          <span class="product-savings-tag">Save 75%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Xerox WorkCentre</span>
+          <h3 class="product-name">Xerox 106R02773 Toner</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> Yield: 1,500 Pages • For
+            Phaser 3020, 3025
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$19.00</div>
+              <div class="oem-price">OEM $76.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Refill Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5: Samsung MLT-D111S -->
+      <div class="product-card" data-brand="samsung" data-category="toner">
+        <div class="product-img-wrap">
+          <img
+            src="data:image/webp;base64,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"
+            alt="Samsung MLT-D111S Toner"
+          />
+          <span class="product-badge">Samsung</span>
+          <span class="product-savings-tag">Save 70%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Samsung Xpress</span>
+          <h3 class="product-name">Samsung MLT-D111S Toner</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> Yield: 1,200 Pages • For
+            M2020W, M2070FW
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$17.50</div>
+              <div class="oem-price">OEM $59.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Refill Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6: Pantum PA-210EV -->
+      <div class="product-card" data-brand="pantum" data-category="toner">
+        <div class="product-img-wrap">
+          <img
+            src="https://static01.galaxus.com/productimages/2/8/8/3/7/9/0/1/4/1/0/3/7/8/0/5/2/8/3/01a0b4c8-fcc9-7dc3-a072-d32cf13bd90a_720.jpeg"
+            alt="Pantum PA-210EV Laser Toner"
+          />
+          <span class="product-badge">Pantum</span>
+          <span class="product-savings-tag">Save 65%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Pantum Laser</span>
+          <h3 class="product-name">Pantum PA-210EV Standard</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> Yield: 1,600 Pages • For
+            P2500W, M6550NW
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$16.00</div>
+              <div class="oem-price">OEM $46.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Refill Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+         SECTION 5: BULK CONTINUOUS INK BOTTLES
+         ========================================================================== -->
+<section class="section-py" style="background: var(--bg-surface-alt)">
+  <div class="container">
+    <div class="section-header text-start">
+      <div class="section-badge">
+        <i class="fa-solid fa-bottle-droplet"></i> Eco-Tank Series
+      </div>
+      <h2 class="section-title">Bulk Continuous Ink Refill Bottles (CMYK)</h2>
+      <p class="section-subtitle">
+        Micro-filtered dye and pigment formulas designed for continuous ink tank
+        printers. Guaranteed zero printhead clogging.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Bottle 1: Epson 003 CMYK 4-Pack -->
+      <div class="product-card" data-brand="epson" data-category="bottle">
+        <div class="product-img-wrap">
+          <img
+            src="https://katib.pk/cdn/shop/files/EPSON003InkBottleRefill_929fa0cd-477e-49fc-b1e8-b13e696915c3_1024x1024.webp?v=1728631295"
+            alt="Epson 003 CMYK Refill Inks"
+          />
+          <span class="product-badge">Epson</span>
+          <span class="product-savings-tag">Save 60%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Epson EcoTank</span>
+          <h3 class="product-name">Epson 003 4-Color CMYK Bundle</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> 70ml per bottle • Yield:
+            7,500 Color Pages (L3110, L3150)
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$14.99</div>
+              <div class="oem-price">OEM $38.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+              >Order Now</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottle 2: Canon GI-790 CMYK -->
+      <div class="product-card" data-brand="canon" data-category="bottle">
+        <div class="product-img-wrap">
+          <img
+            src="https://abhishekid.com/cdn/shop/files/inks-Original-Canon-Pixma-GI-790-Original-Ink-Bottle-For-G1000-G1010-G2000-G2010-G3000-G3010-G4000-G4010-scaled.jpg?v=1728725535&width=1000"
+            alt="Canon GI-790 MegaTank Refill Bottle"
+          />
+          <span class="product-badge">Canon</span>
+          <span class="product-savings-tag">Save 62%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Canon MegaTank</span>
+          <h3 class="product-name">Canon GI-790 CMYK Complete Set</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> 135ml Black + 3x 70ml Color •
+            For G2010, G3010
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$15.50</div>
+              <div class="oem-price">OEM $42.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+              >Order Now</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottle 3: HP GT53 / GT52 Smart Tank -->
+      <div class="product-card" data-brand="hp" data-category="bottle">
+        <div class="product-img-wrap">
+          <img
+            src="https://texmax.store/cdn/shop/files/HPGT52_GT53_3.jpg?v=1780854099&width=1000"
+            alt="HP GT53 XL Ink Bottle"
+          />
+          <span class="product-badge">HP</span>
+          <span class="product-savings-tag">Save 58%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">HP Smart Tank</span>
+          <h3 class="product-name">HP GT53 XL Black + GT52 CMY</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-file-lines"></i> High Optical Black • For
+            Smart Tank 515, 530, 615
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$16.20</div>
+              <div class="oem-price">OEM $39.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+              >Order Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+         SECTION 6: IMAGING DRUMS & MAINTENANCE KITS
+         ========================================================================== -->
+<section class="section-py">
+  <div class="container">
+    <div class="section-header text-start">
+      <div class="section-badge">
+        <i class="fa-solid fa-circle-notch"></i> Hardware Replacements
+      </div>
+      <h2 class="section-title">
+        OPC Drum Units & Waste Toner Collector Boxes
+      </h2>
+      <p class="section-subtitle">
+        If your printer displays 'replace drum' or streaks vertical lines,
+        replace the optical photo-conductor drum without buying an expensive new
+        machine.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Drum 1 -->
+      <div class="product-card" data-brand="brother" data-category="drum">
+        <div class="product-img-wrap">
+          <img
+            src="https://media.ldlc.com/r1600/ld/products/00/04/76/57/LD0004765748_2.jpg"
+            alt="Brother DR-2400 Drum Unit"
+          />
+          <span class="product-badge">Brother</span>
+          <span class="product-savings-tag">Save 65%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Brother</span>
+          <h3 class="product-name">Brother DR-2400 Drum Unit 6coating</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-circle-check"></i> 12,000 Pages Lifespan •
+            Japanese Optical Coating
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$28.00</div>
+              <div class="oem-price">OEM $82.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+              >Get Drum</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Drum 2 -->
+      <div class="product-card" data-brand="hp" data-category="drum">
+        <div class="product-img-wrap">
+          <img
+            src="https://www.bhphotovideo.com/images/fb/hp_cf232a_32a_original_laserjet_imaging_1305582.jpg"
+            alt="HP 32A CF232A Imaging Drum"
+          />
+          <span class="product-badge">HP</span>
+          <span class="product-savings-tag">Save 60%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">HP LaserJet</span>
+          <h3 class="product-name">HP 32A (CF232A) Imaging Drum</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-circle-check"></i> 23,000 Pages • For M203dw,
+            M227fdw
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$34.00</div>
+              <div class="oem-price">OEM $89.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+              >Get Drum</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Drum 3 -->
+      <div class="product-card" data-brand="xerox" data-category="drum">
+        <div class="product-img-wrap">
+          <img
+            src="https://www.shop.xerox.com/media/catalog/product/routine_maintenance_item/108/108R01124.jpg"
+            alt="Xerox VersaLink Waste Box"
+          />
+          <span class="product-badge">Xerox</span>
+          <span class="product-savings-tag">Save 55%</span>
+        </div>
+        <div class="product-info">
+          <span class="product-brand">Xerox</span>
+          <h3 class="product-name">Xerox Waste Toner Collector Box</h3>
+          <p class="product-yield">
+            <i class="fa-solid fa-circle-check"></i> 30,000 Pages • For
+            VersaLink C400, C405
+          </p>
+          <div class="price-row">
+            <div>
+              <div class="refill-price">$18.00</div>
+              <div class="oem-price">OEM $42.00</div>
+            </div>
+            <a
+              href="contact.html#enquiry-form"
+              class="btn btn-primary btn-sm"
+              style="margin-left: auto"
+              >Order Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ==========================================================================
+         SECTION 7: PRINTER-TO-CARTRIDGE COMPATIBILITY MATRIX
+         ========================================================================== -->
+    <section class="section-py" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-table-list"></i> Reference Table</div>
+          <h2 class="section-title">Popular Printer Model Compatibility Guide</h2>
+          <p class="section-subtitle">Cross-reference your printer series with our certified Inkit remanufactured cartridges and page-yield ratings.</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="ink-table">
+            <thead>
+              <tr>
+                <th>Printer Series</th>
+                <th>Cartridge SKU</th>
+                <th>Type / Color</th>
+                <th>Est. Page Yield</th>
+                <th>OEM Price</th>
+                <th class="highlight-col">Inkit Refill Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HP LaserJet Pro M404, M428</td>
+                <td>HP 58A (CF258A)</td>
+                <td>Monochrome Toner</td>
+                <td>3,000 Pages</td>
+                <td>$112.00</td>
+                <td class="highlight-col"><strong>$32.00 (Save 71%)</strong></td>
+              </tr>
+              <tr>
+                <td>Canon imageCLASS LBP6030, MF3010</td>
+                <td>Canon 325 / 725</td>
+                <td>Monochrome Toner</td>
+                <td>1,600 Pages</td>
+                <td>$68.00</td>
+                <td class="highlight-col"><strong>$17.50 (Save 74%)</strong></td>
+              </tr>
+              <tr>
+                <td>Brother DCP-L2540DW, HL-L2320D</td>
+                <td>Brother TN-660</td>
+                <td>High-Yield Black</td>
+                <td>2,600 Pages</td>
+                <td>$65.00</td>
+                <td class="highlight-col"><strong>$19.50 (Save 70%)</strong></td>
+              </tr>
+              <tr>
+                <td>Epson EcoTank L3210, L3250</td>
+                <td>Epson 003 (Black & CMY)</td>
+                <td>Liquid Bottle Inks</td>
+                <td>7,500 Pages</td>
+                <td>$36.00</td>
+                <td class="highlight-col"><strong>$14.99 (Save 58%)</strong></td>
+              </tr>
+              <tr>
+                <td>Xerox Phaser 3020, 3025</td>
+                <td>106R02773</td>
+                <td>Monochrome Toner</td>
+                <td>1,500 Pages</td>
+                <td>$74.00</td>
+                <td class="highlight-col"><strong>$19.00 (Save 74%)</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: ZERO-LOCKOUT MICROCHIP GUARANTEE
+         ========================================================================== -->
+    <section class="section-py">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <div class="section-badge"><i class="fa-solid fa-shield-halved"></i> Smart Engineering</div>
+            <h2 class="section-title">Firmware-Resistant Smart Microchips</h2>
+            <p class="card-text" style="margin-bottom: 1.25rem;">
+              Printer makers frequently push silent Wi-Fi firmware updates designed to lock out third-party and refilled cartridges. At Inkit, we program our microchips with advanced dual-stage firmware decoders that bypass automatic OEM lockout checks.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+              <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-main); font-weight: 600;">
+                <i class="fa-solid fa-check" style="color: var(--accent-green);"></i> 100% Accurate real-time ink and toner gauge levels on your PC screen
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-main); font-weight: 600;">
+                <i class="fa-solid fa-check" style="color: var(--accent-green);"></i> Tested against latest 2026 manufacturer firmware releases
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-main); font-weight: 600;">
+                <i class="fa-solid fa-check" style="color: var(--accent-green);"></i> Free replacement chip if a printer update ever triggers an error
+              </li>
+            </ul>
+            <a href="contact.html#enquiry-form" class="btn btn-primary">
+              <i class="fa-solid fa-screwdriver-wrench"></i> Ask Our Chip Specialist
+            </a>
+          </div>
+
+          <div>
+            <img src="https://images.pexels.com/photos/6636476/pexels-photo-6636476.jpeg" alt="Encrypted Microchip Testing at Inkit" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; height: 400px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: CUSTOM & RARE CARTRIDGE SOURCING CTA
+         ========================================================================== -->
+    <section class="section-py" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="grid-2">
+            <div>
+              <h2>Can't Find Your Cartridge Model?</h2>
+              <p>
+                Have an older plotter, specialized blueprint printer, or discontinued laser model? Our lab technicians rebuild and source hard-to-find cartridges within 24 hours.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                <a href="contact.html#enquiry-form" class="btn btn-primary" style="background: #ffffff; color: var(--primary) !important;">
+                  <i class="fa-solid fa-clipboard-question"></i> Submit Custom Cartridge Enquiry
+                </a>
+                <a href="tel:+18005554658" class="btn btn-outline" style="border-color: #ffffff; color: #ffffff !important;">
+                  <i class="fa-solid fa-phone"></i> Call 1-800-555-INKIT
+                </a>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <div style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: var(--radius-lg); padding: 2rem;">
+                <i class="fa-solid fa-rotate-right" style="font-size: 3rem; color: #ffffff; margin-bottom: 0.75rem;"></i>
+                <h3 style="margin: 0; font-size: 1.4rem; color: #ffffff;">24-Hour Sourcing</h3>
+                <p style="margin: 0.5rem 0 0 0; color: #e0f2fe; font-size: 0.9rem;">We track down rare toner shells and formulations nationwide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (Unified Color: #0b1120, Identical to Navbar)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1: Brand & Socials -->
+          <div class="footer-brand">
+              <a href="index.html"
+   class="footer-brand-logo"
+   title="Inkit - Home"
+   style="display:inline-flex;
+          align-items:center;
+          gap:8px;
+          text-decoration:none;
+          margin-bottom:15px;">
+
+    <img src="assets/images/logo.png"
+         alt="Inkit Logo"
+         style="width:52px;
+                height:52px;
+                object-fit:contain;
+                display:block;">
+
+    <span style="font-size:29px;
+                 font-weight:800;
+                 letter-spacing:-1px;
+                 line-height:1;
+                 color:#dadee0;">
+        In<span style="color:#00d4ff;"> kit.</span>
+    </span>
+
+</a>
+            <p>
+              Inkit is your trusted ISO-certified destination for precision printer ink refilling, laser toner remanufacturing, and eco-friendly printing solutions. Dedicated to saving your money and preserving our planet.
+            </p>
+            <div class="social-links">
+              <a href="https://facebook.com/InkitRefillShop" class="social-link fb" target="_blank" rel="noopener noreferrer" title="Inkit on Facebook" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://youtube.com/@InkitRefillShop" class="social-link yt" target="_blank" rel="noopener noreferrer" title="Inkit on YouTube" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://linkedin.com/company/inkit-refill-shop" class="social-link in" target="_blank" rel="noopener noreferrer" title="Inkit on LinkedIn" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6c0 .88.72 1.6 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+              </a>
+              <a href="https://instagram.com/inkitrefillshop" class="social-link ig" target="_blank" rel="noopener noreferrer" title="Inkit on Instagram" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home 1: Eco Refill Hub</a></li>
+              <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home 2: Corporate & Express</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Products by Brand</a></li>
+              <li><a href="bulk-plans.html"><i class="fa-solid fa-angle-right"></i> Corporate Bulk Plans</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Store Hours</a></li>
+              <li><a href="contact.html#enquiry-form"><i class="fa-solid fa-angle-right"></i> Refill Enquiry Form</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Supported Brands -->
+          <div class="footer-col">
+            <h4>Supported Brands</h4>
+            <ul class="footer-links">
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> HP Toner & Inkjet</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Canon Pixma & Lasers</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Epson EcoTank CMYK</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Brother MFC Series</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Xerox WorkCentre</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Samsung & Ricoh Cartridges</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Newsletter & Direct Hotline -->
+          <div class="footer-col footer-newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe for seasonal discount codes, printer maintenance guides, and bulk corporate offers.</p>
+            <form class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Your work email..." required>
+              <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div style="font-size: 0.85rem; color: var(--nav-footer-muted); margin-top: 1rem;">
+              <div><i class="fa-solid fa-phone" style="color: #38bdf8; margin-right: 0.4rem;"></i> 1-800-555-INKIT (Toll Free)</div>
+              <div style="margin-top: 0.4rem;"><i class="fa-solid fa-envelope" style="color: #38bdf8; margin-right: 0.4rem;"></i> support@inkit-refill.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          © 2026 Inkit Printer Ink & Toner Refill Shop. All rights reserved.
+        </div>
+        <div class="footer-certifications">
+          <span class="footer-cert-badge"><i class="fa-solid fa-award"></i> ISO 9001:2015 Registered</span>
+          <span class="footer-cert-badge"><i class="fa-solid fa-leaf"></i> Zero-Landfill E-Waste Partner</span>
+          <span class="footer-cert-badge"><i class="fa-solid fa-shield-halved"></i> OEM Yield Guaranteed</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/common.js"></script>
+</body>
+</html>
