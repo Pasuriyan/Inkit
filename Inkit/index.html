@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inkit | Printer Ink & Toner Refill Shop - Eco Refill Hub</title>
+  <meta name="description" content="Inkit offers premium printer ink refilling, laser toner remanufacturing, and eco-tank bottled inks at up to 75% savings with certified test page guarantees.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Common & Page Stylesheets -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVBAR (Unified Color: #0b1120)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo redirects to index.html -->
+         <a href="index.html"
+   class="footer-brand-logo"
+   title="Inkit - Home"
+   style="display:inline-flex;
+          align-items:center;
+          gap:8px;
+          text-decoration:none;
+          margin-bottom:15px;">
+
+    <img src="assets/images/logo.png"
+         alt="Inkit Logo"
+         style="width:52px;
+                height:52px;
+                object-fit:contain;
+                display:block;">
+
+    <span style="font-size:29px;
+                 font-weight:800;
+                 letter-spacing:-1px;
+                 line-height:1;
+                 color:#dadee0;">
+        In<span style="color:#00d4ff;"> kit.</span>
+    </span>
+
+</a>
+        
+       
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu">
+          <!-- Home Dropdown with Home 1 & Home 2 -->
+          <li class="nav-item dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle active">
+              <span>Home</span>
+              <svg class="svg-icon chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-item active">
+                <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                <div>
+                  <span class="item-title">Home 1: Eco Refill Hub</span>
+                  <span class="item-desc">Consumer & Small Business Refills</span>
+                </div>
+              </a>
+              <a href="home2.html" class="dropdown-item">
+                <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6"/><path d="M12 22s6-3 6-7v-4l-6-2-6 2v4c0 4 6 7 6 7Z"/></svg>
+                <div>
+                  <span class="item-title">Home 2: Corporate & Express</span>
+                  <span class="item-desc">30-Min Walk-in & Fleet Contracts</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="bulk-plans.html" class="nav-link">Bulk Plans</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Navbar Controls & Action -->
+        <div class="nav-actions">
+          <!-- RTL to LTR Mode Button with Icon -->
+          <button id="rtlToggleBtn" class="icon-btn" title="Toggle RTL / LTR text direction" aria-label="Toggle Text Direction">
+            <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+          </button>
+
+          <!-- Dark to Light Mode Button with Icon -->
+          <button id="themeToggleBtn" class="icon-btn" title="Toggle Dark / Light mode" aria-label="Toggle Theme Mode">
+            <svg class="svg-icon theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+
+          <!-- CTA Button going to Contact Page Enquiry Form -->
+          <a href="contact.html#enquiry-form" class="nav-cta-btn">
+            <svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z"/></svg>
+            <span>Refill Enquiry</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobileMenuToggle" class="icon-btn mobile-nav-toggle" title="Open Menu" aria-label="Toggle mobile menu">
+            <svg class="svg-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="active"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> Home 1: Eco Refill Hub</a>
+      <a href="home2.html"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/></svg> Home 2: Corporate & Express</a>
+      <a href="products.html"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v8.88a1.78 1.78 0 0 0 2.5 1.55L16.5 11"/></svg> Products by Brand</a>
+      <a href="bulk-plans.html"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/></svg> Bulk Plans & Corporate</a>
+      <a href="contact.html"><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Contact & Locations</a>
+    </div>
+    <div class="mobile-actions">
+      <div style="display:flex; gap: 0.5rem;">
+        <button onclick="document.getElementById('rtlToggleBtn').click()" class="icon-btn" title="RTL Switch">
+          <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+        </button>
+        <button onclick="document.getElementById('themeToggleBtn').click()" class="icon-btn" title="Theme Switch">
+          <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
+      <a href="contact.html#enquiry-form" class="btn btn-primary btn-sm">
+        <svg class="svg-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z"/></svg>
+        Refill Enquiry
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: HERO SECTION (Eco Refill Hub)
+         ========================================================================== -->
+   <section
+  class="hero-section"
+  style="
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 1.5rem;
+    color: #fff;
+    text-align: center;
+    background:
+      linear-gradient(rgba(10, 20, 35, 0.72), rgba(10, 20, 35, 0.72)),
+      url('https://images.unsplash.com/photo-1563968743333-044cef800494?auto=format&fit=crop&w=1000&q=80')
+      center / cover no-repeat;
+  "
+>
+  <div
+    class="container"
+    style="width: 100%; max-width: 1100px; margin: 0 auto;"
+  >
+    <div
+      class="hero-content"
+      style="
+        max-width: 850px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <div
+        class="hero-pill"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 0.6rem;
+          margin-bottom: 1.5rem;
+          padding: 0.65rem 1rem;
+          border: 1px solid rgba(255, 255, 255, 0.35);
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.12);
+          font-size: 0.9rem;
+        "
+      >
+        <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+        <span>Eco-Certified Precision Cartridge Refills</span>
+      </div>
+
+      <h1
+        class="hero-title"
+        style="
+          max-width: 850px;
+          margin: 0 0 1.25rem;
+          color: #fff;
+          font-size: clamp(2.5rem, 6vw, 4.5rem);
+          line-height: 1.08;
+          font-weight: 800;
+        "
+      >
+        Slash Printing Costs by
+        <span style="color: #8be0b0;">75%</span>
+        with Zero Quality Compromise.
+      </h1>
+
+      <p
+        class="hero-desc"
+        style="
+          max-width: 720px;
+          margin: 0 0 2rem;
+          color: rgba(255, 255, 255, 0.9);
+          font-size: clamp(1rem, 2vw, 1.2rem);
+          line-height: 1.7;
+        "
+      >
+        Don't throw away perfectly functional cartridges. At Inkit, our vacuum
+        injection technology and ultrasonic printhead de-clogging deliver
+        laser-sharp text and vibrant photos while keeping plastic out of
+        landfills.
+      </p>
+
+      <div
+        class="hero-actions"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+          margin-bottom: 3rem;
+        "
+      >
+        <a href="contact.html#enquiry-form" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+          Book Doorstep Pickup
+        </a>
+
+        <a href="#refill-finder" class="btn btn-secondary btn-lg">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          Check My Printer Price
+        </a>
+      </div>
+
+      <div
+        class="hero-stats"
+        style="
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2rem 4rem;
+        "
+      >
+        <div class="stat-item">
+          <h3 style="margin: 0; color: #fff; font-size: 2rem;">75%</h3>
+          <p style="margin: 0.35rem 0 0; color: rgba(255, 255, 255, 0.82);">
+            Average Cost Savings
+          </p>
+        </div>
+
+        <div class="stat-item">
+          <h3 style="margin: 0; color: #fff; font-size: 2rem;">98,000+</h3>
+          <p style="margin: 0.35rem 0 0; color: rgba(255, 255, 255, 0.82);">
+            Cartridges Refilled
+          </p>
+        </div>
+
+        <div class="stat-item">
+          <h3 style="margin: 0; color: #fff; font-size: 2rem;">100%</h3>
+          <p style="margin: 0.35rem 0 0; color: rgba(255, 255, 255, 0.82);">
+            Page-Yield Guarantee
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ==========================================================================
+         SECTION 2: INSTANT REFILL FINDER (Interactive Tool)
+         ========================================================================== -->
+    <section class="section-py" id="refill-finder">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-bolt"></i> Instant Quote
+          </div>
+          <h2 class="section-title">Find Compatible Refills for Your Printer</h2>
+          <p class="section-subtitle">Select your printer model to view exact refill pricing, OEM price comparison, and turn-around time.</p>
+        </div>
+
+        <div class="refill-finder-box">
+          <div class="finder-grid">
+            <div class="form-group">
+              <label class="form-label" for="finderBrand"><i class="fa-solid fa-tag"></i> Printer Brand</label>
+              <select id="finderBrand" class="form-select">
+                <option value="HP">HP (Hewlett-Packard)</option>
+                <option value="Canon">Canon</option>
+                <option value="Epson">Epson</option>
+                <option value="Brother">Brother</option>
+                <option value="Xerox">Xerox</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Ricoh">Ricoh</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="finderType"><i class="fa-solid fa-palette"></i> Cartridge Category</label>
+              <select id="finderType" class="form-select">
+                <option value="Laser Toner Black">Black Laser Toner</option>
+                <option value="Laser Toner Color">Color Laser Toner (CMYK)</option>
+                <option value="Inkjet Cartridge">Inkjet Cartridge (Tri-color/Black)</option>
+                <option value="EcoTank Bulk Inks">EcoTank / MegaTank Ink Bottle</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="finderModel"><i class="fa-solid fa-print"></i> Printer Model or Cartridge Code</label>
+              <input type="text" id="finderModel" class="form-input" placeholder="e.g. LaserJet M404 / 12A / PG-245">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="finderLocation"><i class="fa-solid fa-location-dot"></i> Delivery Option</label>
+              <select id="finderLocation" class="form-select">
+                <option value="pickup">Doorstep Pickup & Return</option>
+                <option value="walkin">Walk-in Express Lab (30 min)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <button id="findRefillBtn" class="btn btn-primary" style="height: 48px; width: 100%;">
+                <i class="fa-solid fa-calculator"></i> Calculate
+              </button>
+            </div>
+          </div>
+
+          <!-- Finder Result Display Card -->
+          <div id="finderResultBox" class="finder-result">
+            <div>
+              <div class="cmyk-dot-row">
+                <span class="cmyk-dot cyan"></span>
+                <span class="cmyk-dot magenta"></span>
+                <span class="cmyk-dot yellow"></span>
+                <span class="cmyk-dot black"></span>
+                <span id="resultSavingsBadge" class="product-savings-tag" style="position: static; margin-left: 8px;">Save 73%</span>
+              </div>
+              <h3 id="resultCartridgeTitle" style="margin: 0.25rem 0; font-size: 1.25rem; color: var(--text-main);">HP LaserJet 12A / Pro M404 Toner Refill</h3>
+              <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Includes complete vacuum de-dusting, OPC drum inspection, smart chip reset, and 2,500-page high-yield toner reload.</p>
+            </div>
+            <div style="text-align: right; min-width: 170px;">
+              <div id="resultRefillPrice" class="refill-price">$18.50</div>
+              <div id="resultOemPrice" class="oem-price">OEM Price: $68.00</div>
+              <a href="contact.html#enquiry-form" class="btn btn-primary btn-sm" style="margin-top: 0.5rem;">
+                <i class="fa-solid fa-calendar-check"></i> Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: CORE REFILL SERVICES
+         ========================================================================== -->
+    <section class="section-py" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-wrench"></i> What We Do
+          </div>
+          <h2 class="section-title">Comprehensive Refilling Solutions</h2>
+          <p class="section-subtitle">From standard home desktop printers to industrial office workhorses, we provide factory-grade refill engineering.</p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3 class="card-title">Laser Toner Remanufacturing</h3>
+            <p class="card-text">Complete disassembly, hopper sanitization, fresh micro-toner charge, and new OPC drum replacement for crisp monochrome and vivid color documents.</p>
+            <div style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--primary); font-weight: 700;">
+              HP • Canon • Brother • Xerox • Ricoh
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <h3 class="card-title">Inkjet Cartridge Vacuum Refill</h3>
+            <p class="card-text">Negative-pressure chamber filling prevents micro-air bubbles and ink seepage. We use German formulation dye and UV-resistant pigment inks.</p>
+            <div style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--primary); font-weight: 700;">
+              HP 67/65 • Canon PG/CL • Lexmark
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-bottle-droplet"></i>
+            </div>
+            <h3 class="card-title">Continuous & EcoTank Bulk Bottles</h3>
+            <p class="card-text">Specialty formulated CMYK ink refill bottles engineered specifically for Epson EcoTank, Canon MegaTank, and HP SmartTank continuous ink reservoirs.</p>
+            <div style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--primary); font-weight: 700;">
+              003 • 504 • 664 • GI-790 • GT53 Bottles
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3 class="card-title">Smart Chip Reset & Firmware Bypass</h3>
+            <p class="card-text">Never see 'cartridge rejected' errors again. We replace or re-program encrypted microchips so your printer reports 100% accurate toner level indicators.</p>
+            <div style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--primary); font-weight: 700;">
+              100% Firmware Update Resistant
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: 5-STEP PRECISION WORKFLOW
+         ========================================================================== -->
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-gears"></i> Quality Control
+          </div>
+          <h2 class="section-title">The Inkit 5-Step Precision Engineering Process</h2>
+          <p class="section-subtitle">We don't simply drill holes and squirt ink. Every cartridge undergoes a cleanroom industrial remanufacturing workflow.</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">1</div>
+            <div class="step-icon"><i class="fa-solid fa-microscope"></i></div>
+            <h4 class="step-title">12-Point Inspection</h4>
+            <p class="step-desc">Electrical circuit conductivity checks, roller surface integrity testing, and microchip health analysis.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">2</div>
+            <div class="step-icon"><i class="fa-solid fa-wind"></i></div>
+            <h4 class="step-title">Ultrasonic De-clog</h4>
+            <p class="step-desc">Sonic bath dissolves dried ink crystals from thermal nozzles; high-pressure vacuum evacuates residual waste powder.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">3</div>
+            <div class="step-icon"><i class="fa-solid fa-fill-drip"></i></div>
+            <h4 class="step-title">Precision Fill</h4>
+            <p class="step-desc">Calibrated micro-gram digital scales measure  OEM volume of German-engineered chemically matched ink or toner.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">4</div>
+            <div class="step-icon"><i class="fa-solid fa-barcode"></i></div>
+            <h4 class="step-title">Chip Coding</h4>
+            <p class="step-desc">Installation of brand new smart microchips to ensure full OEM printer handshake and real-time level reporting.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">5</div>
+            <div class="step-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h4 class="step-title">Test Page QC</h4>
+            <p class="step-desc">Diagnostic test print of high-density black blocks and CMYK color gradients. Certified sample is enclosed with every order.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: SAVINGS & ECO-IMPACT CALCULATOR
+         ========================================================================== -->
+    <section class="section-py" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="calculator-card">
+          <div class="grid-2">
+            <div>
+              <div class="section-badge">
+                <i class="fa-solid fa-calculator"></i> Interactive ROI
+              </div>
+              <h2 class="section-title" style="font-size: 2rem;">See How Much You Save & Divert from Landfills</h2>
+              <p class="card-text">
+                Every remanufactured cartridge saves approximately 1.3 kg of crude oil, virgin plastics, and aluminum casing from incinerators. Drag the slider to calculate your estimated annual financial and environmental dividends.
+              </p>
+              
+              <div class="slider-container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                  <span style="font-weight: 700; color: var(--text-main);">Monthly Cartridge Usage:</span>
+                  <span id="cartridgeCountDisplay" style="font-weight: 800; color: var(--primary); font-size: 1.15rem;">10 Cartridges / Month</span>
+                </div>
+                <input type="range" id="cartridgeSlider" class="range-slider" min="1" max="50" value="10">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">
+                  <span>1 Cartridge (Home)</span>
+                  <span>25 (Office)</span>
+                  <span>50+ (Enterprise)</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="bulk-plans.html" class="btn btn-primary">
+                  <i class="fa-solid fa-file-contract"></i> Explore Bulk Plans
+                </a>
+                <a href="contact.html#enquiry-form" class="btn btn-secondary">
+                  <i class="fa-solid fa-phone"></i> Talk to Specialist
+                </a>
+              </div>
+            </div>
+
+            <div class="calc-display">
+              <span style="text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">Estimated Annual Savings</span>
+              <div id="calcMoneySaved" class="savings-amount">$4,680</div>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Based on national retail OEM cartridge benchmark pricing.</p>
+
+              <div style="border-top: 1px solid var(--border-color); padding-top: 1.25rem; display: flex; justify-content: space-around;">
+                <div>
+                  <div id="calcPlasticSaved" style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">156.0 kg</div>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Plastic & E-Waste Saved</span>
+                </div>
+                <div>
+                  <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent-amber);">312 L</div>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Petroleum Conserved</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: SUPPORTED BRANDS
+         ========================================================================== -->
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-check-double"></i> Compatibility
+          </div>
+          <h2 class="section-title">Certified for All Leading Global Printer Brands</h2>
+          <p class="section-subtitle">We stock proprietary chemical inks, toners, and microchips engineered to match each manufacturer's thermal and laser specifications.</p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem;">
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> HP LaserJet & SmartTank</div>
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> Canon Pixma & imageCLASS</div>
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> Epson EcoTank & WorkForce</div>
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> Brother MFC & HL Laser</div>
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> Xerox VersaLink & Phaser</div>
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> Samsung Xpress Series</div>
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> Ricoh Aficio Multi-Function</div>
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> Lexmark Enterprise Series</div>
+          <div class="brand-badge"><i class="fa-solid fa-print"></i> Pantum Compact Laser</div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="products.html" class="btn btn-outline">
+            <i class="fa-solid fa-arrow-right"></i> Browse Full Products Catalog by Brand
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: CUSTOMER REVIEWS & TESTIMONIALS
+         ========================================================================== -->
+    <section class="section-py" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-star"></i> Verified Feedback
+          </div>
+          <h2 class="section-title">Loved by Thousands of Home & Business Printers</h2>
+          <p class="section-subtitle">Read why freelance designers, accounting firms, and educators trust Inkit to keep their paperwork rolling without breaking the budget.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Review 1 -->
+          <div class="card">
+            <div style="display: flex; gap: 0.25rem; color: #eab308; margin-bottom: 1rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card-text" style="font-style: italic; margin-bottom: 1.5rem;">
+              "Our legal clinic prints hundreds of court briefs every week. We used to spend over $1,200 every two months on HP toners. Since switching to Inkit, our bill dropped to under $350 and the barcodes remain 100% crisp."
+            </p>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Sarah Jenkins" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div>
+                <strong style="color: var(--text-main); font-size: 0.95rem; display: block;">Sarah Jenkins</strong>
+                <span style="color: var(--text-muted); font-size: 0.8rem;">Managing Partner, Apex Legal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="card">
+            <div style="display: flex; gap: 0.25rem; color: #eab308; margin-bottom: 1rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card-text" style="font-style: italic; margin-bottom: 1.5rem;">
+              "As a photographer doing art test prints, I was initially skeptical of refilled inks. Inkit's German pigment inks for my Canon MegaTank matched the factory color gamuts spot on. The doorstep pickup is extraordinarily convenient!"
+            </p>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Marcus Vance" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div>
+                <strong style="color: var(--text-main); font-size: 0.95rem; display: block;">Marcus Vance</strong>
+                <span style="color: var(--text-muted); font-size: 0.8rem;">Independent Visual Artist</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="card">
+            <div style="display: flex; gap: 0.25rem; color: #eab308; margin-bottom: 1rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card-text" style="font-style: italic; margin-bottom: 1.5rem;">
+              "We have 14 Brother laser printers across 3 tuition centers. Inkit handles our bulk monthly refills seamlessly and  They even choose to replace worn drums for free when refilling. Hands-down the best service in the city."
+            </p>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Elena Rodriguez" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div>
+                <strong style="color: var(--text-main); font-size: 0.95rem; display: block;">Elena Rodriguez</strong>
+                <span style="color: var(--text-muted); font-size: 0.8rem;">Operations Director, BrightEdu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: DOORSTEP PICKUP & PEACE-OF-MIND GUARANTEE
+         ========================================================================== -->
+    <section class="section-py">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <div class="section-badge">
+              <i class="fa-solid fa-truck-ramp-box"></i> Convenient Service
+            </div>
+            <h2 class="section-title">Free Doorstep Pickup with Same-Day Turnaround</h2>
+            <p class="card-text" style="margin-bottom: 1.5rem;">
+              You never have to step away from your desk. Schedule a pickup online, our courier collects your depleted cartridges in secure protective sleeves, and our lab technicians refill, clean, reset, and return them ready to print.
+            </p>
+
+            <ul style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+              <li style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-main); font-weight: 600;">
+                <i class="fa-solid fa-circle-check" style="color: var(--accent-green); font-size: 1.2rem;"></i>
+                100% Zero-Leak Protective Seal guarantee
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-main); font-weight: 600;">
+                <i class="fa-solid fa-circle-check" style="color: var(--accent-green); font-size: 1.2rem;"></i>
+                Complimentary printer test diagnostics sheet enclosed
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-main); font-weight: 600;">
+                <i class="fa-solid fa-circle-check" style="color: var(--accent-green); font-size: 1.2rem;"></i>
+                Does NOT void your printer manufacturer warranty
+              </li>
+            </ul>
+
+            <a href="contact.html#enquiry-form" class="btn btn-primary">
+              <i class="fa-solid fa-truck"></i> Request Courier Pickup
+            </a>
+          </div>
+
+          <div>
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="Inkit Doorstep Delivery and Lab Quality" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; height: 420px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: CALL TO ACTION BANNER
+         ========================================================================== -->
+    <section class="section-py" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="grid-2">
+            <div>
+              <h2>Ready to Stop Overpaying for Printer Ink & Toner?</h2>
+              <p>
+                Experience factory-level density, crisp blacks, and vibrant full-color pages at a fraction of store price. Drop off at our express counter or book a free doorstep courier pickup today.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                <a href="contact.html#enquiry-form" class="btn btn-primary" style="background: #ffffff; color: var(--primary) !important;">
+                  <i class="fa-solid fa-paper-plane"></i> Book Your Refill Now
+                </a>
+                <a href="tel:+18005554658" class="btn btn-outline" style="border-color: #ffffff; color: #ffffff !important;">
+                  <i class="fa-solid fa-phone"></i> Hotline: 1-800-555-INKIT
+                </a>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <div style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: var(--radius-lg); padding: 2rem; display: inline-block;">
+                <i class="fa-solid fa-stopwatch" style="font-size: 3rem; color: #ffffff; margin-bottom: 0.75rem;"></i>
+                <h3 style="margin: 0; font-size: 1.5rem; color: #ffffff;">30-Minute Counter</h3>
+                <p style="margin: 0.5rem 0 0 0; color: #e0f2fe; font-size: 0.95rem;">Walk in with empty cartridges, walk out with full ones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (Unified Color: #0b1120, Identical to Navbar)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1: Brand & Socials -->
+          <div class="footer-brand">
+        <a href="index.html"
+   class="footer-brand-logo"
+   title="Inkit - Home"
+   style="display:inline-flex;
+          align-items:center;
+          gap:8px;
+          text-decoration:none;
+          margin-bottom:15px;">
+
+    <img src="assets/images/logo.png"
+         alt="Inkit Logo"
+         style="width:52px;
+                height:52px;
+                object-fit:contain;
+                display:block;">
+
+    <span style="font-size:29px;
+                 font-weight:800;
+                 letter-spacing:-1px;
+                 line-height:1;
+                 color:#dadee0;">
+        In<span style="color:#00d4ff;"> kit.</span>
+    </span>
+
+</a>
+            <p>
+              Inkit is your trusted ISO-certified destination for precision printer ink refilling, laser toner remanufacturing, and eco-friendly printing solutions. Dedicated to saving your money and preserving our planet.
+            </p>
+            <!-- Platform Social Links with Target Blank & Direct SVGs -->
+            <div class="social-links">
+              <a href="https://facebook.com/InkitRefillShop" class="social-link fb" target="_blank" rel="noopener noreferrer" title="Inkit on Facebook" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://youtube.com/@InkitRefillShop" class="social-link yt" target="_blank" rel="noopener noreferrer" title="Inkit on YouTube" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://linkedin.com/company/inkit-refill-shop" class="social-link in" target="_blank" rel="noopener noreferrer" title="Inkit on LinkedIn" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6c0 .88.72 1.6 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+              </a>
+              <a href="https://instagram.com/inkitrefillshop" class="social-link ig" target="_blank" rel="noopener noreferrer" title="Inkit on Instagram" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home 1: Eco Refill Hub</a></li>
+              <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home 2: Corporate & Express</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Products by Brand</a></li>
+              <li><a href="bulk-plans.html"><i class="fa-solid fa-angle-right"></i> Corporate Bulk Plans</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Store Hours</a></li>
+              <li><a href="contact.html#enquiry-form"><i class="fa-solid fa-angle-right"></i> Refill Enquiry Form</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Supported Brands -->
+          <div class="footer-col">
+            <h4>Supported Brands</h4>
+            <ul class="footer-links">
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> HP Toner & Inkjet</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Canon Pixma & Lasers</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Epson EcoTank CMYK</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Brother MFC Series</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Xerox WorkCentre</a></li>
+              <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Samsung & Ricoh Cartridges</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Newsletter & Direct Hotline -->
+          <div class="footer-col footer-newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe for seasonal discount codes, printer maintenance guides, and bulk corporate offers.</p>
+            <form class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Your work email..." required>
+              <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div style="font-size: 0.85rem; color: var(--nav-footer-muted); margin-top: 1rem;">
+              <div><i class="fa-solid fa-phone" style="color: #38bdf8; margin-right: 0.4rem;"></i> 1-800-555-INKIT (Toll Free)</div>
+              <div style="margin-top: 0.4rem;"><i class="fa-solid fa-envelope" style="color: #38bdf8; margin-right: 0.4rem;"></i> support@inkit-refill.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          © 2026 Inkit Printer Ink & Toner Refill Shop. All rights reserved.
+        </div>
+        <div class="footer-certifications">
+          <span class="footer-cert-badge"><i class="fa-solid fa-award"></i> ISO 9001:2015 Registered</span>
+          <span class="footer-cert-badge"><i class="fa-solid fa-leaf"></i> Zero-Landfill E-Waste Partner</span>
+          <span class="footer-cert-badge"><i class="fa-solid fa-shield-halved"></i> OEM Yield Guaranteed</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/common.js"></script>
+</body>
+</html>
