@@ -1,1119 +1,2910 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inkit | Printing Insights, Refill Masterclasses & Hardware Guides</title>
-  <meta name="description" content="Inkit Knowledge Base: Technician-verified guides on reducing printer costs by 75%, unclogging printheads, toner chemistry, firmware locks, and eco-friendly printing.">
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  
-  <!-- FontAwesome 6 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Common & Page Stylesheets -->
-  <link rel="stylesheet" href="assets/css/common.css">
-  <link rel="stylesheet" href="assets/css/pages.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Inkit | Printing Insights, Refill Masterclasses & Hardware Guides
+    </title>
+    <meta
+      name="description"
+      content="Inkit Knowledge Base: Technician-verified guides on reducing printer costs by 75%, unclogging printheads, toner chemistry, firmware locks, and eco-friendly printing."
+    />
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
 
-  <!-- ==========================================================================
+    <!-- FontAwesome 6 Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Common & Page Stylesheets -->
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+  </head>
+  <body>
+    <!-- ==========================================================================
        NAVBAR (Unified Color: #0b1120)
        ========================================================================== -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <!-- Logo redirects to index.html -->
-        <a href="index.html" class="brand-logo" title="Inkit - Home">
-          <img src="assets/images/logo.png" alt="Inkit - Ink & Toner Refill" class="site-logo-img" onerror="if(this.src.indexOf('assets/')!==-1){this.src='logo.png';}">
-          <div class="brand-text">
-            <span class="brand-name">Inkit<span class="ink-dot">.</span></span>
-            <span class="brand-tagline">Ink & Toner Refill</span>
-          </div>
-        </a>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar">
+          <!-- Logo redirects to index.html -->
+               <a href="index.html"
+   class="footer-brand-logo"
+   title="Inkit - Home"
+   style="display:inline-flex;
+          align-items:center;
+          gap:8px;
+          text-decoration:none;
+          margin-bottom:15px;">
 
-        <!-- Desktop Navigation Menu -->
-        <ul class="nav-menu">
-          <!-- Home Dropdown with Home 1 & Home 2 -->
-          <li class="nav-item dropdown">
-            <a href="index.html" class="nav-link dropdown-toggle">
-              <span>Home</span>
-              <span class="svg-icon-wrap chevron-icon"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+    <img src="assets/images/logo.png"
+         alt="Inkit Logo"
+         style="width:52px;
+                height:52px;
+                object-fit:contain;
+                display:block;">
+
+    <span style="font-size:29px;
+                 font-weight:800;
+                 letter-spacing:-1px;
+                 line-height:1;
+                 color:#dadee0;">
+        In<span style="color:#00d4ff;"> kit.</span>
+    </span>
+
+</a>
+
+          <!-- Desktop Navigation Menu -->
+          <ul class="nav-menu">
+            <!-- Home Dropdown with Home 1 & Home 2 -->
+            <li class="nav-item dropdown">
+              <a href="index.html" class="nav-link dropdown-toggle">
+                <span>Home</span>
+                <span class="svg-icon-wrap chevron-icon"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="index.html" class="dropdown-item">
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                      />
+                      <path
+                        d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                      /></svg
+                  ></span>
+                  <div>
+                    <span class="item-title">Home 1: Eco Refill Hub</span>
+                    <span class="item-desc"
+                      >Consumer & Small Business Refills</span
+                    >
+                  </div>
+                </a>
+                <a href="home2.html" class="dropdown-item">
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6" />
+                      <path
+                        d="M12 22s6-3 6-7v-4l-6-2-6 2v4c0 4 6 7 6 7Z"
+                      /></svg
+                  ></span>
+                  <div>
+                    <span class="item-title">Home 2: Corporate & Express</span>
+                    <span class="item-desc"
+                      >30-Min Walk-in & Fleet Contracts</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="bulk-plans.html" class="nav-link">Bulk Plans</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link active">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Navbar Controls & Action -->
+          <div class="nav-actions">
+            <!-- RTL to LTR Mode Button with Icon -->
+            <button
+              id="rtlToggleBtn"
+              class="icon-btn"
+              title="Toggle RTL / LTR text direction"
+              aria-label="Toggle Text Direction"
+            >
+              <span class="svg-icon-wrap"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m16 3 4 4-4 4" />
+                  <path d="M20 7H4" />
+                  <path d="m8 21-4-4 4-4" />
+                  <path d="M4 17h16" /></svg
+              ></span>
+            </button>
+
+            <!-- Dark to Light Mode Button with Icon -->
+            <button
+              id="themeToggleBtn"
+              class="icon-btn"
+              title="Toggle Dark / Light mode"
+              aria-label="Toggle Theme Mode"
+            >
+              <span class="svg-icon-wrap"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg
+              ></span>
+            </button>
+
+            <!-- CTA Button going to Contact Page Enquiry Form -->
+            <a href="contact.html#enquiry-form" class="nav-cta-btn">
+              <span class="svg-icon-wrap"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10" />
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                  <path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z" /></svg
+              ></span>
+              <span>Refill Enquiry</span>
             </a>
-            <div class="dropdown-menu">
-              <a href="index.html" class="dropdown-item">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>
-                <div>
-                  <span class="item-title">Home 1: Eco Refill Hub</span>
-                  <span class="item-desc">Consumer & Small Business Refills</span>
-                </div>
-              </a>
-              <a href="home2.html" class="dropdown-item">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6"/><path d="M12 22s6-3 6-7v-4l-6-2-6 2v4c0 4 6 7 6 7Z"/></svg></span>
-                <div>
-                  <span class="item-title">Home 2: Corporate & Express</span>
-                  <span class="item-desc">30-Min Walk-in & Fleet Contracts</span>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="products.html" class="nav-link">Products</a>
-          </li>
-          <li class="nav-item">
-            <a href="bulk-plans.html" class="nav-link">Bulk Plans</a>
-          </li>
-          <li class="nav-item">
-            <a href="blog.html" class="nav-link active">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-        </ul>
 
-        <!-- Navbar Controls & Action -->
-        <div class="nav-actions">
-          <!-- RTL to LTR Mode Button with Icon -->
-          <button id="rtlToggleBtn" class="icon-btn" title="Toggle RTL / LTR text direction" aria-label="Toggle Text Direction">
-            <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg></span>
+            <!-- Mobile Hamburger Toggle -->
+            <button
+              id="mobileMenuToggle"
+              class="icon-btn mobile-nav-toggle"
+              title="Open Menu"
+              aria-label="Toggle mobile menu"
+            >
+              <span class="svg-icon-wrap"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="4" x2="20" y1="12" y2="12" />
+                  <line x1="4" x2="20" y1="6" y2="6" />
+                  <line x1="4" x2="20" y1="18" y2="18" /></svg
+              ></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileDrawer" class="mobile-drawer">
+      <div class="mobile-nav-links">
+        <a href="index.html"
+          ><span class="svg-icon-wrap"
+            ><svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" /></svg
+          ></span>
+          Home 1: Eco Refill Hub</a
+        >
+        <a href="home2.html"
+          ><span class="svg-icon-wrap"
+            ><svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
+              <path d="M9 22v-4h6v4" /></svg
+          ></span>
+          Home 2: Corporate & Express</a
+        >
+        <a href="products.html"
+          ><span class="svg-icon-wrap"
+            ><svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+              />
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+              <line x1="12" y1="22.08" x2="12" y2="12" /></svg
+          ></span>
+          Products by Brand</a
+        >
+        <a href="bulk-plans.html"
+          ><span class="svg-icon-wrap"
+            ><svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect width="16" height="20" x="4" y="2" rx="2" />
+              <line x1="8" x2="16" y1="6" y2="6" /></svg
+          ></span>
+          Bulk Plans & Corporate</a
+        >
+        <a href="blog.html" class="active"
+          ><span class="svg-icon-wrap"
+            ><svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"
+              />
+              <path d="M6 6h10" />
+              <path d="M6 10h10" /></svg
+          ></span>
+          Blog & Insights</a
+        >
+        <a href="contact.html"
+          ><span class="svg-icon-wrap"
+            ><svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg
+          ></span>
+          Contact & Locations</a
+        >
+      </div>
+      <div class="mobile-actions">
+        <div style="display: flex; gap: 0.5rem">
+          <button
+            onclick="document.getElementById('rtlToggleBtn').click()"
+            class="icon-btn"
+            title="RTL Switch"
+          >
+            <span class="svg-icon-wrap"
+              ><svg
+                class="svg-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m16 3 4 4-4 4" />
+                <path d="M20 7H4" />
+                <path d="m8 21-4-4 4-4" />
+                <path d="M4 17h16" /></svg
+            ></span>
           </button>
-
-          <!-- Dark to Light Mode Button with Icon -->
-          <button id="themeToggleBtn" class="icon-btn" title="Toggle Dark / Light mode" aria-label="Toggle Theme Mode">
-            <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
-          </button>
-
-          <!-- CTA Button going to Contact Page Enquiry Form -->
-          <a href="contact.html#enquiry-form" class="nav-cta-btn">
-            <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z"/></svg></span>
-            <span>Refill Enquiry</span>
-          </a>
-
-          <!-- Mobile Hamburger Toggle -->
-          <button id="mobileMenuToggle" class="icon-btn mobile-nav-toggle" title="Open Menu" aria-label="Toggle mobile menu">
-            <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></span>
+          <button
+            onclick="document.getElementById('themeToggleBtn').click()"
+            class="icon-btn"
+            title="Theme Switch"
+          >
+            <span class="svg-icon-wrap"
+              ><svg
+                class="svg-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg
+            ></span>
           </button>
         </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Mobile Drawer Menu -->
-  <div id="mobileDrawer" class="mobile-drawer">
-    <div class="mobile-nav-links">
-      <a href="index.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span> Home 1: Eco Refill Hub</a>
-      <a href="home2.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/></svg></span> Home 2: Corporate & Express</a>
-      <a href="products.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span> Products by Brand</a>
-      <a href="bulk-plans.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/></svg></span> Bulk Plans & Corporate</a>
-      <a href="blog.html" class="active"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg></span> Blog & Insights</a>
-      <a href="contact.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span> Contact & Locations</a>
-    </div>
-    <div class="mobile-actions">
-      <div style="display:flex; gap: 0.5rem;">
-        <button onclick="document.getElementById('rtlToggleBtn').click()" class="icon-btn" title="RTL Switch">
-          <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg></span>
-        </button>
-        <button onclick="document.getElementById('themeToggleBtn').click()" class="icon-btn" title="Theme Switch">
-          <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
-        </button>
+        <a href="contact.html#enquiry-form" class="btn btn-primary btn-sm">
+          <span class="svg-icon-wrap"
+            ><svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10" />
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z" /></svg
+          ></span>
+          Refill Enquiry
+        </a>
       </div>
-      <a href="contact.html#enquiry-form" class="btn btn-primary btn-sm">
-        <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z"/></svg></span>
-        Refill Enquiry
-      </a>
     </div>
-  </div>
 
-  <main>
-    <!-- ==========================================================================
+    <main>
+      <!-- ==========================================================================
          SECTION 1: HERO SECTION WITH LIVE SEARCH & FILTER TAGS
          ========================================================================== -->
 
-
-<section class="page-hero blog-hero-section" id="blog-hero"
-  style="
-    background:
-      linear-gradient(rgba(10, 15, 25, 0.78), rgba(10, 15, 25, 0.88)),
-      url('https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1920&q=85')
-      center center / cover no-repeat;
-    min-height: 680px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 100px 0 80px;
-  ">
-
-  <div class="container">
-    <div class="blog-hero-wrap"
-      style="
-        max-width: 1050px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      ">
-
-      <!-- Badges -->
-      <div class="badge-tag-row"
+      <section
+        class="page-hero blog-hero-section"
+        id="blog-hero"
         style="
+          background:
+            linear-gradient(rgba(10, 15, 25, 0.78), rgba(10, 15, 25, 0.88)),
+            url(&quot;https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1920&q=85&quot;)
+              center center / cover no-repeat;
+          min-height: 680px;
           display: flex;
-          justify-content: center;
           align-items: center;
-          flex-wrap: wrap;
-          gap: 12px;
-          margin-bottom: 25px;
-        ">
-        <span class="editor-badge">Masterclass & Tech Insights</span>
-        <span class="article-category-pill">Updated for 2026</span>
-      </div>
-
-      <!-- Heading -->
-      <h1 class="hero-title"
-        style="
-          max-width: 900px;
-          margin: 0 auto 22px;
-          text-align: center;
-          line-height: 1.2;
-        ">
-        Printing Insights & <br>
-        <span>Refill Masterclasses</span>
-      </h1>
-
-      <!-- Description -->
-      <p class="hero-subtitle"
-        style="
-          max-width: 760px;
-          margin: 0 auto 30px;
-          text-align: center;
-          line-height: 1.8;
-        ">
-        Unbiased, technician-verified guides on reducing office printing
-        costs by 75%, unclogging stubborn printheads, extending toner life,
-        and protecting your printer hardware.
-      </p>
-
-      <!-- CTA -->
-      <div class="blog-hero-cta" style="margin-bottom: 25px;">
-        <a href="#blog-articles" class="btn btn-primary"
-          style="
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 14px 28px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-          ">
-          Explore All Guides
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-
-      <!-- Statistics -->
-      <div class="hero-stats"
-        style="
-          width: 100%;
-          display: flex;
           justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 30px;
-          margin-top: 25px;
-        ">
-
-        <div class="stat-item" style="text-align: center;">
-          <span class="stat-number">140+</span>
-          <span class="stat-label">Technician Articles</span>
-        </div>
-
-        <div class="stat-divider"></div>
-
-        <div class="stat-item" style="text-align: center;">
-          <span class="stat-number">$1.2M+</span>
-          <span class="stat-label">Client Printing Saved</span>
-        </div>
-
-        <div class="stat-divider"></div>
-
-        <div class="stat-item" style="text-align: center;">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Zero-Landfill Process</span>
-        </div>
-
-        <div class="stat-divider"></div>
-
-        <div class="stat-item" style="text-align: center;">
-          <span class="stat-number">15 Min</span>
-          <span class="stat-label">Fast Refill Express</span>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- ==========================================================================
-         SECTION 2: FEATURED EDITOR'S CHOICE SPOTLIGHT
-         ========================================================================== -->
-    <section class="section-py bg-surface" id="featured-article">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Editor's Pick</span>
-          <h2 class="section-title">Spotlight Deep-Dive Investigation</h2>
-          <p class="section-subtitle">Our most comprehensive benchmark study analyzing 250,000 office pages across commercial laser toner and inkjet fleets.</p>
-        </div>
-
-        <div class="featured-article-card">
-          <div class="featured-img-col">
-            <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1000&q=80" alt="Laser Toner vs Inkjet Printer Refill Fleet Analysis">
-          
-          </div>
-
-          <div class="featured-content-col">
-            <div class="badge-tag-row">
-              <span class="editor-badge">Benchmark Guide</span>
-              <span class="article-category-pill">Cost Optimization</span>
-              <span style="font-size: 0.8rem; color: var(--text-muted); display: inline-flex; align-items: center; gap: 0.3rem;">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> 8 min read
-              </span>
+          text-align: center;
+          padding: 100px 0 80px;
+        "
+      >
+        <div class="container">
+          <div
+            class="blog-hero-wrap"
+            style="
+              max-width: 1050px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+            "
+          >
+            <!-- Badges -->
+            <div
+              class="badge-tag-row"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-bottom: 25px;
+              "
+            >
+              <span class="editor-badge">Masterclass & Tech Insights</span>
+              <span class="article-category-pill">Updated for 2026</span>
             </div>
 
-            <h3 style="font-size: 1.65rem; font-weight: 800; line-height: 1.35; margin-bottom: 1rem; color: var(--text-main);">
-              The Definitive 2026 Fleet Guide: Laser Toner vs. Inkjet Refills — How Small Businesses Cut Overhead by 78%
-            </h3>
-
-            <p style="color: var(--text-muted); font-size: 0.975rem; line-height: 1.65; margin-bottom: 1.75rem;">
-              Compare real-world cost-per-page (CPP) analytics, chemical durability, paper adhesion, and warranty legal protections. Learn why high-yield remanufacturing saves small offices thousands annually without risking printer hardware.
-            </p>
-
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
-              <div class="author-chip">
-                <img src="assets/images/logo-icon.png" alt="David Vance" class="author-chip-avatar">
-                <div>
-                  <span class="author-chip-name">David Vance</span>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Chief Master Refill Technician</span>
-                </div>
-              </div>
-
-              <!-- Interactive Read More Trigger -->
-              <button class="btn btn-primary" data-article-id="article-1">
-                <span>Read Full 8-Min Guide</span>
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         SECTION 3: INTERACTIVE ARTICLES GRID WITH IN-PAGE DETAIL VIEWER
-         ========================================================================== -->
-    <section class="section-py" id="articles-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Masterclass Library</span>
-          <h2 class="section-title">Expert Refill & Maintenance Articles</h2>
-          <p class="section-subtitle">
-            Browse our technician guides below. Click <strong>"Read More"</strong> on any article to open and study the full comprehensive guide directly on this page!
-          </p>
-        </div>
-
-        <!-- In-Page Article Detail Viewer (Expands inline on click!) -->
-        <article id="inpageArticleViewer" class="inpage-article-viewer" aria-live="polite">
-          <div class="viewer-top-nav">
-            <button class="back-to-articles-btn" aria-label="Return to all articles">
-              <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></span>
-              <span>Back to All Articles</span>
-            </button>
-            <div style="display: flex; align-items: center; gap: 0.75rem;">
-              <button class="feedback-btn" onclick="window.print()" title="Print Guide">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg></span>
-                <span>Print Guide</span>
-              </button>
-              <button class="feedback-btn" onclick="navigator.clipboard?.writeText(window.location.href); InkitApp.showToast('Article link copied to clipboard!', 'success');" title="Share Link">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg></span>
-                <span>Share</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="viewer-article-header">
-            <div class="badge-tag-row">
-              <span id="viewerCategory" class="article-category-pill">Category</span>
-              <span style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.85rem; color: var(--text-muted);">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span> <span id="viewerDate">Date</span>
-              </span>
-              <span style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.85rem; color: var(--text-muted);">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> <span id="viewerReadTime">Read Time</span>
-              </span>
-            </div>
-
-            <h1 id="viewerTitle" style="font-size: 2.2rem; font-weight: 800; line-height: 1.3; color: var(--text-main); margin: 0.85rem 0 1.25rem 0;">
-              Article Title
+            <!-- Heading -->
+            <h1
+              class="hero-title"
+              style="
+                max-width: 900px;
+                margin: 0 auto 22px;
+                text-align: center;
+                line-height: 1.2;
+              "
+            >
+              Printing Insights & <br />
+              <span>Refill Masterclasses</span>
             </h1>
 
-            <div class="viewer-author-box">
-              <img id="viewerAuthorImg" src="assets/images/logo-icon.png" alt="Author Avatar" class="viewer-author-img">
-              <div>
-                <span id="viewerAuthorName" class="viewer-author-name">Author Name</span>
-                <span id="viewerAuthorRole" class="viewer-author-role">Technical Specialist</span>
+            <!-- Description -->
+            <p
+              class="hero-subtitle"
+              style="
+                max-width: 760px;
+                margin: 0 auto 30px;
+                text-align: center;
+                line-height: 1.8;
+              "
+            >
+              Unbiased, technician-verified guides on reducing office printing
+              costs by 75%, unclogging stubborn printheads, extending toner
+              life, and protecting your printer hardware.
+            </p>
+
+            <!-- CTA -->
+            <div class="blog-hero-cta" style="margin-bottom: 25px">
+              <a
+                href="#blog-articles"
+                class="btn btn-primary"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 12px;
+                  padding: 14px 28px;
+                  text-decoration: none;
+                  border-radius: 8px;
+                  font-weight: 600;
+                "
+              >
+                Explore All Guides
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- Statistics -->
+            <div
+              class="hero-stats"
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                margin-top: 25px;
+              "
+            >
+              <div class="stat-item" style="text-align: center">
+                <span class="stat-number">140+</span>
+                <span class="stat-label">Technician Articles</span>
+              </div>
+
+              <div class="stat-divider"></div>
+
+              <div class="stat-item" style="text-align: center">
+                <span class="stat-number">$1.2M+</span>
+                <span class="stat-label">Client Printing Saved</span>
+              </div>
+
+              <div class="stat-divider"></div>
+
+              <div class="stat-item" style="text-align: center">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Zero-Landfill Process</span>
+              </div>
+
+              <div class="stat-divider"></div>
+
+              <div class="stat-item" style="text-align: center">
+                <span class="stat-number">15 Min</span>
+                <span class="stat-label">Fast Refill Express</span>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <!-- Key Takeaways Highlight Box -->
-          <div class="takeaways-box">
-            <div class="takeaways-title">
-              <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>
-              <span>Key Takeaways & Executive Summary</span>
+      <!-- ==========================================================================
+         SECTION 2: FEATURED EDITOR'S CHOICE SPOTLIGHT
+         ========================================================================== -->
+      <section class="section-py bg-surface" id="featured-article">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Editor's Pick</span>
+            <h2 class="section-title">Spotlight Deep-Dive Investigation</h2>
+            <p class="section-subtitle">
+              Our most comprehensive benchmark study analyzing 250,000 office
+              pages across commercial laser toner and inkjet fleets.
+            </p>
+          </div>
+
+          <div class="featured-article-card">
+            <div class="featured-img-col">
+              <img
+                src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1000&q=80"
+                alt="Laser Toner vs Inkjet Printer Refill Fleet Analysis"
+              />
             </div>
-            <ul id="viewerTakeawaysList" class="takeaways-list">
+
+            <div class="featured-content-col">
+              <div class="badge-tag-row">
+                <span class="editor-badge">Benchmark Guide</span>
+                <span class="article-category-pill">Cost Optimization</span>
+                <span
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--text-muted);
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.3rem;
+                  "
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" /></svg
+                  ></span>
+                  8 min read
+                </span>
+              </div>
+
+              <h3
+                style="
+                  font-size: 1.65rem;
+                  font-weight: 800;
+                  line-height: 1.35;
+                  margin-bottom: 1rem;
+                  color: var(--text-main);
+                "
+              >
+                The Definitive 2026 Fleet Guide: Laser Toner vs. Inkjet Refills
+                — How Small Businesses Cut Overhead by 78%
+              </h3>
+
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.975rem;
+                  line-height: 1.65;
+                  margin-bottom: 1.75rem;
+                "
+              >
+                Compare real-world cost-per-page (CPP) analytics, chemical
+                durability, paper adhesion, and warranty legal protections.
+                Learn why high-yield remanufacturing saves small offices
+                thousands annually without risking printer hardware.
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                  gap: 1rem;
+                "
+              >
+                <div class="author-chip">
+                  <img
+                    src="assets/images/logo-icon.png"
+                    alt="David Vance"
+                    class="author-chip-avatar"
+                  />
+                  <div>
+                    <span class="author-chip-name">David Vance</span>
+                    <span
+                      style="
+                        font-size: 0.75rem;
+                        color: var(--text-muted);
+                        display: block;
+                      "
+                      >Chief Master Refill Technician</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Interactive Read More Trigger -->
+                <button class="btn btn-primary" data-article-id="article-1">
+                  <span>Read Full 8-Min Guide</span>
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" /></svg
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+         SECTION 3: INTERACTIVE ARTICLES GRID WITH IN-PAGE DETAIL VIEWER
+         ========================================================================== -->
+      <section class="section-py" id="articles-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Masterclass Library</span>
+            <h2 class="section-title">Expert Refill & Maintenance Articles</h2>
+            <p class="section-subtitle">
+              Browse our technician guides below. Click
+              <strong>"Read More"</strong> on any article to open and study the
+              full comprehensive guide directly on this page!
+            </p>
+          </div>
+
+          <!-- In-Page Article Detail Viewer (Expands inline on click!) -->
+          <article
+            id="inpageArticleViewer"
+            class="inpage-article-viewer"
+            aria-live="polite"
+          >
+            <div class="viewer-top-nav">
+              <button
+                class="back-to-articles-btn"
+                aria-label="Return to all articles"
+              >
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M19 12H5" />
+                    <path d="m12 19-7-7 7-7" /></svg
+                ></span>
+                <span>Back to All Articles</span>
+              </button>
+              <div style="display: flex; align-items: center; gap: 0.75rem">
+                <button
+                  class="feedback-btn"
+                  onclick="window.print()"
+                  title="Print Guide"
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="6 9 6 2 18 2 18 9" />
+                      <path
+                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+                      />
+                      <rect width="12" height="8" x="6" y="14" /></svg
+                  ></span>
+                  <span>Print Guide</span>
+                </button>
+                <button
+                  class="feedback-btn"
+                  onclick="
+                    navigator.clipboard?.writeText(window.location.href);
+                    InkitApp.showToast(
+                      'Article link copied to clipboard!',
+                      'success',
+                    );
+                  "
+                  title="Share Link"
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="18" cy="5" r="3" />
+                      <circle cx="6" cy="12" r="3" />
+                      <circle cx="18" cy="19" r="3" />
+                      <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
+                      <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" /></svg
+                  ></span>
+                  <span>Share</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="viewer-article-header">
+              <div class="badge-tag-row">
+                <span id="viewerCategory" class="article-category-pill"
+                  >Category</span
+                >
+                <span
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.35rem;
+                    font-size: 0.85rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                      <line x1="16" x2="16" y1="2" y2="6" />
+                      <line x1="8" x2="8" y1="2" y2="6" />
+                      <line x1="3" x2="21" y1="10" y2="10" /></svg
+                  ></span>
+                  <span id="viewerDate">Date</span>
+                </span>
+                <span
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.35rem;
+                    font-size: 0.85rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" /></svg
+                  ></span>
+                  <span id="viewerReadTime">Read Time</span>
+                </span>
+              </div>
+
+              <h1
+                id="viewerTitle"
+                style="
+                  font-size: 2.2rem;
+                  font-weight: 800;
+                  line-height: 1.3;
+                  color: var(--text-main);
+                  margin: 0.85rem 0 1.25rem 0;
+                "
+              >
+                Article Title
+              </h1>
+
+              <div class="viewer-author-box">
+                <img
+                  id="viewerAuthorImg"
+                  src="assets/images/logo-icon.png"
+                  alt="Author Avatar"
+                  class="viewer-author-img"
+                />
+                <div>
+                  <span id="viewerAuthorName" class="viewer-author-name"
+                    >Author Name</span
+                  >
+                  <span id="viewerAuthorRole" class="viewer-author-role"
+                    >Technical Specialist</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Takeaways Highlight Box -->
+            <div class="takeaways-box">
+              <div class="takeaways-title">
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></svg
+                ></span>
+                <span>Key Takeaways & Executive Summary</span>
+              </div>
+              <ul id="viewerTakeawaysList" class="takeaways-list">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+
+            <!-- Full Article Body -->
+            <div id="viewerContentBody" class="viewer-content-body">
               <!-- Dynamically populated -->
-            </ul>
-          </div>
+            </div>
 
-          <!-- Full Article Body -->
-          <div id="viewerContentBody" class="viewer-content-body">
-            <!-- Dynamically populated -->
-          </div>
+            <!-- Viewer Footer & Feedback -->
+            <div class="viewer-footer-actions">
+              <div class="helpful-feedback">
+                <span>Was this technical guide helpful?</span>
+                <button class="feedback-btn" aria-label="Yes, this was helpful">
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 10v12" />
+                      <path
+                        d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h3Z"
+                      /></svg
+                  ></span>
+                  <span>Helpful (<span class="count">48</span>)</span>
+                </button>
+              </div>
 
-          <!-- Viewer Footer & Feedback -->
-          <div class="viewer-footer-actions">
-            <div class="helpful-feedback">
-              <span>Was this technical guide helpful?</span>
-              <button class="feedback-btn" aria-label="Yes, this was helpful">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h3Z"/></svg></span>
-                <span>Helpful (<span class="count">48</span>)</span>
+              <button class="back-to-articles-btn">
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M19 12H5" />
+                    <path d="m12 19-7-7 7-7" /></svg
+                ></span>
+                <span>Back to Top of Articles</span>
               </button>
             </div>
+          </article>
 
-            <button class="back-to-articles-btn">
-              <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></span>
-              <span>Back to Top of Articles</span>
+          <!-- Articles Grid (6 Comprehensive Technical Articles) -->
+          <div class="articles-grid" id="articles-grid">
+            <!-- Article 1 -->
+            <div class="article-card" data-category="Cost Optimization">
+              <div class="article-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80"
+                  alt="Laser Toner vs Inkjet Refills"
+                />
+                <span class="article-thumb-tag">Cost Optimization</span>
+                <span class="article-read-badge"
+                  ><span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" /></svg
+                  ></span>
+                  8 min</span
+                >
+              </div>
+              <div class="article-body">
+                <div class="article-meta-row">
+                  <span>Nov 2026</span> • <span>David Vance</span>
+                </div>
+                <h3 class="article-title">
+                  Laser Toner vs. Inkjet Refill: Which Saves More in 2026?
+                </h3>
+                <p class="article-excerpt">
+                  Full analytical breakdown of cost-per-page, print longevity,
+                  and monthly thresholds for home offices and commercial fleets.
+                </p>
+                <div class="article-footer-row">
+                  <div class="author-chip">
+                    <img
+                      src="assets/images/logo-icon.png"
+                      alt="David Vance"
+                      class="author-chip-avatar"
+                    />
+                    <span class="author-chip-name">D. Vance</span>
+                  </div>
+                  <button class="read-more-btn" data-article-id="article-1">
+                    <span>Read More</span>
+                    <span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" /></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="article-card" data-category="Cartridge Care">
+              <div class="article-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=600&q=80"
+                  alt="Unclogging Printhead Nozzles"
+                />
+                <span class="article-thumb-tag">Cartridge Care</span>
+                <span class="article-read-badge"
+                  ><span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" /></svg
+                  ></span>
+                  6 min</span
+                >
+              </div>
+              <div class="article-body">
+                <div class="article-meta-row">
+                  <span>Nov 2026</span> • <span>Elena Rostova</span>
+                </div>
+                <h3 class="article-title">
+                  How to Fix Clogged Printhead Nozzles: Safe, Solvent-Free
+                  Method
+                </h3>
+                <p class="article-excerpt">
+                  Why alcohol ruins printhead membranes, and how our warm
+                  capillary soak revives dried ink channels without wasting ink
+                  cycles.
+                </p>
+                <div class="article-footer-row">
+                  <div class="author-chip">
+                    <img
+                      src="assets/images/logo-icon.png"
+                      alt="Elena Rostova"
+                      class="author-chip-avatar"
+                    />
+                    <span class="author-chip-name">E. Rostova</span>
+                  </div>
+                  <button class="read-more-btn" data-article-id="article-2">
+                    <span>Read More</span>
+                    <span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" /></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="article-card" data-category="Firmware & Chips">
+              <div class="article-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                  alt="Printer Microchips and Firmware"
+                />
+                <span class="article-thumb-tag">Firmware & Chips</span>
+                <span class="article-read-badge"
+                  ><span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" /></svg
+                  ></span>
+                  7 min</span
+                >
+              </div>
+              <div class="article-body">
+                <div class="article-meta-row">
+                  <span>Nov 2026</span> • <span>Marcus Chen</span>
+                </div>
+                <h3 class="article-title">
+                  Demystifying Printer Firmware Updates & Smart Chip Locks
+                </h3>
+                <p class="article-excerpt">
+                  How printer OEMs push silent Wi-Fi updates to reject
+                  aftermarket cartridges, and how to safely disable auto-updates
+                  brand by brand.
+                </p>
+                <div class="article-footer-row">
+                  <div class="author-chip">
+                    <img
+                      src="assets/images/logo-icon.png"
+                      alt="Marcus Chen"
+                      class="author-chip-avatar"
+                    />
+                    <span class="author-chip-name">M. Chen</span>
+                  </div>
+                  <button class="read-more-btn" data-article-id="article-3">
+                    <span>Read More</span>
+                    <span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" /></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="article-card" data-category="Ink Chemistry">
+              <div class="article-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=600&q=80"
+                  alt="Dye vs Pigment Inks"
+                />
+                <span class="article-thumb-tag">Ink Chemistry</span>
+                <span class="article-read-badge"
+                  ><span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" /></svg
+                  ></span>
+                  5 min</span
+                >
+              </div>
+              <div class="article-body">
+                <div class="article-meta-row">
+                  <span>Nov 2026</span> • <span>Sarah Jenkins</span>
+                </div>
+                <h3 class="article-title">
+                  Epson EcoTank Inks: Why Dye vs. Pigment Chemistry Matters
+                </h3>
+                <p class="article-excerpt">
+                  The molecular differences between water-soluble dye and
+                  suspended pigment particles, and why cross-mixing ruins
+                  printheads.
+                </p>
+                <div class="article-footer-row">
+                  <div class="author-chip">
+                    <img
+                      src="assets/images/logo-icon.png"
+                      alt="Sarah Jenkins"
+                      class="author-chip-avatar"
+                    />
+                    <span class="author-chip-name">S. Jenkins</span>
+                  </div>
+                  <button class="read-more-btn" data-article-id="article-4">
+                    <span>Read More</span>
+                    <span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" /></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="article-card" data-category="Eco Sustainability">
+              <div class="article-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80"
+                  alt="E-Waste and Eco Sustainability"
+                />
+                <span class="article-thumb-tag">Eco Sustainability</span>
+                <span class="article-read-badge"
+                  ><span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" /></svg
+                  ></span>
+                  5 min</span
+                >
+              </div>
+              <div class="article-body">
+                <div class="article-meta-row">
+                  <span>Nov 2026</span> • <span>Tara O'Connor</span>
+                </div>
+                <h3 class="article-title">
+                  The Circular Economy: Where 300M Discarded Cartridges Go
+                </h3>
+                <p class="article-excerpt">
+                  How precision remanufacturing conserves 2.5 quarts of oil per
+                  laser cartridge and eliminates 1,000-year plastic
+                  decomposition.
+                </p>
+                <div class="article-footer-row">
+                  <div class="author-chip">
+                    <img
+                      src="assets/images/logo-icon.png"
+                      alt="Tara O'Connor"
+                      class="author-chip-avatar"
+                    />
+                    <span class="author-chip-name">T. O'Connor</span>
+                  </div>
+                  <button class="read-more-btn" data-article-id="article-5">
+                    <span>Read More</span>
+                    <span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" /></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="article-card" data-category="Laser Toner">
+              <div class="article-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80"
+                  alt="Laser Toner Drum Unit Diagnostics"
+                />
+                <span class="article-thumb-tag">Laser Toner</span>
+                <span class="article-read-badge"
+                  ><span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" /></svg
+                  ></span>
+                  6 min</span
+                >
+              </div>
+              <div class="article-body">
+                <div class="article-meta-row">
+                  <span>Nov 2026</span> • <span>David Vance</span>
+                </div>
+                <h3 class="article-title">
+                  OPC Drum vs. Toner Hopper: Diagnosing Streaks & Dots
+                </h3>
+                <p class="article-excerpt">
+                  Why replacing the toner cartridge doesn't fix a scratched drum
+                  unit, and the mathematical formula for identifying roller
+                  defects.
+                </p>
+                <div class="article-footer-row">
+                  <div class="author-chip">
+                    <img
+                      src="assets/images/logo-icon.png"
+                      alt="David Vance"
+                      class="author-chip-avatar"
+                    />
+                    <span class="author-chip-name">D. Vance</span>
+                  </div>
+                  <button class="read-more-btn" data-article-id="article-6">
+                    <span>Read More</span>
+                    <span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" /></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- No Results Fallback -->
+          <div
+            id="noArticlesNotice"
+            style="display: none; text-align: center; padding: 3rem 1rem"
+          >
+            <p style="font-size: 1.15rem; color: var(--text-muted)">
+              No technical guides matched your search query. Try typing another
+              printer model (e.g., HP 58A, Epson, Canon) or category.
+            </p>
+            <button
+              class="btn btn-secondary btn-sm"
+              onclick="document.getElementById('blogSearchInput').value=''; document.querySelector('.category-chip[data-category='all']').click();"
+            >
+              Reset Filters
             </button>
           </div>
-        </article>
-
-        <!-- Articles Grid (6 Comprehensive Technical Articles) -->
-        <div class="articles-grid" id="articles-grid">
-          
-          <!-- Article 1 -->
-          <div class="article-card" data-category="Cost Optimization">
-            <div class="article-thumb-wrap">
-              <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80" alt="Laser Toner vs Inkjet Refills">
-              <span class="article-thumb-tag">Cost Optimization</span>
-              <span class="article-read-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> 8 min</span>
-            </div>
-            <div class="article-body">
-              <div class="article-meta-row">
-                <span>Nov 2026</span> • <span>David Vance</span>
-              </div>
-              <h3 class="article-title">Laser Toner vs. Inkjet Refill: Which Saves More in 2026?</h3>
-              <p class="article-excerpt">
-                Full analytical breakdown of cost-per-page, print longevity, and monthly thresholds for home offices and commercial fleets.
-              </p>
-              <div class="article-footer-row">
-                <div class="author-chip">
-                  <img src="assets/images/logo-icon.png" alt="David Vance" class="author-chip-avatar">
-                  <span class="author-chip-name">D. Vance</span>
-                </div>
-                <button class="read-more-btn" data-article-id="article-1">
-                  <span>Read More</span>
-                  <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Article 2 -->
-          <div class="article-card" data-category="Cartridge Care">
-            <div class="article-thumb-wrap">
-              <img src="https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=600&q=80" alt="Unclogging Printhead Nozzles">
-              <span class="article-thumb-tag">Cartridge Care</span>
-              <span class="article-read-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> 6 min</span>
-            </div>
-            <div class="article-body">
-              <div class="article-meta-row">
-                <span>Nov 2026</span> • <span>Elena Rostova</span>
-              </div>
-              <h3 class="article-title">How to Fix Clogged Printhead Nozzles: Safe, Solvent-Free Method</h3>
-              <p class="article-excerpt">
-                Why alcohol ruins printhead membranes, and how our warm capillary soak revives dried ink channels without wasting ink cycles.
-              </p>
-              <div class="article-footer-row">
-                <div class="author-chip">
-                  <img src="assets/images/logo-icon.png" alt="Elena Rostova" class="author-chip-avatar">
-                  <span class="author-chip-name">E. Rostova</span>
-                </div>
-                <button class="read-more-btn" data-article-id="article-2">
-                  <span>Read More</span>
-                  <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Article 3 -->
-          <div class="article-card" data-category="Firmware & Chips">
-            <div class="article-thumb-wrap">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Printer Microchips and Firmware">
-              <span class="article-thumb-tag">Firmware & Chips</span>
-              <span class="article-read-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> 7 min</span>
-            </div>
-            <div class="article-body">
-              <div class="article-meta-row">
-                <span>Nov 2026</span> • <span>Marcus Chen</span>
-              </div>
-              <h3 class="article-title">Demystifying Printer Firmware Updates & Smart Chip Locks</h3>
-              <p class="article-excerpt">
-                How printer OEMs push silent Wi-Fi updates to reject aftermarket cartridges, and how to safely disable auto-updates brand by brand.
-              </p>
-              <div class="article-footer-row">
-                <div class="author-chip">
-                  <img src="assets/images/logo-icon.png" alt="Marcus Chen" class="author-chip-avatar">
-                  <span class="author-chip-name">M. Chen</span>
-                </div>
-                <button class="read-more-btn" data-article-id="article-3">
-                  <span>Read More</span>
-                  <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Article 4 -->
-          <div class="article-card" data-category="Ink Chemistry">
-            <div class="article-thumb-wrap">
-              <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=600&q=80" alt="Dye vs Pigment Inks">
-              <span class="article-thumb-tag">Ink Chemistry</span>
-              <span class="article-read-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> 5 min</span>
-            </div>
-            <div class="article-body">
-              <div class="article-meta-row">
-                <span>Nov 2026</span> • <span>Sarah Jenkins</span>
-              </div>
-              <h3 class="article-title">Epson EcoTank Inks: Why Dye vs. Pigment Chemistry Matters</h3>
-              <p class="article-excerpt">
-                The molecular differences between water-soluble dye and suspended pigment particles, and why cross-mixing ruins printheads.
-              </p>
-              <div class="article-footer-row">
-                <div class="author-chip">
-                  <img src="assets/images/logo-icon.png" alt="Sarah Jenkins" class="author-chip-avatar">
-                  <span class="author-chip-name">S. Jenkins</span>
-                </div>
-                <button class="read-more-btn" data-article-id="article-4">
-                  <span>Read More</span>
-                  <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Article 5 -->
-          <div class="article-card" data-category="Eco Sustainability">
-            <div class="article-thumb-wrap">
-              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80" alt="E-Waste and Eco Sustainability">
-              <span class="article-thumb-tag">Eco Sustainability</span>
-              <span class="article-read-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> 5 min</span>
-            </div>
-            <div class="article-body">
-              <div class="article-meta-row">
-                <span>Nov 2026</span> • <span>Tara O'Connor</span>
-              </div>
-              <h3 class="article-title">The Circular Economy: Where 300M Discarded Cartridges Go</h3>
-              <p class="article-excerpt">
-                How precision remanufacturing conserves 2.5 quarts of oil per laser cartridge and eliminates 1,000-year plastic decomposition.
-              </p>
-              <div class="article-footer-row">
-                <div class="author-chip">
-                  <img src="assets/images/logo-icon.png" alt="Tara O'Connor" class="author-chip-avatar">
-                  <span class="author-chip-name">T. O'Connor</span>
-                </div>
-                <button class="read-more-btn" data-article-id="article-5">
-                  <span>Read More</span>
-                  <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Article 6 -->
-          <div class="article-card" data-category="Laser Toner">
-            <div class="article-thumb-wrap">
-              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" alt="Laser Toner Drum Unit Diagnostics">
-              <span class="article-thumb-tag">Laser Toner</span>
-              <span class="article-read-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> 6 min</span>
-            </div>
-            <div class="article-body">
-              <div class="article-meta-row">
-                <span>Nov 2026</span> • <span>David Vance</span>
-              </div>
-              <h3 class="article-title">OPC Drum vs. Toner Hopper: Diagnosing Streaks & Dots</h3>
-              <p class="article-excerpt">
-                Why replacing the toner cartridge doesn't fix a scratched drum unit, and the mathematical formula for identifying roller defects.
-              </p>
-              <div class="article-footer-row">
-                <div class="author-chip">
-                  <img src="assets/images/logo-icon.png" alt="David Vance" class="author-chip-avatar">
-                  <span class="author-chip-name">D. Vance</span>
-                </div>
-                <button class="read-more-btn" data-article-id="article-6">
-                  <span>Read More</span>
-                  <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </section>
 
-        <!-- No Results Fallback -->
-        <div id="noArticlesNotice" style="display: none; text-align: center; padding: 3rem 1rem;">
-          <p style="font-size: 1.15rem; color: var(--text-muted);">No technical guides matched your search query. Try typing another printer model (e.g., HP 58A, Epson, Canon) or category.</p>
-          <button class="btn btn-secondary btn-sm" onclick="document.getElementById('blogSearchInput').value=''; document.querySelector('.category-chip[data-category='all']').click();">Reset Filters</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          SECTION 4: PRINTHEAD & HARDWARE DIAGNOSTICS MATRIX
          ========================================================================== -->
-    <section class="section-py bg-surface" id="troubleshooting-guide">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Interactive Diagnostic Tool</span>
-          <h2 class="section-title">Hardware Troubleshooting Matrix</h2>
-          <p class="section-subtitle">Click on your observed printing defect below to instantly see the root engineering cause and lab remedy.</p>
-        </div>
-
-        <div class="diag-container">
-          <!-- Left: Tab List -->
-          <div class="diag-tabs-col">
-            <button class="diag-tab-btn active" data-target="diag-card-1">
-              <span>1. Faded / Blank Vertical Bands</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <button class="diag-tab-btn" data-target="diag-card-2">
-              <span>2. Repeating Dots Every 3 Inches</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <button class="diag-tab-btn" data-target="diag-card-3">
-              <span>3. "Cartridge Depleted" Error Popup</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <button class="diag-tab-btn" data-target="diag-card-4">
-              <span>4. Smudging & Flaking Toner Powder</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <button class="diag-tab-btn" data-target="diag-card-5">
-              <span>5. Color Shifting (Yellow / Magenta Cast)</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
+      <section class="section-py bg-surface" id="troubleshooting-guide">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Interactive Diagnostic Tool</span>
+            <h2 class="section-title">Hardware Troubleshooting Matrix</h2>
+            <p class="section-subtitle">
+              Click on your observed printing defect below to instantly see the
+              root engineering cause and lab remedy.
+            </p>
           </div>
 
-          <!-- Right: Details Display -->
-          <div class="diag-detail-col">
-            <!-- Card 1 -->
-            <div id="diag-card-1" class="diag-detail-card active">
-              <span class="article-category-pill">Inkjet & Laser Issue</span>
-              <h3 style="font-size: 1.45rem; font-weight: 800; margin: 0.75rem 0 0.5rem 0; color: var(--text-main);">Faded Lines or Missing Color Bands</h3>
-              <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
-                <strong>Primary Cause:</strong> In inkjets, dried crust in micro-nozzles or air bubbles trapped in the feed chamber. In laser printers, uneven toner distribution across the developer mag-roller.
-              </p>
-              <div class="callout-box tip">
-                <span class="svg-icon-wrap" style="color: #10b981; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
-                <div>
-                  <strong>Quick At-Home Fix:</strong> For toner, remove the cartridge and gently rock it horizontally 5 times to redistribute powder. For inkjet, run the warm distilled water capillary bath outlined in our Article #2 above.
-                </div>
-              </div>
-              <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">
-                <strong>Inkit Workshop Fix:</strong> Ultrasonic bath degreasing and negative-pressure vacuum priming ($12.00 walk-in, takes 15 minutes).
-              </p>
+          <div class="diag-container">
+            <!-- Left: Tab List -->
+            <div class="diag-tabs-col">
+              <button class="diag-tab-btn active" data-target="diag-card-1">
+                <span>1. Faded / Blank Vertical Bands</span>
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <button class="diag-tab-btn" data-target="diag-card-2">
+                <span>2. Repeating Dots Every 3 Inches</span>
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <button class="diag-tab-btn" data-target="diag-card-3">
+                <span>3. "Cartridge Depleted" Error Popup</span>
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <button class="diag-tab-btn" data-target="diag-card-4">
+                <span>4. Smudging & Flaking Toner Powder</span>
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <button class="diag-tab-btn" data-target="diag-card-5">
+                <span>5. Color Shifting (Yellow / Magenta Cast)</span>
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
             </div>
 
-            <!-- Card 2 -->
-            <div id="diag-card-2" class="diag-detail-card">
-              <span class="article-category-pill">Laser Printer Specific</span>
-              <h3 style="font-size: 1.45rem; font-weight: 800; margin: 0.75rem 0 0.5rem 0; color: var(--text-main);">Repeating Spots or Dots Down the Page</h3>
-              <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
-                <strong>Primary Cause:</strong> A physical dent, scratch, or baked-on adhesive deposit on the organic photoconductor (OPC) drum cylinder. As the drum rotates, the defect imprints every 75mm–94mm.
-              </p>
-              <div class="callout-box warning">
-                <span class="svg-icon-wrap" style="color: #f59e0b; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
-                <div>
-                  <strong>Important Caution:</strong> Do NOT scrape the drum with metal tools, fingernails, or paperclips. Light-sensitive OPC coatings are delicate and permanently damaged by fingernail pressure.
+            <!-- Right: Details Display -->
+            <div class="diag-detail-col">
+              <!-- Card 1 -->
+              <div id="diag-card-1" class="diag-detail-card active">
+                <span class="article-category-pill">Inkjet & Laser Issue</span>
+                <h3
+                  style="
+                    font-size: 1.45rem;
+                    font-weight: 800;
+                    margin: 0.75rem 0 0.5rem 0;
+                    color: var(--text-main);
+                  "
+                >
+                  Faded Lines or Missing Color Bands
+                </h3>
+                <p
+                  style="
+                    color: var(--text-muted);
+                    line-height: 1.65;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <strong>Primary Cause:</strong> In inkjets, dried crust in
+                  micro-nozzles or air bubbles trapped in the feed chamber. In
+                  laser printers, uneven toner distribution across the developer
+                  mag-roller.
+                </p>
+                <div class="callout-box tip">
+                  <span
+                    class="svg-icon-wrap"
+                    style="color: #10b981; font-size: 1.25rem"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                      /></svg
+                  ></span>
+                  <div>
+                    <strong>Quick At-Home Fix:</strong> For toner, remove the
+                    cartridge and gently rock it horizontally 5 times to
+                    redistribute powder. For inkjet, run the warm distilled
+                    water capillary bath outlined in our Article #2 above.
+                  </div>
                 </div>
+                <p
+                  style="font-size: 0.9rem; color: var(--text-muted); margin: 0"
+                >
+                  <strong>Inkit Workshop Fix:</strong> Ultrasonic bath
+                  degreasing and negative-pressure vacuum priming ($12.00
+                  walk-in, takes 15 minutes).
+                </p>
               </div>
-              <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">
-                <strong>Inkit Workshop Fix:</strong> We install a brand-new long-life optical drum cylinder and replace the wiper blade ($18.00–$28.00 depending on machine model).
-              </p>
-            </div>
 
-            <!-- Card 3 -->
-            <div id="diag-card-3" class="diag-detail-card">
-              <span class="article-category-pill">Smart Chip Issue</span>
-              <h3 style="font-size: 1.45rem; font-weight: 800; margin: 0.75rem 0 0.5rem 0; color: var(--text-main);">"Cartridge Not Recognized" or Depleted Lockout</h3>
-              <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
-                <strong>Primary Cause:</strong> The cartridge chip serial number has reached its internal dot counter limit, or oxidation on the contact copper leaves has interrupted communication with the logic board.
-              </p>
-              <div class="callout-box tip">
-                <span class="svg-icon-wrap" style="color: #10b981; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
-                <div>
-                  <strong>Quick At-Home Fix:</strong> Power cycle the printer, remove the cartridge, clean the gold electrical contacts with an eraser or lint-free alcohol pad, and re-seat firmly.
+              <!-- Card 2 -->
+              <div id="diag-card-2" class="diag-detail-card">
+                <span class="article-category-pill"
+                  >Laser Printer Specific</span
+                >
+                <h3
+                  style="
+                    font-size: 1.45rem;
+                    font-weight: 800;
+                    margin: 0.75rem 0 0.5rem 0;
+                    color: var(--text-main);
+                  "
+                >
+                  Repeating Spots or Dots Down the Page
+                </h3>
+                <p
+                  style="
+                    color: var(--text-muted);
+                    line-height: 1.65;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <strong>Primary Cause:</strong> A physical dent, scratch, or
+                  baked-on adhesive deposit on the organic photoconductor (OPC)
+                  drum cylinder. As the drum rotates, the defect imprints every
+                  75mm–94mm.
+                </p>
+                <div class="callout-box warning">
+                  <span
+                    class="svg-icon-wrap"
+                    style="color: #f59e0b; font-size: 1.25rem"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                      /></svg
+                  ></span>
+                  <div>
+                    <strong>Important Caution:</strong> Do NOT scrape the drum
+                    with metal tools, fingernails, or paperclips.
+                    Light-sensitive OPC coatings are delicate and permanently
+                    damaged by fingernail pressure.
+                  </div>
                 </div>
+                <p
+                  style="font-size: 0.9rem; color: var(--text-muted); margin: 0"
+                >
+                  <strong>Inkit Workshop Fix:</strong> We install a brand-new
+                  long-life optical drum cylinder and replace the wiper blade
+                  ($18.00–$28.00 depending on machine model).
+                </p>
               </div>
-              <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">
-                <strong>Inkit Workshop Fix:</strong> Hardware EEPROM serial recoding with our Apex programmer or installation of an updated firmware-immune bypass chip.
-              </p>
-            </div>
 
-            <!-- Card 4 -->
-            <div id="diag-card-4" class="diag-detail-card">
-              <span class="article-category-pill">Laser Fuser Assembly</span>
-              <h3 style="font-size: 1.45rem; font-weight: 800; margin: 0.75rem 0 0.5rem 0; color: var(--text-main);">Toner Smudging or Flaking Off the Sheet</h3>
-              <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
-                <strong>Primary Cause:</strong> Fuser unit temperature failure. Laser toner requires 180°C heat to melt into cellulose. If paper type is set to "Normal" while feeding thick cardstock or labels, heat transfer is insufficient.
-              </p>
-              <div class="callout-box tip">
-                <span class="svg-icon-wrap" style="color: #10b981; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
-                <div>
-                  <strong>Quick At-Home Fix:</strong> Change your printer driver paper setting from "Plain Paper" to "Heavy Cardstock / Thick 2". This slows the print feed rate, giving the fuser roller twice the dwell time to melt toner.
+              <!-- Card 3 -->
+              <div id="diag-card-3" class="diag-detail-card">
+                <span class="article-category-pill">Smart Chip Issue</span>
+                <h3
+                  style="
+                    font-size: 1.45rem;
+                    font-weight: 800;
+                    margin: 0.75rem 0 0.5rem 0;
+                    color: var(--text-main);
+                  "
+                >
+                  "Cartridge Not Recognized" or Depleted Lockout
+                </h3>
+                <p
+                  style="
+                    color: var(--text-muted);
+                    line-height: 1.65;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <strong>Primary Cause:</strong> The cartridge chip serial
+                  number has reached its internal dot counter limit, or
+                  oxidation on the contact copper leaves has interrupted
+                  communication with the logic board.
+                </p>
+                <div class="callout-box tip">
+                  <span
+                    class="svg-icon-wrap"
+                    style="color: #10b981; font-size: 1.25rem"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                      /></svg
+                  ></span>
+                  <div>
+                    <strong>Quick At-Home Fix:</strong> Power cycle the printer,
+                    remove the cartridge, clean the gold electrical contacts
+                    with an eraser or lint-free alcohol pad, and re-seat firmly.
+                  </div>
                 </div>
+                <p
+                  style="font-size: 0.9rem; color: var(--text-muted); margin: 0"
+                >
+                  <strong>Inkit Workshop Fix:</strong> Hardware EEPROM serial
+                  recoding with our Apex programmer or installation of an
+                  updated firmware-immune bypass chip.
+                </p>
               </div>
-              <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">
-                <strong>Inkit Workshop Fix:</strong> Complete fuser ceramic heater test, thermistor calibration, and fuser film sleeve replacement.
-              </p>
-            </div>
 
-            <!-- Card 5 -->
-            <div id="diag-card-5" class="diag-detail-card">
-              <span class="article-category-pill">Color Gamut Calibration</span>
-              <h3 style="font-size: 1.45rem; font-weight: 800; margin: 0.75rem 0 0.5rem 0; color: var(--text-main);">Unwanted Tint / Muddy Color Cast</h3>
-              <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
-                <strong>Primary Cause:</strong> One specific color nozzle channel is starved or completely dry (typically Yellow or Cyan), throwing off the subtractive CMYK color balance and creating severe pink or green casts.
-              </p>
-              <div class="callout-box tip">
-                <span class="svg-icon-wrap" style="color: #10b981; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
-                <div>
-                  <strong>Diagnostic Test:</strong> Print an 8-color gradient calibration chart. The missing or heavily faded stripe reveals exactly which chamber needs priming.
+              <!-- Card 4 -->
+              <div id="diag-card-4" class="diag-detail-card">
+                <span class="article-category-pill">Laser Fuser Assembly</span>
+                <h3
+                  style="
+                    font-size: 1.45rem;
+                    font-weight: 800;
+                    margin: 0.75rem 0 0.5rem 0;
+                    color: var(--text-main);
+                  "
+                >
+                  Toner Smudging or Flaking Off the Sheet
+                </h3>
+                <p
+                  style="
+                    color: var(--text-muted);
+                    line-height: 1.65;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <strong>Primary Cause:</strong> Fuser unit temperature
+                  failure. Laser toner requires 180°C heat to melt into
+                  cellulose. If paper type is set to "Normal" while feeding
+                  thick cardstock or labels, heat transfer is insufficient.
+                </p>
+                <div class="callout-box tip">
+                  <span
+                    class="svg-icon-wrap"
+                    style="color: #10b981; font-size: 1.25rem"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                      /></svg
+                  ></span>
+                  <div>
+                    <strong>Quick At-Home Fix:</strong> Change your printer
+                    driver paper setting from "Plain Paper" to "Heavy Cardstock
+                    / Thick 2". This slows the print feed rate, giving the fuser
+                    roller twice the dwell time to melt toner.
+                  </div>
                 </div>
+                <p
+                  style="font-size: 0.9rem; color: var(--text-muted); margin: 0"
+                >
+                  <strong>Inkit Workshop Fix:</strong> Complete fuser ceramic
+                  heater test, thermistor calibration, and fuser film sleeve
+                  replacement.
+                </p>
               </div>
-              <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">
-                <strong>Inkit Workshop Fix:</strong> Spectrophotometer spectral density balance and single-chamber refill top-up ($8.00–$14.00).
-              </p>
+
+              <!-- Card 5 -->
+              <div id="diag-card-5" class="diag-detail-card">
+                <span class="article-category-pill"
+                  >Color Gamut Calibration</span
+                >
+                <h3
+                  style="
+                    font-size: 1.45rem;
+                    font-weight: 800;
+                    margin: 0.75rem 0 0.5rem 0;
+                    color: var(--text-main);
+                  "
+                >
+                  Unwanted Tint / Muddy Color Cast
+                </h3>
+                <p
+                  style="
+                    color: var(--text-muted);
+                    line-height: 1.65;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <strong>Primary Cause:</strong> One specific color nozzle
+                  channel is starved or completely dry (typically Yellow or
+                  Cyan), throwing off the subtractive CMYK color balance and
+                  creating severe pink or green casts.
+                </p>
+                <div class="callout-box tip">
+                  <span
+                    class="svg-icon-wrap"
+                    style="color: #10b981; font-size: 1.25rem"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                      /></svg
+                  ></span>
+                  <div>
+                    <strong>Diagnostic Test:</strong> Print an 8-color gradient
+                    calibration chart. The missing or heavily faded stripe
+                    reveals exactly which chamber needs priming.
+                  </div>
+                </div>
+                <p
+                  style="font-size: 0.9rem; color: var(--text-muted); margin: 0"
+                >
+                  <strong>Inkit Workshop Fix:</strong> Spectrophotometer
+                  spectral density balance and single-chamber refill top-up
+                  ($8.00–$14.00).
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          SECTION 5: OEM VS PRECISION REFILL VS GENERIC COST COMPARISON
          ========================================================================== -->
-    <section class="section-py" id="cost-comparison">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Market Analysis</span>
-          <h2 class="section-title">The Three Tiers of Consumables</h2>
-          <p class="section-subtitle">Understanding the technical, economic, and safety differences between OEM, Inkit remanufactured, and cheap generic imports.</p>
-        </div>
+      <section class="section-py" id="cost-comparison">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Market Analysis</span>
+            <h2 class="section-title">The Three Tiers of Consumables</h2>
+            <p class="section-subtitle">
+              Understanding the technical, economic, and safety differences
+              between OEM, Inkit remanufactured, and cheap generic imports.
+            </p>
+          </div>
 
-        <div class="table-responsive-wrap">
-          <table class="compare-table">
-            <thead>
-              <tr>
-                <th style="width: 25%;">Evaluation Metric</th>
-                <th style="width: 25%;">Original OEM Cartridge</th>
-                <th style="width: 25%;" class="highlight-col">Inkit Certified Refill</th>
-                <th style="width: 25%;">Cheap Overseas Clone</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Price / Cost per Cartridge</strong></td>
-                <td>$85.00 – $160.00 (High)</td>
-                <td class="highlight-col"><strong>$22.00 – $38.00 (75% Less)</strong></td>
-                <td>$9.00 – $15.00 (Extremely Cheap)</td>
-              </tr>
-              <tr>
-                <td><strong>Cost Per Page (CPP)</strong></td>
-                <td>$0.032 / page</td>
-                <td class="highlight-col"><strong>$0.006 / page</strong></td>
-                <td>$0.015 / page (low page yield)</td>
-              </tr>
-              <tr>
-                <td><strong>Casing Plastic Quality</strong></td>
-                <td>OEM Virgin High-Grade Polymer</td>
-                <td class="highlight-col"><strong>100% Genuine Re-tested OEM Shell</strong></td>
-                <td>Brittle Recycled Plastic, Warps Easily</td>
-              </tr>
-              <tr>
-                <td><strong>Printhead Safety & Leak Risk</strong></td>
-                <td>Zero Leak Risk</td>
-                <td class="highlight-col"><strong>Pressure-chamber Tested Zero Leak</strong></td>
-                <td>High Failure (Toner dumps inside chassis)</td>
-              </tr>
-              <tr>
-                <td><strong>ISO/IEC Yield Standards</strong></td>
-                <td>Standard Factory Yield</td>
-                <td class="highlight-col"><strong>100% to 115% of OEM Yield</strong></td>
-                <td>Often delivers under 40% stated yield</td>
-              </tr>
-              <tr>
-                <td><strong>Environmental Impact</strong></td>
-                <td>Virgin fossil fuel consumption</td>
-                <td class="highlight-col"><strong>Zero Landfill / 100% Circular Loop</strong></td>
-                <td>Single-use plastic tossed in landfill</td>
-              </tr>
-              <tr>
-                <td><strong>Warranty Protection</strong></td>
-                <td>Standard limited warranty</td>
-                <td class="highlight-col"><strong>Inkit Machine Repair Guarantee</strong></td>
-                <td>Zero warranty / No customer support</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%">Evaluation Metric</th>
+                  <th style="width: 25%">Original OEM Cartridge</th>
+                  <th style="width: 25%" class="highlight-col">
+                    Inkit Certified Refill
+                  </th>
+                  <th style="width: 25%">Cheap Overseas Clone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Price / Cost per Cartridge</strong></td>
+                  <td>$85.00 – $160.00 (High)</td>
+                  <td class="highlight-col">
+                    <strong>$22.00 – $38.00 (75% Less)</strong>
+                  </td>
+                  <td>$9.00 – $15.00 (Extremely Cheap)</td>
+                </tr>
+                <tr>
+                  <td><strong>Cost Per Page (CPP)</strong></td>
+                  <td>$0.032 / page</td>
+                  <td class="highlight-col"><strong>$0.006 / page</strong></td>
+                  <td>$0.015 / page (low page yield)</td>
+                </tr>
+                <tr>
+                  <td><strong>Casing Plastic Quality</strong></td>
+                  <td>OEM Virgin High-Grade Polymer</td>
+                  <td class="highlight-col">
+                    <strong>100% Genuine Re-tested OEM Shell</strong>
+                  </td>
+                  <td>Brittle Recycled Plastic, Warps Easily</td>
+                </tr>
+                <tr>
+                  <td><strong>Printhead Safety & Leak Risk</strong></td>
+                  <td>Zero Leak Risk</td>
+                  <td class="highlight-col">
+                    <strong>Pressure-chamber Tested Zero Leak</strong>
+                  </td>
+                  <td>High Failure (Toner dumps inside chassis)</td>
+                </tr>
+                <tr>
+                  <td><strong>ISO/IEC Yield Standards</strong></td>
+                  <td>Standard Factory Yield</td>
+                  <td class="highlight-col">
+                    <strong>100% to 115% of OEM Yield</strong>
+                  </td>
+                  <td>Often delivers under 40% stated yield</td>
+                </tr>
+                <tr>
+                  <td><strong>Environmental Impact</strong></td>
+                  <td>Virgin fossil fuel consumption</td>
+                  <td class="highlight-col">
+                    <strong>Zero Landfill / 100% Circular Loop</strong>
+                  </td>
+                  <td>Single-use plastic tossed in landfill</td>
+                </tr>
+                <tr>
+                  <td><strong>Warranty Protection</strong></td>
+                  <td>Standard limited warranty</td>
+                  <td class="highlight-col">
+                    <strong>Inkit Machine Repair Guarantee</strong>
+                  </td>
+                  <td>Zero warranty / No customer support</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          SECTION 6: ENVIRONMENTAL SUSTAINABILITY & CIRCULAR METRICS
          ========================================================================== -->
-    <section class="section-py bg-surface" id="eco-impact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Eco Sustainability</span>
-          <h2 class="section-title">Measurable Environmental Preservation</h2>
-          <p class="section-subtitle">Refilling is not just about saving money — every remanufactured cartridge directly keeps hazardous chemicals and fossil fuels out of our biosphere.</p>
+      <section class="section-py bg-surface" id="eco-impact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Eco Sustainability</span>
+            <h2 class="section-title">Measurable Environmental Preservation</h2>
+            <p class="section-subtitle">
+              Refilling is not just about saving money — every remanufactured
+              cartridge directly keeps hazardous chemicals and fossil fuels out
+              of our biosphere.
+            </p>
+          </div>
+
+          <div class="eco-metrics-grid">
+            <div class="eco-metric-card">
+              <span
+                class="svg-icon-wrap"
+                style="color: var(--accent-green); font-size: 2.5rem"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                  />
+                  <path
+                    d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                  /></svg
+              ></span>
+              <div class="eco-stat-val">375 Million</div>
+              <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem">
+                Cartridges Dumped Annually
+              </h4>
+              <p
+                style="margin: 0; font-size: 0.85rem; color: var(--text-muted)"
+              >
+                Inkit has successfully diverted over 180,000 units locally since
+                2018.
+              </p>
+            </div>
+
+            <div class="eco-metric-card">
+              <span
+                class="svg-icon-wrap"
+                style="color: var(--accent-green); font-size: 2.5rem"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"
+                  /></svg
+              ></span>
+              <div class="eco-stat-val">2.5 Quarts</div>
+              <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem">
+                Crude Oil Conserved
+              </h4>
+              <p
+                style="margin: 0; font-size: 0.85rem; color: var(--text-muted)"
+              >
+                Saved per remanufactured laser toner cartridge compared to
+                virgin production.
+              </p>
+            </div>
+
+            <div class="eco-metric-card">
+              <span
+                class="svg-icon-wrap"
+                style="color: var(--accent-green); font-size: 2.5rem"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                  <path d="M12 22V2" /></svg
+              ></span>
+              <div class="eco-stat-val">1,000 Years</div>
+              <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem">
+                Plastic Landfill Longevity
+              </h4>
+              <p
+                style="margin: 0; font-size: 0.85rem; color: var(--text-muted)"
+              >
+                Industrial ABS casings take a millennium to decompose in open
+                garbage dumps.
+              </p>
+            </div>
+
+            <div class="eco-metric-card">
+              <span
+                class="svg-icon-wrap"
+                style="color: var(--accent-green); font-size: 2.5rem"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></svg
+              ></span>
+              <div class="eco-stat-val">7 Cycles</div>
+              <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem">
+                Max Safe Refill Cycles
+              </h4>
+              <p
+                style="margin: 0; font-size: 0.85rem; color: var(--text-muted)"
+              >
+                A genuine OEM casing can be professionally refilled up to 7
+                times with zero quality loss.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4-Step Closed Loop Roadmap -->
+          <div
+            class="process-steps"
+            style="grid-template-columns: repeat(4, 1fr)"
+          >
+            <div class="process-step">
+              <div class="step-num">1</div>
+              <div class="step-icon">
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                    /></svg
+                ></span>
+              </div>
+              <h4 class="step-title">Collection & Sorting</h4>
+              <p class="step-desc">
+                Empties are ultrasonically cataloged, weighed, and inspected for
+                casing micro-cracks.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-num">2</div>
+              <div class="step-icon">
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                    />
+                    <path
+                      d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                    /></svg
+                ></span>
+              </div>
+              <h4 class="step-title">Bio-Steam Flush</h4>
+              <p class="step-desc">
+                Internal sponges are purged with 60°C deionized water,
+                eliminating residual dried pigment.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-num">3</div>
+              <div class="step-icon">
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"
+                    /></svg
+                ></span>
+              </div>
+              <h4 class="step-title">Precision Refill</h4>
+              <p class="step-desc">
+                Automated vacuum chambers refill calibrated toner or dye inks to
+                OEM gram specifications.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-num">4</div>
+              <div class="step-icon">
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></svg
+                ></span>
+              </div>
+              <h4 class="step-title">ISO Certified Test</h4>
+              <p class="step-desc">
+                Every cartridge outputs a full-bleed diagnostic test page before
+                receiving our tamper seal.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="eco-metrics-grid">
-          <div class="eco-metric-card">
-            <span class="svg-icon-wrap" style="color: var(--accent-green); font-size: 2.5rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>
-            <div class="eco-stat-val">375 Million</div>
-            <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Cartridges Dumped Annually</h4>
-            <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Inkit has successfully diverted over 180,000 units locally since 2018.</p>
-          </div>
-
-          <div class="eco-metric-card">
-            <span class="svg-icon-wrap" style="color: var(--accent-green); font-size: 2.5rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span>
-            <div class="eco-stat-val">2.5 Quarts</div>
-            <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Crude Oil Conserved</h4>
-            <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Saved per remanufactured laser toner cartridge compared to virgin production.</p>
-          </div>
-
-          <div class="eco-metric-card">
-            <span class="svg-icon-wrap" style="color: var(--accent-green); font-size: 2.5rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 22V2"/></svg></span>
-            <div class="eco-stat-val">1,000 Years</div>
-            <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Plastic Landfill Longevity</h4>
-            <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Industrial ABS casings take a millennium to decompose in open garbage dumps.</p>
-          </div>
-
-          <div class="eco-metric-card">
-            <span class="svg-icon-wrap" style="color: var(--accent-green); font-size: 2.5rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>
-            <div class="eco-stat-val">7 Cycles</div>
-            <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Max Safe Refill Cycles</h4>
-            <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">A genuine OEM casing can be professionally refilled up to 7 times with zero quality loss.</p>
-          </div>
-        </div>
-
-        <!-- 4-Step Closed Loop Roadmap -->
-        <div class="process-steps" style="grid-template-columns: repeat(4, 1fr);">
-          <div class="process-step">
-            <div class="step-num">1</div>
-            <div class="step-icon"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></div>
-            <h4 class="step-title">Collection & Sorting</h4>
-            <p class="step-desc">Empties are ultrasonically cataloged, weighed, and inspected for casing micro-cracks.</p>
-          </div>
-
-          <div class="process-step">
-            <div class="step-num">2</div>
-            <div class="step-icon"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span></div>
-            <h4 class="step-title">Bio-Steam Flush</h4>
-            <p class="step-desc">Internal sponges are purged with 60°C deionized water, eliminating residual dried pigment.</p>
-          </div>
-
-          <div class="process-step">
-            <div class="step-num">3</div>
-            <div class="step-icon"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span></div>
-            <h4 class="step-title">Precision Refill</h4>
-            <p class="step-desc">Automated vacuum chambers refill calibrated toner or dye inks to OEM gram specifications.</p>
-          </div>
-
-          <div class="process-step">
-            <div class="step-num">4</div>
-            <div class="step-icon"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span></div>
-            <h4 class="step-title">ISO Certified Test</h4>
-            <p class="step-desc">Every cartridge outputs a full-bleed diagnostic test page before receiving our tamper seal.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          SECTION 7: VIDEO MASTERCLASSES & MEDIA TUTORIALS
          ========================================================================== -->
-    <section class="section-py" id="video-tutorials">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Video Walkthroughs</span>
-          <h2 class="section-title">Technician Masterclass Tutorials</h2>
-          <p class="section-subtitle">Visual, step-by-step video procedures filmed inside our certified refilling laboratories.</p>
+      <section class="section-py" id="video-tutorials">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Video Walkthroughs</span>
+            <h2 class="section-title">Technician Masterclass Tutorials</h2>
+            <p class="section-subtitle">
+              Visual, step-by-step video procedures filmed inside our certified
+              refilling laboratories.
+            </p>
+          </div>
+
+          <div class="tutorials-grid">
+            <!-- Tutorial 1 -->
+            <div class="tutorial-card">
+              <div class="tutorial-video-preview">
+                <img
+                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+                  alt="Safe Transport of Inkjet Cartridges"
+                />
+                <div class="play-badge">
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <polygon points="5 3 19 12 5 21 5 3" /></svg
+                  ></span>
+                </div>
+                <span class="tutorial-duration">4:12 mins</span>
+              </div>
+              <div class="tutorial-content">
+                <span
+                  class="article-category-pill"
+                  style="align-self: flex-start; margin-bottom: 0.75rem"
+                  >Handling Guide</span
+                >
+                <h3
+                  style="
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    margin-bottom: 0.5rem;
+                    color: var(--text-main);
+                  "
+                >
+                  How to Safely Transport Empty Inkjet Cartridges
+                </h3>
+                <p
+                  style="
+                    color: var(--text-muted);
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                    margin-bottom: 1.25rem;
+                    flex: 1;
+                  "
+                >
+                  Why sealing nozzles with scotch tape permanently ruins the
+                  plate, and how to use a damp paper towel wrap in an airtight
+                  zip bag.
+                </p>
+                <button
+                  class="btn btn-secondary btn-sm"
+                  onclick="
+                    InkitApp.showToast(
+                      'Tutorial video playing in HD...',
+                      'info',
+                    )
+                  "
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <polygon points="5 3 19 12 5 21 5 3" /></svg
+                  ></span>
+                  Watch Video Checklist
+                </button>
+              </div>
+            </div>
+
+            <!-- Tutorial 2 -->
+            <div class="tutorial-card">
+              <div class="tutorial-video-preview">
+                <img
+                  src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80"
+                  alt="Brother Toner Reset Gear"
+                />
+                <div class="play-badge">
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <polygon points="5 3 19 12 5 21 5 3" /></svg
+                  ></span>
+                </div>
+                <span class="tutorial-duration">5:45 mins</span>
+              </div>
+              <div class="tutorial-content">
+                <span
+                  class="article-category-pill"
+                  style="align-self: flex-start; margin-bottom: 0.75rem"
+                  >Hardware Reset</span
+                >
+                <h3
+                  style="
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    margin-bottom: 0.5rem;
+                    color: var(--text-main);
+                  "
+                >
+                  Step-by-Step Reset of Brother TN-760 Flag Gears
+                </h3>
+                <p
+                  style="
+                    color: var(--text-muted);
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                    margin-bottom: 1.25rem;
+                    flex: 1;
+                  "
+                >
+                  How mechanical flag gears tell the printer the cartridge is
+                  fresh, and how to rewind the spring without opening the powder
+                  reservoir.
+                </p>
+                <button
+                  class="btn btn-secondary btn-sm"
+                  onclick="
+                    InkitApp.showToast(
+                      'Tutorial video playing in HD...',
+                      'info',
+                    )
+                  "
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <polygon points="5 3 19 12 5 21 5 3" /></svg
+                  ></span>
+                  Watch Video Checklist
+                </button>
+              </div>
+            </div>
+
+            <!-- Tutorial 3 -->
+            <div class="tutorial-card">
+              <div class="tutorial-video-preview">
+                <img
+                  src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80"
+                  alt="EcoTank Air Bubble Purging"
+                />
+                <div class="play-badge">
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <polygon points="5 3 19 12 5 21 5 3" /></svg
+                  ></span>
+                </div>
+                <span class="tutorial-duration">6:30 mins</span>
+              </div>
+              <div class="tutorial-content">
+                <span
+                  class="article-category-pill"
+                  style="align-self: flex-start; margin-bottom: 0.75rem"
+                  >EcoTank Tech</span
+                >
+                <h3
+                  style="
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    margin-bottom: 0.5rem;
+                    color: var(--text-main);
+                  "
+                >
+                  Purging Air Locks From Continuous Ink Dampers
+                </h3>
+                <p
+                  style="
+                    color: var(--text-muted);
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                    margin-bottom: 1.25rem;
+                    flex: 1;
+                  "
+                >
+                  When an EcoTank sits unused, air enters the silicone delivery
+                  tubes. Learn the manual suction syringe method without
+                  spilling a drop.
+                </p>
+                <button
+                  class="btn btn-secondary btn-sm"
+                  onclick="
+                    InkitApp.showToast(
+                      'Tutorial video playing in HD...',
+                      'info',
+                    )
+                  "
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <polygon points="5 3 19 12 5 21 5 3" /></svg
+                  ></span>
+                  Watch Video Checklist
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="tutorials-grid">
-          <!-- Tutorial 1 -->
-          <div class="tutorial-card">
-            <div class="tutorial-video-preview">
-              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Safe Transport of Inkjet Cartridges">
-              <div class="play-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span></div>
-              <span class="tutorial-duration">4:12 mins</span>
-            </div>
-            <div class="tutorial-content">
-              <span class="article-category-pill" style="align-self: flex-start; margin-bottom: 0.75rem;">Handling Guide</span>
-              <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-main);">
-                How to Safely Transport Empty Inkjet Cartridges
-              </h3>
-              <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
-                Why sealing nozzles with scotch tape permanently ruins the plate, and how to use a damp paper towel wrap in an airtight zip bag.
-              </p>
-              <button class="btn btn-secondary btn-sm" onclick="InkitApp.showToast('Tutorial video playing in HD...', 'info');">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span> Watch Video Checklist
-              </button>
-            </div>
-          </div>
-
-          <!-- Tutorial 2 -->
-          <div class="tutorial-card">
-            <div class="tutorial-video-preview">
-              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Brother Toner Reset Gear">
-              <div class="play-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span></div>
-              <span class="tutorial-duration">5:45 mins</span>
-            </div>
-            <div class="tutorial-content">
-              <span class="article-category-pill" style="align-self: flex-start; margin-bottom: 0.75rem;">Hardware Reset</span>
-              <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-main);">
-                Step-by-Step Reset of Brother TN-760 Flag Gears
-              </h3>
-              <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
-                How mechanical flag gears tell the printer the cartridge is fresh, and how to rewind the spring without opening the powder reservoir.
-              </p>
-              <button class="btn btn-secondary btn-sm" onclick="InkitApp.showToast('Tutorial video playing in HD...', 'info');">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span> Watch Video Checklist
-              </button>
-            </div>
-          </div>
-
-          <!-- Tutorial 3 -->
-          <div class="tutorial-card">
-            <div class="tutorial-video-preview">
-              <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80" alt="EcoTank Air Bubble Purging">
-              <div class="play-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span></div>
-              <span class="tutorial-duration">6:30 mins</span>
-            </div>
-            <div class="tutorial-content">
-              <span class="article-category-pill" style="align-self: flex-start; margin-bottom: 0.75rem;">EcoTank Tech</span>
-              <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-main);">
-                Purging Air Locks From Continuous Ink Dampers
-              </h3>
-              <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
-                When an EcoTank sits unused, air enters the silicone delivery tubes. Learn the manual suction syringe method without spilling a drop.
-              </p>
-              <button class="btn btn-secondary btn-sm" onclick="InkitApp.showToast('Tutorial video playing in HD...', 'info');">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span> Watch Video Checklist
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          SECTION 8: READER Q&A & EXPERT ADVICE FORUM
          ========================================================================== -->
-    <section class="section-py bg-surface" id="reader-qa">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Expert Advice</span>
-          <h2 class="section-title">Frequently Asked Reader Questions</h2>
-          <p class="section-subtitle">Real inquiries from home users and IT administrators answered directly by our master technicians.</p>
+      <section class="section-py bg-surface" id="reader-qa">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Expert Advice</span>
+            <h2 class="section-title">Frequently Asked Reader Questions</h2>
+            <p class="section-subtitle">
+              Real inquiries from home users and IT administrators answered
+              directly by our master technicians.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <!-- Question 1 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span
+                  >Will refilling my cartridges void my printer manufacturer's
+                  warranty?</span
+                >
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  <strong>No.</strong> In the United States, the
+                  <em>Magnuson-Moss Warranty Act</em> prohibits manufacturers
+                  from voiding machine warranties simply for using third-party
+                  or remanufactured consumables. Similar consumer protection
+                  laws protect buyers in the UK, European Union, and Canada. In
+                  the extremely rare event that an Inkit cartridge causes a
+                  defect, our own Inkit Comprehensive Guarantee covers the
+                  certified repair or machine replacement at zero cost to you.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span
+                  >Why does my printer still say "Low Ink" after I had it
+                  refilled?</span
+                >
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Most inkjet cartridges do not have an internal liquid float or
+                  optical sensor. Instead, the printer calculates consumption
+                  based on a theoretical page counter stored in the microchip.
+                  When refilled without a chip replacement (such as HP
+                  63/65/67), the printer remembers the old serial number and
+                  displays a warning. You can simply press
+                  <strong>"OK" or "Continue"</strong> — the cartridge is
+                  physically full and will print crisp, sharp pages until the
+                  ink is truly exhausted.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span
+                  >How many times can a single cartridge casing be
+                  refilled?</span
+                >
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Standard integrated inkjet cartridges (with the printhead on
+                  the bottom) can typically be refilled
+                  <strong>4 to 7 times</strong> before the internal heating
+                  resistors wear down. Laser toner cartridges can be
+                  remanufactured indefinitely (5 to 10+ times) because Inkit
+                  replaces all mechanical wear parts — including the OPC drum,
+                  wiper blades, and chip — during each servicing cycle.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span
+                  >Can I switch between dye-based ink and pigment-based
+                  ink?</span
+                >
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  <strong>Never mix them directly in the same tank.</strong>
+                  Pigment ink uses solid microscopic particles, while dye ink is
+                  a chemical solution. If mixed together without a thorough
+                  deionized solvent flush, the chemical reaction causes the
+                  pigment particles to precipitate and congeal into a thick
+                  sludge that permanently ruins the printhead nozzles.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span
+                  >What is the shelf life of a sealed, refilled Inkit
+                  cartridge?</span
+                >
+                <span class="svg-icon-wrap"
+                  ><svg
+                    class="svg-icon chevron-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Laser toner cartridges have an
+                  <strong>unlimited shelf life (3 to 5+ years)</strong> because
+                  dry polymer powder does not degrade as long as it is kept away
+                  from moisture and extreme heat. Refilled inkjet cartridges are
+                  sealed in airtight moisture-barrier clips and stay fresh for
+                  <strong>18 to 24 months</strong> in cool indoor storage.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="faq-list">
-          <!-- Question 1 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Will refilling my cartridges void my printer manufacturer's warranty?</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                <strong>No.</strong> In the United States, the <em>Magnuson-Moss Warranty Act</em> prohibits manufacturers from voiding machine warranties simply for using third-party or remanufactured consumables. Similar consumer protection laws protect buyers in the UK, European Union, and Canada. In the extremely rare event that an Inkit cartridge causes a defect, our own Inkit Comprehensive Guarantee covers the certified repair or machine replacement at zero cost to you.
-              </p>
-            </div>
-          </div>
-
-          <!-- Question 2 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Why does my printer still say "Low Ink" after I had it refilled?</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Most inkjet cartridges do not have an internal liquid float or optical sensor. Instead, the printer calculates consumption based on a theoretical page counter stored in the microchip. When refilled without a chip replacement (such as HP 63/65/67), the printer remembers the old serial number and displays a warning. You can simply press <strong>"OK" or "Continue"</strong> — the cartridge is physically full and will print crisp, sharp pages until the ink is truly exhausted.
-              </p>
-            </div>
-          </div>
-
-          <!-- Question 3 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>How many times can a single cartridge casing be refilled?</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Standard integrated inkjet cartridges (with the printhead on the bottom) can typically be refilled <strong>4 to 7 times</strong> before the internal heating resistors wear down. Laser toner cartridges can be remanufactured indefinitely (5 to 10+ times) because Inkit replaces all mechanical wear parts — including the OPC drum, wiper blades, and chip — during each servicing cycle.
-              </p>
-            </div>
-          </div>
-
-          <!-- Question 4 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Can I switch between dye-based ink and pigment-based ink?</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                <strong>Never mix them directly in the same tank.</strong> Pigment ink uses solid microscopic particles, while dye ink is a chemical solution. If mixed together without a thorough deionized solvent flush, the chemical reaction causes the pigment particles to precipitate and congeal into a thick sludge that permanently ruins the printhead nozzles.
-              </p>
-            </div>
-          </div>
-
-          <!-- Question 5 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>What is the shelf life of a sealed, refilled Inkit cartridge?</span>
-              <span class="svg-icon-wrap"><svg class="svg-icon chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Laser toner cartridges have an <strong>unlimited shelf life (3 to 5+ years)</strong> because dry polymer powder does not degrade as long as it is kept away from moisture and extreme heat. Refilled inkjet cartridges are sealed in airtight moisture-barrier clips and stay fresh for <strong>18 to 24 months</strong> in cool indoor storage.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
- 
-  </main>
-
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        FOOTER (Unified Color: #0b1120)
        ========================================================================== -->
-  <footer class="site-footer">
-    <div class="footer-main">
-      <div class="container">
-        <div class="footer-grid">
-          <!-- Column 1: Brand Info -->
-          <div class="footer-col footer-brand">
-            <a href="index.html" class="brand-logo footer-logo" title="Inkit - Home">
-              <img src="assets/images/logo.png" alt="Inkit - Ink & Toner Refill" class="site-logo-img" onerror="if(this.src.indexOf('assets/')!==-1){this.src='logo.png';}">
-              <div class="brand-text">
-                <span class="brand-name">Inkit<span class="ink-dot">.</span></span>
-                <span class="brand-tagline">Ink & Toner Refill</span>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-grid">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-col footer-brand">
+                    <a href="index.html"
+   class="footer-brand-logo"
+   title="Inkit - Home"
+   style="display:inline-flex;
+          align-items:center;
+          gap:8px;
+          text-decoration:none;
+          margin-bottom:15px;">
+
+    <img src="assets/images/logo.png"
+         alt="Inkit Logo"
+         style="width:52px;
+                height:52px;
+                object-fit:contain;
+                display:block;">
+
+    <span style="font-size:29px;
+                 font-weight:800;
+                 letter-spacing:-1px;
+                 line-height:1;
+                 color:#dadee0;">
+        In<span style="color:#00d4ff;"> kit.</span>
+    </span>
+
+</a>
+              <p>
+                Inkit is your trusted ISO-certified destination for precision
+                printer ink refilling, laser toner remanufacturing, and
+                eco-friendly printing solutions. Dedicated to saving your money
+                and preserving our planet.
+              </p>
+              <!-- Platform Social Links with Target Blank -->
+              <div class="social-links">
+                <a
+                  href="https://facebook.com/InkitRefillShop"
+                  class="social-link fb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Inkit on Facebook"
+                  aria-label="Facebook"
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                      /></svg
+                  ></span>
+                </a>
+                <a
+                  href="https://youtube.com/@InkitRefillShop"
+                  class="social-link yt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Inkit on YouTube"
+                  aria-label="YouTube"
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                      /></svg
+                  ></span>
+                </a>
+                <a
+                  href="https://linkedin.com/company/inkit-refill-shop"
+                  class="social-link in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Inkit on LinkedIn"
+                  aria-label="LinkedIn"
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6c0 .88.72 1.6 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"
+                      /></svg
+                  ></span>
+                </a>
+                <a
+                  href="https://instagram.com/inkitrefillshop"
+                  class="social-link ig"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Inkit on Instagram"
+                  aria-label="Instagram"
+                >
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      /></svg
+                  ></span>
+                </a>
               </div>
-            </a>
-            <p>
-              Inkit is your trusted ISO-certified destination for precision printer ink refilling, laser toner remanufacturing, and eco-friendly printing solutions. Dedicated to saving your money and preserving our planet.
-            </p>
-            <!-- Platform Social Links with Target Blank -->
-            <div class="social-links">
-              <a href="https://facebook.com/InkitRefillShop" class="social-link fb" target="_blank" rel="noopener noreferrer" title="Inkit on Facebook" aria-label="Facebook">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
-              </a>
-              <a href="https://youtube.com/@InkitRefillShop" class="social-link yt" target="_blank" rel="noopener noreferrer" title="Inkit on YouTube" aria-label="YouTube">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span>
-              </a>
-              <a href="https://linkedin.com/company/inkit-refill-shop" class="social-link in" target="_blank" rel="noopener noreferrer" title="Inkit on LinkedIn" aria-label="LinkedIn">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6c0 .88.72 1.6 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg></span>
-              </a>
-              <a href="https://instagram.com/inkitrefillshop" class="social-link ig" target="_blank" rel="noopener noreferrer" title="Inkit on Instagram" aria-label="Instagram">
-                <span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>
-              </a>
             </div>
-          </div>
 
-          <!-- Column 2: Quick Links -->
-          <div class="footer-col">
-            <h4>Quick Navigation</h4>
-            <ul class="footer-links">
-              <li><a href="index.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Home 1: Eco Refill Hub</a></li>
-              <li><a href="home2.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Home 2: Corporate & Express</a></li>
-              <li><a href="products.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Products by Brand</a></li>
-              <li><a href="bulk-plans.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Corporate Bulk Plans</a></li>
-              <li><a href="contact.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Contact & Store Hours</a></li>
-              <li><a href="contact.html#enquiry-form"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Refill Enquiry Form</a></li>
-            </ul>
-          </div>
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+              <h4>Quick Navigation</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Home 1: Eco Refill Hub</a
+                  >
+                </li>
+                <li>
+                  <a href="home2.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Home 2: Corporate & Express</a
+                  >
+                </li>
+                <li>
+                  <a href="products.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Products by Brand</a
+                  >
+                </li>
+                <li>
+                  <a href="bulk-plans.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Corporate Bulk Plans</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Contact & Store Hours</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html#enquiry-form"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Refill Enquiry Form</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-          <!-- Column 3: Supported Brands -->
-          <div class="footer-col">
-            <h4>Supported Brands</h4>
-            <ul class="footer-links">
-              <li><a href="products.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> HP Toner & Inkjet</a></li>
-              <li><a href="products.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Canon Pixma & Lasers</a></li>
-              <li><a href="products.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Epson EcoTank CMYK</a></li>
-              <li><a href="products.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Brother MFC Series</a></li>
-              <li><a href="products.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Xerox WorkCentre</a></li>
-              <li><a href="products.html"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span> Samsung & Ricoh Cartridges</a></li>
-            </ul>
-          </div>
+            <!-- Column 3: Supported Brands -->
+            <div class="footer-col">
+              <h4>Supported Brands</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="products.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    HP Toner & Inkjet</a
+                  >
+                </li>
+                <li>
+                  <a href="products.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Canon Pixma & Lasers</a
+                  >
+                </li>
+                <li>
+                  <a href="products.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Epson EcoTank CMYK</a
+                  >
+                </li>
+                <li>
+                  <a href="products.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Brother MFC Series</a
+                  >
+                </li>
+                <li>
+                  <a href="products.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Xerox WorkCentre</a
+                  >
+                </li>
+                <li>
+                  <a href="products.html"
+                    ><span class="svg-icon-wrap"
+                      ><svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" /></svg
+                    ></span>
+                    Samsung & Ricoh Cartridges</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-          <!-- Column 4: Newsletter & Direct Hotline -->
-          <div class="footer-col footer-newsletter">
-            <h4>Stay Updated</h4>
-            <p>Subscribe for seasonal discount codes, printer maintenance guides, and bulk corporate offers.</p>
-            <form class="newsletter-form">
-              <input type="email" class="newsletter-input" placeholder="Your work email..." required>
-              <button type="submit" class="btn btn-primary btn-sm"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></button>
-            </form>
-            <div style="font-size: 0.85rem; color: var(--nav-footer-muted); margin-top: 1rem;">
-              <div><span class="svg-icon-wrap" style="color: #38bdf8; margin-right: 0.4rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span> 1-800-555-INKIT (Toll Free)</div>
-              <div style="margin-top: 0.4rem;"><span class="svg-icon-wrap" style="color: #38bdf8; margin-right: 0.4rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span> support@inkit-refill.com</div>
+            <!-- Column 4: Newsletter & Direct Hotline -->
+            <div class="footer-col footer-newsletter">
+              <h4>Stay Updated</h4>
+              <p>
+                Subscribe for seasonal discount codes, printer maintenance
+                guides, and bulk corporate offers.
+              </p>
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  class="newsletter-input"
+                  placeholder="Your work email..."
+                  required
+                />
+                <button type="submit" class="btn btn-primary btn-sm">
+                  <span class="svg-icon-wrap"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" /></svg
+                  ></span>
+                </button>
+              </form>
+              <div
+                style="
+                  font-size: 0.85rem;
+                  color: var(--nav-footer-muted);
+                  margin-top: 1rem;
+                "
+              >
+                <div>
+                  <span
+                    class="svg-icon-wrap"
+                    style="color: #38bdf8; margin-right: 0.4rem"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      /></svg
+                  ></span>
+                  1-800-555-INKIT (Toll Free)
+                </div>
+                <div style="margin-top: 0.4rem">
+                  <span
+                    class="svg-icon-wrap"
+                    style="color: #38bdf8; margin-right: 0.4rem"
+                    ><svg
+                      class="svg-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path
+                        d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                      /></svg
+                  ></span>
+                  support@inkit-refill.com
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <div>
-          © 2026 Inkit Printer Ink & Toner Refill Shop. All rights reserved.
-        </div>
-        <div class="footer-certifications">
-          <span class="footer-cert-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span> ISO 9001:2015 Registered</span>
-          <span class="footer-cert-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span> Zero-Landfill E-Waste Partner</span>
-          <span class="footer-cert-badge"><span class="svg-icon-wrap"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 22V2"/></svg></span> OEM Yield Guaranteed</span>
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <div>
+            © 2026 Inkit Printer Ink & Toner Refill Shop. All rights reserved.
+          </div>
+          <div class="footer-certifications">
+            <span class="footer-cert-badge"
+              ><span class="svg-icon-wrap"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></svg
+              ></span>
+              ISO 9001:2015 Registered</span
+            >
+            <span class="footer-cert-badge"
+              ><span class="svg-icon-wrap"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                  />
+                  <path
+                    d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                  /></svg
+              ></span>
+              Zero-Landfill E-Waste Partner</span
+            >
+            <span class="footer-cert-badge"
+              ><span class="svg-icon-wrap"
+                ><svg
+                  class="svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                  <path d="M12 22V2" /></svg
+              ></span>
+              OEM Yield Guaranteed</span
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/common.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="assets/js/common.js"></script>
+  </body>
 </html>
