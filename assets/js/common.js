@@ -196,6 +196,7 @@ function onInit() {
   initSavingsCalculator();
   initProductFilters();
   initEnquiryForm();
+  initBlog();
 }
 
 /* --- THEME TOGGLE (Dark / Light) --- */
@@ -556,3 +557,649 @@ window.InkitApp = {
   showToast,
   SVG_ICONS
 };
+
+
+/* --- INKIT BLOG & INTERACTIVE ARTICLE READER SYSTEM --- */
+
+const BLOG_ARTICLES = {
+  'article-1': {
+    id: 'article-1',
+    title: 'The Definitive 2026 Fleet Guide: Laser Toner vs. Inkjet Refills — How Small Businesses Cut Overhead by 78%',
+    category: 'Cost Optimization',
+    readTime: '8 min read',
+    date: 'November 2026',
+    author: {
+      name: 'David Vance',
+      role: 'Chief Master Refill Technician',
+      avatar: 'assets/images/logo-icon.png'
+    },
+    takeaways: [
+      'Refilling high-yield monochrome toner cartridges delivers an average cost-per-page (CPP) of $0.004 compared to $0.028 for OEM cartridges.',
+      'Modern pigment-based inkjet refills match OEM water resistance while eliminating 80% of single-use cartridge plastic.',
+      'The US Magnuson-Moss Warranty Act strictly prevents printer OEMs from voiding machine warranties simply for using third-party refilled toner.',
+      'Small offices with print volumes above 600 pages/month achieve highest ROI with remanufactured high-capacity laser toner hoppers.'
+    ],
+    contentHtml: `
+      <p class="lead-text" style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+        Every corporate accountant and office manager encounters the same shock: your modern multi-function printer was purchased for $280, but replacing four OEM toner cartridges sets the company back $450 every quarter. In 2026, printer manufacturers earn more than 85% of their gross hardware division profits from consumable lock-in. Here is our technician-verified breakdown of how laser toner and inkjet precision refilling truly compare.
+      </p>
+
+      <h2>1. Chemistry & Physics: Laser Toner vs. Inkjet Fluid</h2>
+      <p>
+        Laser toner is not liquid ink; it is a microscopic powder composed of polymer resins, magnetite, and carbon black pigments engineered to fuse to cellulose fibers at 180°C to 205°C via heated fuser rollers. Inkit's remanufacturing process replaces worn organic photoconductor (OPC) drums, installs micro-polished wiper blades, and fills the hopper with electrostatically matched polymer toner.
+      </p>
+      <p>
+        Inkjet cartridges, conversely, utilize thermal or piezoelectric chambers that heat micro-nozzles to 300°C in microseconds, launching droplets as small as 1.5 picoliters. Precision refilling requires vacuum-degassed pigment or dye inks calibrated for exact surface tension (dynes/cm) and viscosity (centipoise).
+      </p>
+
+      <div class="callout-box tip">
+        <span class="svg-icon-wrap" style="color: #10b981; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <div>
+          <strong>Pro Technician Rule:</strong> Never mix dye and pigment inks in the same printer model. Dye dissolves completely in water (ideal for vivid color photos), whereas pigment suspends micro-particles (essential for razor-sharp, waterproof legal briefs). Inkit technicians always flush internal sponges with deionized fluid before introducing new formulation batches.
+        </div>
+      </div>
+
+      <h2>2. True Cost-Per-Page (CPP) Comparison Study</h2>
+      <p>
+        We tracked 250,000 pages printed across 12 legal firms and medical practices in our regional testing network. Here is how genuine OEM cartridges compared to Inkit Precision Refills:
+      </p>
+
+      <div class="table-responsive-wrap" style="margin: 1.5rem 0 2rem 0;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Printer Category & Cartridge</th>
+              <th>OEM Standard Cost</th>
+              <th>Inkit Certified Refill</th>
+              <th>Monthly Savings (1,500 Pgs)</th>
+              <th>Warranty Protection</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>HP LaserJet Pro (CF258A / 58A)</strong></td>
+              <td>$142.00 (3,000 pgs)</td>
+              <td class="highlight-col">$38.00 (3,200 pgs)</td>
+              <td><strong>$52.00 / month</strong></td>
+              <td>100% Inkit Guarantee</td>
+            </tr>
+            <tr>
+              <td><strong>Brother MFC Mono (TN-760)</strong></td>
+              <td>$89.00 (3,000 pgs)</td>
+              <td class="highlight-col">$26.00 (3,000 pgs)</td>
+              <td><strong>$31.50 / month</strong></td>
+              <td>100% Inkit Guarantee</td>
+            </tr>
+            <tr>
+              <td><strong>Canon Pixma Color Pack (PG-245/CL-246)</strong></td>
+              <td>$62.00 (300 pgs)</td>
+              <td class="highlight-col">$19.00 (400 pgs)</td>
+              <td><strong>$71.60 / month</strong></td>
+              <td>100% Inkit Guarantee</td>
+            </tr>
+            <tr>
+              <td><strong>Epson EcoTank 502 CMYK Set</strong></td>
+              <td>$54.00 (6,000 pgs)</td>
+              <td class="highlight-col">$22.00 (7,500 pgs)</td>
+              <td><strong>$6.40 / month</strong></td>
+              <td>100% Inkit Guarantee</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>3. The Legal Reality: Does Refilling Void Your Printer Warranty?</h2>
+      <p>
+        One of the most persistent myths pushed by printer OEM warning popups is that refilling your toner or ink voids your manufacturer warranty. Under the <strong>United States Magnuson-Moss Warranty Improvement Act (15 U.S.C. § 2302(c))</strong> and comparable European Union consumer protection directives, it is illegal for an OEM to condition warranty coverage on the exclusive use of brand-name consumables.
+      </p>
+      <p>
+        A printer manufacturer can only deny a warranty repair if they can legally and forensically prove that a specific defect or mechanical failure was directly caused by an aftermarket consumable. At Inkit, we carry comprehensive product liability insurance and offer our own <strong>Total Printer Hardware Guarantee</strong>: if an Inkit-refilled cartridge ever damages your machine, our certified field engineers repair or replace the hardware at zero cost.
+      </p>
+
+      <h2>4. 4-Step Checklist for Maximizing Refill Lifespan</h2>
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">1</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Refill Before the Chamber Runs Bone Dry</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            In thermal inkjet cartridges, liquid ink acts as a cooling agent for the heating resistors. Printing with an empty chamber burns out micro-resistors within 10-15 pages, making the nozzle plate non-refillable. Bring cartridges in when the first light streaks appear.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">2</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Turn Off Automatic Firmware Updates</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Silent Wi-Fi firmware updates frequently alter the printer's crypto-handshake with smart chips. Disable "Auto Firmware Updates" in your printer's LCD touchscreen network settings to ensure uninterrupted cartridge recognition.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">3</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Store Spares in Cool, Airtight Polybags</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Never leave spare cartridges sitting under direct sunlight or near HVAC heat vents. Ambient humidity between 40% and 60% prevents sponge drying and toner clump aggregation.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">4</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Always Request Diagnostic Print Test Pages</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Every Inkit refill undergoes optical density densitometer testing and a 100% full-bleed test page printout before leaving our workshop so you never face unexpected lines or blotches.
+          </p>
+        </div>
+      </div>
+
+      <div class="callout-box warning" style="margin-top: 2rem;">
+        <span class="svg-icon-wrap" style="color: #f59e0b; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <div>
+          <strong>Avoid Dirt-Cheap Online Knockoffs:</strong> Generic $9 cartridges from untrusted overseas marketplaces frequently reuse brittle plastic casings and substandard abrasive powders that erode fuser rollers and leak into laser optics. Choose certified closed-loop remanufacturing with genuine OEM casings.
+        </div>
+      </div>
+    `
+  },
+
+  'article-2': {
+    id: 'article-2',
+    title: 'How to Fix Clogged Printhead Nozzles at Home: The Safe, Solvent-Free Method',
+    category: 'Cartridge Care',
+    readTime: '6 min read',
+    date: 'November 2026',
+    author: {
+      name: 'Elena Rostova',
+      role: 'Lead Hardware Specialist',
+      avatar: 'assets/images/logo-icon.png'
+    },
+    takeaways: [
+      'Never use rubbing alcohol, acetone, or household windex on printheads; harsh solvents permanently melt the microscopic silicone nozzle membranes.',
+      'A warm distilled water steam and capillary bath safely liquefies dried ink crust without applying mechanical pressure.',
+      'Built-in printer deep-clean cycles waste up to 25% of your ink supply per session; manual capillary soaking is 4x more effective.',
+      'Integrated cartridges (HP & Canon 2-cartridge systems) can be revived in under 15 minutes with a warm paper towel compress.'
+    ],
+    contentHtml: `
+      <p class="lead-text" style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+        You turn on your printer after a two-week vacation, send an urgent boarding pass or contract to print, and the paper comes out with white horizontal streaks through every sentence. Dried ink in the nozzle plate is the single most common inkjet issue worldwide. Here is our lab-tested, solvent-free recovery protocol that will not destroy your expensive hardware.
+      </p>
+
+      <h2>1. Why Standard Clean Cycles Often Fail (And Waste Your Ink)</h2>
+      <p>
+        When you press "Deep Clean" in your printer maintenance software, the printer's internal purge pump forcefully pulls ink through all nozzles into a waste ink pad. While this clears minor air locks, it consumes up to <strong>20% to 25% of your full cartridge volume</strong> in a single cycle. Worse, if dried ink has formed a rock-hard crust over the micro-apertures, repeated pumping forces ink sideways, causing color bleeding and air suction pockets.
+      </p>
+
+      <h2>2. Step-by-Step Distilled Capillary Bath Method</h2>
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">1</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Prepare Pure Distilled Water</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Do not use tap water! Tap water contains calcium, magnesium, and chlorine minerals that will crystallize inside the 15-micron nozzle openings as soon as the water evaporates. Warm 100ml of pure distilled water to approximately 45°C–50°C (comfortably warm to the touch, not boiling).
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">2</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">The Shallow Saucer Soak</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Fold a lint-free microfiber cloth or thick multi-ply paper towel into a shallow saucer and pour in warm distilled water so it is roughly 2mm to 3mm deep. Submerge ONLY the copper nozzle plate at the bottom. Keep the top electrical contact strip completely dry.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">3</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Observe Capillary Bleeding</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Within 60 to 90 seconds, you will observe dried ink dissolving into the water towel, creating clear trails of black or cyan/magenta/yellow ink. Allow it to sit for 8 to 10 minutes.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">4</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Dab, Dry, and Clean Contacts</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Gently dab the nozzle plate downward onto a dry paper towel. You should see a clean, rectangular ribbon of ink. Use an alcohol-free lens wipe to remove any fingerprint oils from the gold-plated electrical contacts on the back. Reinsert into the printer and run a standard single test page.
+          </p>
+        </div>
+      </div>
+
+      <h2>3. What About Permanent Printheads (Epson & Canon 5-Cartridge Systems)?</h2>
+      <p>
+        If your printer uses separate ink tanks where the printhead stays permanently inside the printer carriage, use a silicone tubing syringe filled with warmed distilled water. Gently flush 2ml through each color intake post until clear liquid drips into an absorbent paper towel laid beneath the carriage.
+      </p>
+
+      <div class="callout-box tip">
+        <span class="svg-icon-wrap" style="color: #10b981; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <div>
+          <strong>When to Visit Inkit:</strong> If your printhead nozzles remain stubborn after a 10-minute warm bath, bring your cartridge to our shop. Our ultrasonic frequency degreaser cleans micro-nozzles with 40 kHz cavitation waves that break stubborn crusts without touching the nozzle membrane.
+        </div>
+      </div>
+    `
+  },
+
+  'article-3': {
+    id: 'article-3',
+    title: 'Demystifying Printer Firmware Updates & Microchip "Cartridge Depleted" Locks',
+    category: 'Firmware & Chips',
+    readTime: '7 min read',
+    date: 'November 2026',
+    author: {
+      name: 'Marcus Chen',
+      role: 'Firmware & Electronics Lead',
+      avatar: 'assets/images/logo-icon.png'
+    },
+    takeaways: [
+      'Printer OEMs push silent "Dynamic Security" firmware updates specifically engineered to reject third-party and refilled microchips.',
+      'Disabling automatic cloud firmware updates on your printer preserves your freedom to use cost-effective refilled cartridges indefinitely.',
+      'Inkit uses state-of-the-art Apex & Megacell hardware decoders to rewrite chip serial IDs so your printer recognizes full capacity.',
+      'Bypassing the low ink warning popup is safe as long as physical ink is present inside the reservoir.'
+    ],
+    contentHtml: `
+      <p class="lead-text" style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+        You insert a freshly refilled cartridge, and the printer LCD displays a harsh red warning: "Non-HP Cartridge Detected" or "Cartridge Depleted / Replace Supplies". You know the cartridge is 100% full because you just had it refilled. What is happening under the hood, and how can you regain control of hardware you paid for?
+      </p>
+
+      <h2>1. The Architecture of Modern Smart Chips</h2>
+      <p>
+        Every modern printer cartridge contains a small printed circuit board (PCB) equipped with an EEPROM memory chip and cryptographic coprocessor. Contrary to popular belief, <strong>most cartridges have zero physical sensors measuring liquid ink volume</strong>. Instead, the printer calculates ink consumption using an algorithmic page counter: counting dot firings, print coverage percentages, and cleaning cycle purges.
+      </p>
+      <p>
+        Once the counter reaches zero, the printer permanently burns a digital lockout bit into the cartridge chip, instructing the machine never to allow that specific serial ID to print again.
+      </p>
+
+      <h2>2. How Inkit Bypasses the Lockout Bit</h2>
+      <p>
+        At Inkit, our electronics lab utilizes specialized hardware reset tools:
+      </p>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+        <li><strong>Physical EEPROM Flashing:</strong> We rewrite the serial number address on Brother, Canon, and Epson chips, making the printer recognize the cartridge as a fresh, unused factory unit.</li>
+        <li><strong>Permanent Smart Chip Replacement:</strong> For locked HP and Xerox cartridges with irreversible cryptographic keys, we install our high-grade universal replacement chips that report 100% full yield to all printer firmware revisions.</li>
+      </ul>
+
+      <h2>3. How to Turn Off Automatic Firmware Updates (Brand by Brand)</h2>
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">HP</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">HP OfficeJet & LaserJet Printers</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            On your printer touchscreen: Go to <strong>Setup (Gear) → Printer Maintenance → Update the Printer → Printer Update Options → Do Not Check → Select 'No'</strong> to turn off printer analytics.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">Eps</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Epson Workforce & EcoTank Printers</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Open Windows Taskbar / Mac System Settings: Open <strong>Epson Software Updater → Auto Update Settings → Change interval from 'Every Week' to 'Never'</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">Bro</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Brother MFC & HL Series</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Access printer IP in web browser: Go to <strong>Administrator Settings → Firmware Update → Automatic Firmware Update → Disable</strong>.
+          </p>
+        </div>
+      </div>
+    `
+  },
+
+  'article-4': {
+    id: 'article-4',
+    title: 'Epson EcoTank & Tank Inks: Why Dye vs. Pigment Chemistry Matters',
+    category: 'Ink Chemistry',
+    readTime: '5 min read',
+    date: 'November 2026',
+    author: {
+      name: 'Sarah Jenkins',
+      role: 'Ink Formulation Chemist',
+      avatar: 'assets/images/logo-icon.png'
+    },
+    takeaways: [
+      'Dye-based ink is water-soluble and provides brilliant, wide-gamut photo prints on glossy paper.',
+      'Pigment ink uses solid microscopic color particles that bond permanently with paper fibers for archival, highlighter-proof legal text.',
+      'Mixing dye and pigment inks inside the same fluid reservoir causes chemical coagulation and permanent printhead clogging.',
+      'Inkit bottle refills are precision matched to exact manufacturer surface tension and viscosity specifications.'
+    ],
+    contentHtml: `
+      <p class="lead-text" style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+        Continuous ink tank printers like Epson EcoTank, Canon MegaTank, and HP Smart Tank have transformed home and small office printing. However, bottle refilling introduces a critical chemistry choice that many users overlook: the fundamental distinction between dye-based and pigment-based ink formulas.
+      </p>
+
+      <h2>1. The Molecular Difference</h2>
+      <p>
+        <strong>Dye Ink:</strong> The colorant is 100% chemically dissolved in water, similar to sugar dissolved in tea. When printed, dye ink absorbs deeply into the paper fibers. It delivers spectacular optical vibrancy, rich shadow gradation, and ultra-smooth skin tones, making it the favorite for family photography and artistic prints. However, it will smudge if exposed to water or highlighters.
+      </p>
+      <p>
+        <strong>Pigment Ink:</strong> The colorant consists of microscopic solid polymer-encapsulated particles suspended in a carrier fluid. When fired through the nozzle, the fluid evaporates while the pigment particles anchor to the surface of the paper. Pigment prints are 100% waterproof, UV fade-resistant for up to 100 years, and immune to fluorescent highlighter bleed.
+      </p>
+
+      <div class="callout-box warning">
+        <span class="svg-icon-wrap" style="color: #f59e0b; font-size: 1.25rem;"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <div>
+          <strong>The Danger of Cross-Contamination:</strong> If you pour pigment ink into a tank previously containing dye ink (or vice-versa), the pH and electrical polarity mismatch causes the pigment particles to coagulate into a sticky gel, clogging the 20-micron piezo channels irreparably. Always verify your bottle code with an Inkit technician before topping up!
+        </div>
+      </div>
+    `
+  },
+
+  'article-5': {
+    id: 'article-5',
+    title: 'The Circular Economy: Where 300 Million Discarded Cartridges Go & The Inkit Closed-Loop Model',
+    category: 'Eco Sustainability',
+    readTime: '5 min read',
+    date: 'November 2026',
+    author: {
+      name: 'Tara O\'Connor',
+      role: 'Sustainability Director',
+      avatar: 'assets/images/logo-icon.png'
+    },
+    takeaways: [
+      'More than 375 million ink and toner cartridges are tossed into landfills annually, taking 450 to 1,000 years to decompose.',
+      'Manufacturing a single new laser toner cartridge consumes over 3 quarts of crude petroleum oil.',
+      'A precision-remanufactured cartridge can be refilled up to 5 to 7 times with zero degradation in print quality.',
+      'Inkit\'s zero-landfill e-waste program guarantees that 100% of non-refillable components are recycled into raw industrial materials.'
+    ],
+    contentHtml: `
+      <p class="lead-text" style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+        Every second, 11 printer cartridges are thrown into garbage bins worldwide. That translates into more than 1,000,000 cartridges per day ending up in municipal landfills. Because printer casings are engineered from high-grade industrial polymers (ABS, polyphenylene ether, and high-impact polystyrene) designed to withstand heat and pressure, they resist natural degradation for over ten centuries.
+      </p>
+
+      <h2>1. The Raw Resource Footprint</h2>
+      <p>
+        Manufacturing just one brand-new laser toner cartridge requires:
+      </p>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+        <li><strong>3.25 Quarts of Crude Oil:</strong> Used as feedstock for virgin plastics and energy.</li>
+        <li><strong>2.5 Pounds of Refined Metal:</strong> Aluminum drum rollers, copper contacts, and steel gear assemblies.</li>
+        <li><strong>4.8 Kilograms of CO2 Greenhouse Gases:</strong> Emitted during overseas factory processing and international shipping.</li>
+      </ul>
+
+      <h2>2. Inkit’s 4-Stage Closed Loop Remanufacturing Process</h2>
+      <p>
+        When you bring an empty cartridge to Inkit, it enters our zero-landfill circular remanufacturing workflow:
+      </p>
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">1</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Chamber Decontamination & Cleaning</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Residual toner waste is extracted using negative-pressure HEPA vacuums, and inkjet sponge chambers are flushed with warm deionized steam.
+          </p>
+        </div>
+      </div>
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">2</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">High-Stress Component Replacement</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            We replace worn OPC drums, wiper blades, PCR charge rollers, and microchips with brand-new precision hardware.
+          </p>
+        </div>
+      </div>
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">3</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Gram-Precision Digital Injection</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Automated microprocessor scales inject the exact gram weight of polymer toner or vacuum-degassed ink to match original factory specifications.
+          </p>
+        </div>
+      </div>
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">4</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Certified Quality Page Testing</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Each cartridge prints an ISO/IEC 19752 diagnostic page verifying grayscale gradient uniformity and optical density before being sealed in moisture-proof packaging.
+          </p>
+        </div>
+      </div>
+    `
+  },
+
+  'article-6': {
+    id: 'article-6',
+    title: 'OPC Drum Unit vs. Toner Hopper: Diagnosing Streaks, Repeating Dots & Gray Haze',
+    category: 'Laser Toner',
+    readTime: '6 min read',
+    date: 'November 2026',
+    author: {
+      name: 'David Vance',
+      role: 'Chief Master Refill Technician',
+      avatar: 'assets/images/logo-icon.png'
+    },
+    takeaways: [
+      'Understanding the difference between the toner cartridge (powder reservoir) and drum unit (imaging cylinder) saves hundreds in misdiagnosed replacements.',
+      'Repeating spots at exact equal distances down the page indicate a physical scratch on the organic photoconductor (OPC) drum cylinder.',
+      'A faint gray haze across the entire page background points to an old, worn primary charge roller (PCR) or incorrect bias voltage.',
+      'Brother printers separate the drum from the toner; replacing the toner does not fix drum scratches!'
+    ],
+    contentHtml: `
+      <p class="lead-text" style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+        "I just put in a brand new toner, and I'm still getting black streaks down the edge of every printed page!" Our support hotline hears this complaint weekly. In many laser printers (particularly Brother, Lexmark, and Panasonic), the toner cartridge and the imaging drum unit are two separate mechanisms. Knowing which part is failing prevents expensive guesswork.
+      </p>
+
+      <h2>1. The Two-Part Architecture Explained</h2>
+      <p>
+        <strong>The Toner Cartridge (TN):</strong> The plastic container that holds the dry toner powder. It features internal agitator paddles and a developer roller that charges the toner particles.
+      </p>
+      <p>
+        <strong>The Drum Unit (DR):</strong> The photosensitive aluminum cylinder coated in green or blue organic photoconductor (OPC) film. Laser beams write electrostatic images onto this cylinder, which attracts the toner particles and transfers them onto paper before passing into the heated fuser.
+      </p>
+
+      <h2>2. Visual Diagnostic Cheat-Sheet</h2>
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">A</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Symptom: Repeating Dots Down the Page</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            Measure the vertical distance between the repeating marks with a ruler. If the distance is approximately <strong>75mm to 94mm</strong>, the OPC drum has a pinhole scratch from a staple or paperclip. Solution: Replace the OPC drum cylinder, not the toner cartridge!
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">B</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Symptom: Solid Black Vertical Line Along the Margin</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            A nick in the rubber wiper blade has allowed excess toner to escape the waste collection hopper, depositing an unbroken line of toner. Solution: Inkit replaces the wiper blade and empties the waste sump during standard servicing.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-procedure-card">
+        <div class="step-procedure-number">C</div>
+        <div>
+          <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;">Symptom: Gray Background Fog or Shading</h4>
+          <p style="margin: 0; font-size: 0.925rem; color: var(--text-muted);">
+            The primary charge roller (PCR) is failing to maintain negative electrostatic potential, or poor quality generic toner with incompatible dielectric resistance was used. Solution: Clean or replace the PCR and flush the hopper with OEM-spec polymer toner.
+          </p>
+        </div>
+      </div>
+    `
+  }
+};
+
+function initBlog() {
+  const blogContainer = document.getElementById('articles-grid');
+  if (!blogContainer && !document.getElementById('inpageArticleViewer')) return;
+
+  const viewer = document.getElementById('inpageArticleViewer');
+  const searchInput = document.getElementById('blogSearchInput');
+  const categoryChips = document.querySelectorAll('.category-chip');
+  const articleCards = document.querySelectorAll('.article-card');
+  const noArticlesNotice = document.getElementById('noArticlesNotice');
+
+  // 1. Article Open / Close Logic
+  function openArticle(articleId) {
+    const article = BLOG_ARTICLES[articleId];
+    if (!article || !viewer) return;
+
+    // Populate data
+    document.getElementById('viewerCategory').textContent = article.category;
+    document.getElementById('viewerTitle').textContent = article.title;
+    document.getElementById('viewerDate').textContent = article.date;
+    document.getElementById('viewerReadTime').textContent = article.readTime;
+    document.getElementById('viewerAuthorName').textContent = article.author.name;
+    document.getElementById('viewerAuthorRole').textContent = article.author.role;
+    
+    const avatarEl = document.getElementById('viewerAuthorImg');
+    if (avatarEl) avatarEl.src = article.author.avatar;
+
+    // Takeaways
+    const takeawaysList = document.getElementById('viewerTakeawaysList');
+    if (takeawaysList) {
+      takeawaysList.innerHTML = article.takeaways.map(item => `
+        <li>
+          <span class="svg-icon-wrap" style="color: var(--primary); font-size: 1.1rem; flex-shrink: 0; margin-top: 2px;">
+            ${SVG_ICONS['circle-check'] || '✓'}
+          </span>
+          <span>${item}</span>
+        </li>
+      `).join('');
+    }
+
+    // Body HTML
+    const contentEl = document.getElementById('viewerContentBody');
+    if (contentEl) {
+      contentEl.innerHTML = article.contentHtml;
+    }
+
+    // Show viewer and scroll
+    viewer.classList.add('active');
+    viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Update URL hash without reload
+    try {
+      history.replaceState(null, '', `#article-${articleId}`);
+    } catch (e) {}
+
+    showToast(`Opening article: "${article.title.substring(0, 38)}..."`, 'info');
+  }
+
+  function closeArticle() {
+    if (!viewer) return;
+    viewer.classList.remove('active');
+    
+    const articlesSection = document.getElementById('articles-section') || document.getElementById('articles-grid');
+    if (articlesSection) {
+      articlesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    try {
+      history.replaceState(null, '', window.location.pathname);
+    } catch (e) {}
+  }
+
+  // Attach event listeners to all Read More buttons & Featured buttons
+  document.querySelectorAll('[data-article-id]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const articleId = btn.getAttribute('data-article-id');
+      openArticle(articleId);
+    });
+  });
+
+  // Attach event listeners to back buttons
+  document.querySelectorAll('.back-to-articles-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeArticle();
+    });
+  });
+
+  // 2. Category Filter Logic
+  let activeCategory = 'all';
+  function filterArticles() {
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    let visibleCount = 0;
+
+    articleCards.forEach(card => {
+      const cardCat = (card.getAttribute('data-category') || '').toLowerCase();
+      const cardTitle = (card.querySelector('.article-title')?.textContent || '').toLowerCase();
+      const cardExcerpt = (card.querySelector('.article-excerpt')?.textContent || '').toLowerCase();
+
+      const matchCat = (activeCategory === 'all' || cardCat.includes(activeCategory));
+      const matchSearch = (!query || cardTitle.includes(query) || cardExcerpt.includes(query) || cardCat.includes(query));
+
+      if (matchCat && matchSearch) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (noArticlesNotice) {
+      noArticlesNotice.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+  }
+
+  categoryChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      categoryChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      activeCategory = (chip.getAttribute('data-category') || 'all').toLowerCase();
+      filterArticles();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', filterArticles);
+  }
+
+  // 3. Diagnostics Matrix Tab Switcher (Section 4)
+  const diagTabs = document.querySelectorAll('.diag-tab-btn');
+  const diagCards = document.querySelectorAll('.diag-detail-card');
+  diagTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.getAttribute('data-target');
+      diagTabs.forEach(t => t.classList.remove('active'));
+      diagCards.forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      const targetCard = document.getElementById(targetId);
+      if (targetCard) targetCard.classList.add('active');
+    });
+  });
+
+  // 4. Helpful Feedback Buttons
+  document.querySelectorAll('.feedback-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('voted')) return;
+      btn.classList.add('voted');
+      const countSpan = btn.querySelector('.count');
+      if (countSpan) {
+        let current = parseInt(countSpan.textContent, 10) || 0;
+        countSpan.textContent = current + 1;
+      }
+      showToast('Thank you! Your feedback helps us improve Inkit technical guides.', 'success');
+    });
+  });
+
+  // 5. Check if URL hash matches an article on load
+  const currentHash = window.location.hash;
+  if (currentHash && currentHash.startsWith('#article-')) {
+    const reqId = currentHash.replace('#article-', '');
+    if (BLOG_ARTICLES[reqId]) {
+      setTimeout(() => openArticle(reqId), 250);
+    }
+  }
+}

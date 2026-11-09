@@ -1305,3 +1305,214 @@ button {
     grid-template-columns: 1fr !important;
   }
 }
+/* BLOG HERO SECTION */
+.blog-hero-section {
+  position: relative;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 80px;
+  background:
+    linear-gradient(
+      rgba(10, 15, 25, 0.82),
+      rgba(10, 15, 25, 0.88)
+    ),
+    url("assets/images/blog-hero.jpg") center/cover no-repeat;
+  overflow: hidden;
+  text-align: center;
+}
+
+.blog-hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.blog-hero-wrap {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-hero-section .badge-tag-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.blog-hero-section .hero-title {
+  max-width: 900px;
+  margin: 0 auto 22px;
+  text-align: center;
+  line-height: 1.15;
+}
+
+.blog-hero-section .hero-title span {
+  color: var(--primary-color, #e5a33d);
+}
+
+.blog-hero-section .hero-subtitle {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.blog-hero-section .category-chips-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px auto 30px;
+  max-width: 950px;
+}
+
+.blog-hero-section .blog-hero-cta {
+  margin-bottom: 25px;
+}
+
+.blog-hero-section .blog-hero-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.blog-hero-section .blog-hero-cta a:hover {
+  transform: translateY(-3px);
+}
+
+.blog-hero-section .hero-stats {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.blog-hero-section .stat-item {
+  text-align: center;
+}
+
+.blog-hero-section .stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .blog-hero-section {
+    min-height: auto;
+    padding: 85px 0 65px;
+  }
+
+  .blog-hero-section .hero-title {
+    font-size: clamp(30px, 6vw, 42px);
+  }
+
+  .blog-hero-section .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .blog-hero-section .hero-stats {
+    gap: 22px;
+  }
+
+  .blog-hero-section .stat-divider {
+    display: none;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .blog-hero-section {
+    padding: 75px 0 50px;
+  }
+
+  .blog-hero-section .badge-tag-row {
+    gap: 8px;
+  }
+
+  .blog-hero-section .hero-title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .blog-hero-section .hero-subtitle {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .blog-hero-section .category-chips-row {
+    gap: 8px;
+  }
+
+  .blog-hero-section .category-chip {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .blog-hero-section .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 12px;
+  }
+
+  .blog-hero-section .stat-number {
+    font-size: 23px;
+  }
+
+  .blog-hero-section .stat-label {
+    font-size: 12px;
+  }
+}
+/* BLOG HERO TEXT VISIBILITY */
+.blog-hero-section {
+    color: #ffffff !important;
+}
+
+.blog-hero-section .hero-title,
+.blog-hero-section .hero-title span,
+.blog-hero-section .hero-subtitle,
+.blog-hero-section .stat-number,
+.blog-hero-section .stat-label {
+    color: #ffffff !important;
+}
+
+.blog-hero-section .editor-badge,
+.blog-hero-section .article-category-pill {
+    color: #ffffff !important;
+}
+
+.blog-hero-section .stat-number {
+    font-weight: 700;
+}
+
+.blog-hero-section .stat-label {
+    opacity: 0.85;
+}
+
+/* CTA */
+.blog-hero-section .blog-hero-cta .btn {
+    color: #ffffff !important;
+}
+
+/* Category / Badge visibility */
+.blog-hero-section .badge-tag-row span {
+    color: #ffffff !important;
+}
