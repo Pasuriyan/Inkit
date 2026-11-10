@@ -90,9 +90,7 @@
         <!-- Navbar Controls & Action -->
         <div class="nav-actions">
           <!-- RTL to LTR Mode Button with Icon -->
-          <button id="rtlToggleBtn" class="icon-btn" title="Toggle RTL / LTR text direction" aria-label="Toggle Text Direction">
-            <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
-          </button>
+          <button id="rtlToggleBtn" class="icon-btn">RTL</button>
 
           <!-- Dark to Light Mode Button with Icon -->
           <button id="themeToggleBtn" class="icon-btn" title="Toggle Dark / Light mode" aria-label="Toggle Theme Mode">
@@ -222,157 +220,576 @@
     <!-- ==========================================================================
          SECTION 2: MAIN INTERACTIVE REFILL ENQUIRY FORM (id="enquiry-form")
          ========================================================================== -->
-    <section class="section-py" id="enquiry-form" style="background: var(--bg-surface-alt);">
-      <div class="container" style="max-width: 920px;">
+   <section class="section-py" id="enquiry-form"
+    style="background:var(--bg-surface-alt);">
+
+    <div class="container" style="max-width:920px;">
+
         <div class="enquiry-form-card">
-          <div class="section-header" style="margin-bottom: 2rem;">
-            <div class="section-badge"><i class="fa-solid fa-clipboard-check"></i> Refill Request Form</div>
-            <h2 class="section-title" style="font-size: 2rem;">Submit Your Printer Refill Enquiry</h2>
-            <p class="section-subtitle">Fill out this quick form for instant quote confirmation and courier dispatch scheduling.</p>
-          </div>
 
-          <!-- Success Alert Message (Hidden initially) -->
-          <div id="formSuccessMessage" style="display: none; background: rgba(16, 185, 129, 0.12); border: 1px solid var(--accent-green); padding: 1.5rem; border-radius: var(--radius-md); margin-bottom: 2rem;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--accent-green); font-weight: 700; font-size: 1.1rem;">
-              <i class="fa-solid fa-circle-check" style="font-size: 1.4rem;"></i>
-              Enquiry Successfully Dispatched!
-            </div>
-            <p style="margin: 0.5rem 0 0 0; color: var(--text-main); font-size: 0.95rem;">
-              Our technician has logged your request. We will WhatsApp or call your number within 15 minutes to confirm pickup time and provide exact refill pricing.
-            </p>
-          </div>
+            <!-- Section Header -->
+            <div class="section-header" style="margin-bottom:2rem;">
 
-          <form id="enquiry-form-element">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="custName"><i class="fa-solid fa-user"></i> Full Name *</label>
-                <input type="text" id="custName" name="customerName" class="form-input" placeholder="e.g. David Miller" required>
-              </div>
+                <div class="section-badge">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    Refill Request Form
+                </div>
 
-              <div class="form-group">
-                <label class="form-label" for="custCompany"><i class="fa-solid fa-building"></i> Company / Office (Optional)</label>
-                <input type="text" id="custCompany" name="companyName" class="form-input" placeholder="e.g. Miller & Partners Law">
-              </div>
+                <h2 class="section-title" style="font-size:2rem;">
+                    Submit Your Printer Refill Enquiry
+                </h2>
+
+                <p class="section-subtitle">
+                    Fill out this quick form for instant quote confirmation
+                    and courier dispatch scheduling.
+                </p>
+
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="custPhone"><i class="fa-solid fa-phone"></i> Phone / WhatsApp Number *</label>
-                <input type="tel" id="custPhone" name="customerPhone" class="form-input" placeholder="e.g. +1 (555) 019-2834" required>
-              </div>
 
-              <div class="form-group">
-                <label class="form-label" for="custEmail"><i class="fa-solid fa-envelope"></i> Email Address *</label>
-                <input type="email" id="custEmail" name="customerEmail" class="form-input" placeholder="e.g. david@example.com" required>
-              </div>
+            <!-- Success Message -->
+            <div id="formSuccessMessage"
+                style="
+                    display:none;
+                    background:rgba(16,185,129,0.12);
+                    border:1px solid var(--accent-green);
+                    padding:1.5rem;
+                    border-radius:var(--radius-md);
+                    margin-bottom:2rem;
+                ">
+
+                <div style="
+                    display:flex;
+                    align-items:center;
+                    gap:0.75rem;
+                    color:var(--accent-green);
+                    font-weight:700;
+                    font-size:1.1rem;
+                ">
+
+                    <i class="fa-solid fa-circle-check"
+                        style="font-size:1.4rem;"></i>
+
+                    Enquiry Successfully Dispatched!
+
+                </div>
+
+                <p style="
+                    margin:0.5rem 0 0;
+                    color:var(--text-main);
+                    font-size:0.95rem;
+                ">
+                    Our technician has logged your request. We will WhatsApp
+                    or call your number within 15 minutes to confirm pickup
+                    time and provide exact refill pricing.
+                </p>
+
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="printerBrandSelect"><i class="fa-solid fa-tag"></i> Printer Brand *</label>
-                <select id="printerBrandSelect" name="printerBrand" class="form-select" required>
-                  <option value="HP">HP (Hewlett-Packard)</option>
-                  <option value="Canon">Canon</option>
-                  <option value="Brother">Brother</option>
-                  <option value="Epson">Epson</option>
-                  <option value="Xerox">Xerox</option>
-                  <option value="Samsung">Samsung</option>
-                  <option value="Pantum">Pantum</option>
-                  <option value="Ricoh">Ricoh</option>
-                  <option value="Other">Other Manufacturer</option>
-                </select>
-              </div>
 
-              <div class="form-group">
-                <label class="form-label" for="cartridgeModelInput"><i class="fa-solid fa-barcode"></i> Printer Model or Cartridge Code *</label>
-                <input type="text" id="cartridgeModelInput" name="cartridgeModel" class="form-input" placeholder="e.g. HP 12A, Brother TN-2420, Canon 057" required>
-              </div>
-            </div>
+            <!-- Enquiry Form -->
+            <form id="enquiry-form-element" novalidate>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="serviceTypeSelect"><i class="fa-solid fa-gears"></i> Service Type *</label>
-                <select id="serviceTypeSelect" name="serviceType" class="form-select">
-                  <option value="Laser Toner Refill">Laser Toner Refill (Monochrome/Color)</option>
-                  <option value="Inkjet Cartridge Refill">Inkjet Cartridge Vacuum Refill</option>
-                  <option value="EcoTank Bulk Bottles">EcoTank / Continuous Ink Bottles</option>
-                  <option value="Drum Unit Replacement">Drum Unit / Maintenance Box Replacement</option>
-                  <option value="Bulk Corporate Contract">Corporate Fleet Monthly Contract</option>
-                  <option value="Printer Diagnostics">Printer Hardware Diagnostic & Service</option>
-                </select>
-              </div>
+                <!-- Name & Company -->
+                <div class="form-row">
 
-              <div class="form-group">
-                <label class="form-label" for="fulfillmentSelect"><i class="fa-solid fa-truck-fast"></i> Fulfillment Method *</label>
-                <select id="fulfillmentSelect" name="fulfillment" class="form-select">
-                  <option value="Doorstep Pickup">Free Doorstep Pickup & Return (Courier)</option>
-                  <option value="Walk-in Lab">Walk-in 30-Minute Express Lab Counter</option>
-                </select>
-              </div>
-            </div>
+                    <div class="form-group">
 
-            <div class="form-group" style="margin-bottom: 1.25rem;">
-              <label class="form-label" for="pickupAddress"><i class="fa-solid fa-location-dot"></i> Pickup Address / City (If requesting courier)</label>
-              <input type="text" id="pickupAddress" name="pickupAddress" class="form-input" placeholder="e.g. 450 Financial Way, Suite 800, Metro City">
-            </div>
+                        <label class="form-label" for="custName">
+                            <i class="fa-solid fa-user"></i>
+                            Full Name *
+                        </label>
 
-            <div class="form-group" style="margin-bottom: 1.75rem;">
-              <label class="form-label" for="formNotes"><i class="fa-solid fa-message"></i> Additional Details or Printer Symptoms</label>
-              <textarea id="formNotes" name="notes" rows="3" class="form-textarea" placeholder="Mention number of cartridges, any print error codes, or preferred delivery hours..."></textarea>
-            </div>
+                        <input
+                            type="text"
+                            id="custName"
+                            name="customerName"
+                            class="form-input"
+                            placeholder="e.g. David Miller"
+                            minlength="2"
+                            maxlength="50"
+                            autocomplete="name"
+                            required
+                        >
 
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-              <i class="fa-solid fa-paper-plane"></i> Submit Refill Enquiry & Get Instant Confirmation
-            </button>
-          </form>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="custCompany">
+                            <i class="fa-solid fa-building"></i>
+                            Company / Office (Optional)
+                        </label>
+
+                        <input
+                            type="text"
+                            id="custCompany"
+                            name="companyName"
+                            class="form-input"
+                            placeholder="e.g. Miller & Partners Law"
+                            minlength="2"
+                            maxlength="100"
+                            autocomplete="organization"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Phone & Email -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="custPhone">
+                            <i class="fa-solid fa-phone"></i>
+                            Phone / WhatsApp Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="custPhone"
+                            name="customerPhone"
+                            class="form-input"
+                            placeholder="e.g. +1 (555) 019-2834"
+                            minlength="10"
+                            maxlength="20"
+                            autocomplete="tel"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="custEmail">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="custEmail"
+                            name="customerEmail"
+                            class="form-input"
+                            placeholder="e.g. david@example.com"
+                            maxlength="100"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Printer Brand & Model -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="printerBrandSelect">
+                            <i class="fa-solid fa-tag"></i>
+                            Printer Brand *
+                        </label>
+
+                        <select
+                            id="printerBrandSelect"
+                            name="printerBrand"
+                            class="form-select"
+                            required
+                        >
+
+                            <option value="HP">HP (Hewlett-Packard)</option>
+                            <option value="Canon">Canon</option>
+                            <option value="Brother">Brother</option>
+                            <option value="Epson">Epson</option>
+                            <option value="Xerox">Xerox</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Pantum">Pantum</option>
+                            <option value="Ricoh">Ricoh</option>
+                            <option value="Other">Other Manufacturer</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="cartridgeModelInput">
+                            <i class="fa-solid fa-barcode"></i>
+                            Printer Model or Cartridge Code *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cartridgeModelInput"
+                            name="cartridgeModel"
+                            class="form-input"
+                            placeholder="e.g. HP 12A, Brother TN-2420, Canon 057"
+                            minlength="2"
+                            maxlength="60"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Service & Fulfillment -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="serviceTypeSelect">
+                            <i class="fa-solid fa-gears"></i>
+                            Service Type *
+                        </label>
+
+                        <select
+                            id="serviceTypeSelect"
+                            name="serviceType"
+                            class="form-select"
+                            required
+                        >
+
+                            <option value="Laser Toner Refill">
+                                Laser Toner Refill (Monochrome/Color)
+                            </option>
+
+                            <option value="Inkjet Cartridge Refill">
+                                Inkjet Cartridge Vacuum Refill
+                            </option>
+
+                            <option value="EcoTank Bulk Bottles">
+                                EcoTank / Continuous Ink Bottles
+                            </option>
+
+                            <option value="Drum Unit Replacement">
+                                Drum Unit / Maintenance Box Replacement
+                            </option>
+
+                            <option value="Bulk Corporate Contract">
+                                Corporate Fleet Monthly Contract
+                            </option>
+
+                            <option value="Printer Diagnostics">
+                                Printer Hardware Diagnostic & Service
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="fulfillmentSelect">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            Fulfillment Method *
+                        </label>
+
+                        <select
+                            id="fulfillmentSelect"
+                            name="fulfillment"
+                            class="form-select"
+                            required
+                        >
+
+                            <option value="Doorstep Pickup">
+                                Free Doorstep Pickup & Return (Courier)
+                            </option>
+
+                            <option value="Walk-in Lab">
+                                Walk-in 30-Minute Express Lab Counter
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Pickup Address -->
+                <div class="form-group" style="margin-bottom:1.25rem;">
+
+                    <label class="form-label" for="pickupAddress">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Pickup Address / City (If requesting courier)
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pickupAddress"
+                        name="pickupAddress"
+                        class="form-input"
+                        placeholder="e.g. 450 Financial Way, Suite 800, Metro City"
+                        minlength="5"
+                        maxlength="200"
+                    >
+
+                </div>
+
+
+                <!-- Additional Details -->
+                <div class="form-group" style="margin-bottom:1.75rem;">
+
+                    <label class="form-label" for="formNotes">
+                        <i class="fa-solid fa-message"></i>
+                        Additional Details or Printer Symptoms
+                    </label>
+
+                    <textarea
+                        id="formNotes"
+                        name="notes"
+                        rows="3"
+                        class="form-textarea"
+                        minlength="5"
+                        maxlength="500"
+                        placeholder="Mention number of cartridges, any print error codes, or preferred delivery hours..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-lg"
+                    style="width:100%;"
+                >
+
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Submit Refill Enquiry & Get Instant Confirmation
+
+                </button>
+
+            </form>
+
         </div>
-      </div>
-    </section>
+
+    </div>
+
+</section>
 
     <!-- ==========================================================================
          SECTION 3: DIRECT CONTACT CARDS
          ========================================================================== -->
     <section class="section-py">
-      <div class="container">
+    <div class="container">
+
         <div class="section-header">
-          <div class="section-badge"><i class="fa-solid fa-address-book"></i> Connect</div>
-          <h2 class="section-title">Reach Our Specialists Directly</h2>
-          <p class="section-subtitle">We offer multiple direct communication channels to resolve your printing needs quickly.</p>
-        </div>
-
-        <div class="grid-4">
-          <div class="card text-center" style="text-align: center;">
-            <div class="card-icon" style="margin: 0 auto 1.25rem auto;"><i class="fa-solid fa-phone"></i></div>
-            <h3 class="card-title">Customer Hotline</h3>
-            <p class="card-text" style="margin-bottom: 1rem;">Toll-free customer support for general retail enquiries and quotes.</p>
-            <a href="tel:+18005554658" style="color: var(--primary); font-weight: 700; font-size: 1.1rem;">1-800-555-INKIT</a>
-          </div>
-
-          <div class="card text-center" style="text-align: center;">
-            <div class="card-icon" style="margin: 0 auto 1.25rem auto; color: #25d366; background: rgba(37, 211, 102, 0.1); border-color: rgba(37, 211, 102, 0.25);">
-              <i class="fa-brands fa-whatsapp"></i>
+            <div class="section-badge">
+                <i class="fa-solid fa-address-book"></i> Connect
             </div>
-            <h3 class="card-title">WhatsApp Dispatch</h3>
-            <p class="card-text" style="margin-bottom: 1rem;">Send a photo of your cartridge code for instant price & pickup booking.</p>
-            <a href="https://wa.me/18005554658" target="_blank" rel="noopener noreferrer" style="color: #25d366; font-weight: 700; font-size: 1.1rem;">+1 (800) 555-4658</a>
-          </div>
 
-          <div class="card text-center" style="text-align: center;">
-            <div class="card-icon" style="margin: 0 auto 1.25rem auto;"><i class="fa-solid fa-briefcase"></i></div>
-            <h3 class="card-title">Corporate B2B Desk</h3>
-            <p class="card-text" style="margin-bottom: 1rem;">Dedicated account executives for law firms, hospitals, and fleet agreements.</p>
-            <a href="mailto:corporate@inkit-refill.com" style="color: var(--primary); font-weight: 700; font-size: 0.95rem;">corporate@inkit-refill.com</a>
-          </div>
+            <h2 class="section-title">Reach Our Specialists Directly</h2>
 
-          <div class="card text-center" style="text-align: center;">
-            <div class="card-icon" style="margin: 0 auto 1.25rem auto;"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-            <h3 class="card-title">Technical Support</h3>
-            <p class="card-text" style="margin-bottom: 1rem;">Assistance with firmware microchip, printer reset, and AMC queries.</p>
-            <a href="mailto:tech@inkit-refill.com" style="color: var(--primary); font-weight: 700; font-size: 0.95rem;">tech@inkit-refill.com</a>
-          </div>
+            <p class="section-subtitle">
+                We offer multiple direct communication channels to resolve your printing needs quickly.
+            </p>
         </div>
-      </div>
-    </section>
+
+        <div class="grid-4"
+            style="
+                display:grid;
+                grid-template-columns:repeat(4, minmax(0, 1fr));
+                gap:24px;
+                align-items:stretch;
+            ">
+
+            <!-- Customer Hotline -->
+            <div class="card text-center"
+                style="
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    text-align:center;
+                    height:100%;
+                    box-sizing:border-box;
+                ">
+
+                <div class="card-icon"
+                    style="margin:0 auto 1.25rem;">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <h3 class="card-title">Customer Hotline</h3>
+
+                <p class="card-text"
+                    style="margin-bottom:1rem; flex:1;">
+                    Toll-free customer support for general retail enquiries and quotes.
+                </p>
+
+                <a href="tel:+18005554658"
+                    class="btn btn-primary"
+                    style="
+                        width:100%;
+                        max-width:220px;
+                        margin-top:auto;
+                        white-space:nowrap;
+                    ">
+                    <i class="fa-solid fa-phone"></i>
+                    1-800-555-INKIT
+                </a>
+            </div>
+
+            <!-- WhatsApp Dispatch -->
+            <div class="card text-center"
+                style="
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    text-align:center;
+                    height:100%;
+                    box-sizing:border-box;
+                ">
+
+                <div class="card-icon"
+                    style="
+                        margin:0 auto 1.25rem;
+                        color:#25d366;
+                        background:rgba(37,211,102,0.1);
+                        border-color:rgba(37,211,102,0.25);
+                    ">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <h3 class="card-title">WhatsApp Dispatch</h3>
+
+                <p class="card-text"
+                    style="margin-bottom:1rem; flex:1;">
+                    Send a photo of your cartridge code for instant price & pickup booking.
+                </p>
+
+                <a href="https://wa.me/18005554658"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                    style="
+                        width:100%;
+                        max-width:220px;
+                        margin-top:auto;
+                        white-space:nowrap;
+                    ">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp Us
+                </a>
+            </div>
+
+            <!-- Corporate B2B Desk -->
+            <div class="card text-center"
+                style="
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    text-align:center;
+                    height:100%;
+                    box-sizing:border-box;
+                ">
+
+                <div class="card-icon"
+                    style="margin:0 auto 1.25rem;">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <h3 class="card-title">Corporate B2B Desk</h3>
+
+                <p class="card-text"
+                    style="margin-bottom:1rem; flex:1;">
+                    Dedicated account executives for law firms and fleet agreements.
+                </p>
+
+                <a href="mailto:corporate@inkit-refill.com"
+                    class="btn btn-primary"
+                    style="
+                        width:100%;
+                        max-width:220px;
+                        margin-top:auto;
+                        white-space:nowrap;
+                    ">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email Us
+                </a>
+            </div>
+
+            <!-- Technical Support -->
+            <div class="card text-center"
+                style="
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    text-align:center;
+                    height:100%;
+                    box-sizing:border-box;
+                ">
+
+                <div class="card-icon"
+                    style="margin:0 auto 1.25rem;">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <h3 class="card-title">Technical Support</h3>
+
+                <p class="card-text"
+                    style="margin-bottom:1rem; flex:1;">
+                    Assistance with firmware microchip, printer reset, and AMC queries.
+                </p>
+
+                <a href="mailto:tech@inkit-refill.com"
+                    class="btn btn-primary"
+                    style="
+                        width:100%;
+                        max-width:220px;
+                        margin-top:auto;
+                        white-space:nowrap;
+                    ">
+                    <i class="fa-solid fa-envelope"></i>
+                    Get Support
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<style>
+
+/* Tablet */
+@media (max-width: 992px) {
+    .grid-4 {
+        grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .grid-4 {
+        grid-template-columns:1fr !important;
+        gap:18px !important;
+    }
+
+    .grid-4 .card {
+        width:100%;
+        min-width:0;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+    .grid-4 .card {
+        padding:18px 14px;
+    }
+}
+
+</style>
 
     <!-- ==========================================================================
          SECTION 4: STORE HOURS & WALK-IN LAB
@@ -620,37 +1037,81 @@
          SECTION 9: GREEN RECYCLING REWARDS CLUB CTA
          ========================================================================== -->
     <section class="section-py" style="padding-top: 0;">
-      <div class="container">
-        <div class="cta-banner" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
-          <div class="grid-2">
-            <div>
-              <div class="section-badge" style="background: rgba(255, 255, 255, 0.2); color: #ffffff; border-color: rgba(255, 255, 255, 0.3);">
-                <i class="fa-solid fa-recycle"></i> Eco Rewards
-              </div>
-              <h2>Bring 5 Empty Cartridges, Get 1 Refill at 50% Off!</h2>
-              <p>
-                Don't dump plastic cartridges into office trash cans. Drop them off at any Inkit counter to earn instant loyalty points, store refill discounts, and zero-landfill certificates.
-              </p>
-              <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-                <a href="#enquiry-form" class="btn btn-primary" style="background: #ffffff; color: #047857 !important;">
-                  <i class="fa-solid fa-ticket"></i> Join Inkit Green Club
-                </a>
-                <a href="tel:+18005554658" class="btn btn-outline" style="border-color: #ffffff; color: #ffffff !important;">
-                  <i class="fa-solid fa-phone"></i> Inquire About Recycling
-                </a>
-              </div>
+    <div class="container">
+
+        <div class="cta-banner"
+            style="background:linear-gradient(135deg, #059669 0%, #047857 100%);">
+
+            <div class="grid-2">
+
+                <div>
+                    <div class="section-badge"
+                        style="background:rgba(255,255,255,0.2); color:#ffffff; border-color:rgba(255,255,255,0.3);">
+                        <i class="fa-solid fa-recycle"></i> Eco Rewards
+                    </div>
+
+                    <h2>Bring 5 Empty Cartridges, Get 1 Refill at 50% Off!</h2>
+
+                    <p>
+                        Don't dump plastic cartridges into office trash cans.
+                        Drop them off at any Inkit counter to earn instant loyalty
+                        points, store refill discounts, and zero-landfill certificates.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div style="
+                        display:flex;
+                        flex-wrap:wrap;
+                        align-items:center;
+                        gap:1rem;
+                    ">
+
+                        <a href="#enquiry-form"
+                            class="btn btn-primary"
+                            style="white-space:nowrap;">
+                            <i class="fa-solid fa-ticket"></i>
+                            Join Inkit Green Club
+                        </a>
+
+                        <a href="tel:+18005554658"
+                            class="btn btn-primary"
+                            style="white-space:nowrap;">
+                            <i class="fa-solid fa-phone"></i>
+                            Inquire About Recycling
+                        </a>
+
+                    </div>
+                </div>
+
+                <div style="text-align:center;">
+
+                    <div style="
+                        background:rgba(255,255,255,0.15);
+                        border:1px solid rgba(255,255,255,0.25);
+                        border-radius:var(--radius-lg);
+                        padding:2rem;
+                    ">
+
+                        <i class="fa-solid fa-leaf"
+                            style="font-size:3rem; color:#ffffff; margin-bottom:0.75rem;">
+                        </i>
+
+                        <h3 style="margin:0; font-size:1.4rem; color:#ffffff;">
+                            100% Zero-Landfill
+                        </h3>
+
+                        <p style="margin:0.5rem 0 0; color:#e6fffa; font-size:0.9rem;">
+                            Every broken shell is safely shredded for industrial polymers.
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div style="text-align: center;">
-              <div style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: var(--radius-lg); padding: 2rem;">
-                <i class="fa-solid fa-leaf" style="font-size: 3rem; color: #ffffff; margin-bottom: 0.75rem;"></i>
-                <h3 style="margin: 0; font-size: 1.4rem; color: #ffffff;">100% Zero-Landfill</h3>
-                <p style="margin: 0.5rem 0 0 0; color: #e6fffa; font-size: 0.9rem;">Every broken shell is safely shredded for industrial polymers.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
   </main>
 
   <!-- ==========================================================================

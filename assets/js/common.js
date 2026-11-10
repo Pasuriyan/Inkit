@@ -235,18 +235,20 @@ function applyTheme(theme, showNotification) {
     showToast(`Switched to ${theme === 'dark' ? 'Dark' : 'Light'} Mode`, 'info');
   }
 }
-
 /* --- DIRECTION TOGGLE (RTL / LTR) --- */
 function initDirection() {
   const rtlToggleBtn = document.getElementById('rtlToggleBtn');
   const savedDir = localStorage.getItem('inkit_dir') || 'ltr';
+
   applyDirection(savedDir, false);
 
   if (rtlToggleBtn) {
-    rtlToggleBtn.innerHTML = SVG_ICONS['right-left'];
+    rtlToggleBtn.textContent = 'RTL';
+
     rtlToggleBtn.addEventListener('click', () => {
       const currentDir = document.documentElement.getAttribute('dir') || 'ltr';
       const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+
       applyDirection(newDir, true);
     });
   }
@@ -257,7 +259,10 @@ function applyDirection(dir, showNotification) {
   localStorage.setItem('inkit_dir', dir);
 
   const rtlToggleBtn = document.getElementById('rtlToggleBtn');
+
   if (rtlToggleBtn) {
+    rtlToggleBtn.textContent = 'RTL';
+
     if (dir === 'rtl') {
       rtlToggleBtn.setAttribute('title', 'Switch to LTR Mode');
       rtlToggleBtn.setAttribute('aria-label', 'Switch to LTR Mode');
@@ -487,32 +492,263 @@ function initProductFilters() {
   if (categorySelect) categorySelect.addEventListener('change', applyFilters);
 }
 
-/* --- ENQUIRY FORM (Contact Page) --- */
+/* =========================================
+   ENQUIRY FORM VALIDATION
+========================================= */
+
 function initEnquiryForm() {
-  const form = document.getElementById('enquiry-form-element') || (document.getElementById('enquiry-form')?.tagName === 'FORM' ? document.getElementById('enquiry-form') : document.querySelector('#enquiry-form form'));
-  if (!form) return;
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    const form = document.getElementById('enquiry-form-element');
 
-    const name = form.querySelector('[name="customerName"]')?.value.trim();
-    const phone = form.querySelector('[name="customerPhone"]')?.value.trim();
-    const service = form.querySelector('[name="serviceType"]')?.value || 'Refill';
+    if (!form) return;
 
-    if (!name || !phone) {
-      showToast('Please fill in your name and contact phone number.', 'warning');
-      return;
+    const name = form.querySelector('[name="customerName"]');
+    const company = form.querySelector('[name="companyName"]');
+    const phone = form.querySelector('[name="customerPhone"]');
+    const email = form.querySelector('[name="customerEmail"]');
+    const model = form.querySelector('[name="cartridgeModel"]');
+    const address = form.querySelector('[name="pickupAddress"]');
+    const notes = form.querySelector('[name="notes"]');
+
+
+    // =====================================
+    // NAME VALIDATION
+    // =====================================
+
+    function validateName() {
+
+        const value = name.value.trim();
+
+        const validName = /^[A-Za-z][A-Za-z .'-]*$/.test(value);
+
+        if (!value) {
+            name.setCustomValidity('Please enter your full name.');
+        }
+        else if (value.length < 2) {
+            name.setCustomValidity('Name must contain at least 2 characters.');
+        }
+        else if (!validName || !/[A-Za-z]{2}/.test(value)) {
+            name.setCustomValidity('Please enter a valid name. Numbers are not allowed.');
+        }
+        else {
+            name.setCustomValidity('');
+        }
     }
 
-    showToast(`Thank you, ${name}! Your refill request for ${service} has been received. Our technician will contact you within 15 minutes!`, 'success');
-    form.reset();
 
-    const confirmationBox = document.getElementById('formSuccessMessage');
-    if (confirmationBox) {
-      confirmationBox.style.display = 'block';
-      confirmationBox.scrollIntoView({ behavior: 'smooth' });
+    // =====================================
+    // COMPANY VALIDATION (OPTIONAL)
+    // =====================================
+
+    function validateCompany() {
+
+        const value = company.value.trim();
+
+        if (value && value.length < 2) {
+            company.setCustomValidity('Company name must contain at least 2 characters.');
+        }
+        else {
+            company.setCustomValidity('');
+        }
     }
-  });
+
+
+    // =====================================
+    // PHONE VALIDATION
+    // =====================================
+
+    function validatePhone() {
+
+        const value = phone.value.trim();
+
+        const digits = value.replace(/\D/g, '');
+
+        const validFormat = /^\+?[0-9 ()-]+$/.test(value);
+
+        if (!value) {
+            phone.setCustomValidity('Please enter your phone number.');
+        }
+        else if (!validFormat) {
+            phone.setCustomValidity('Phone number must contain only numbers, spaces, +, brackets or hyphens.');
+        }
+        else if (digits.length < 10 || digits.length > 15) {
+            phone.setCustomValidity('Phone number must contain 10 to 15 digits.');
+        }
+        else {
+            phone.setCustomValidity('');
+        }
+    }
+
+
+    // =====================================
+    // EMAIL VALIDATION
+    // =====================================
+
+    function validateEmail() {
+
+        const value = email.value.trim();
+
+        const emailPattern =
+            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,}$/;
+
+        if (!value) {
+            email.setCustomValidity('Please enter your email address.');
+        }
+        else if (!emailPattern.test(value)) {
+            email.setCustomValidity('Please enter a valid email address, such as name@gmail.com.');
+        }
+        else {
+            email.setCustomValidity('');
+        }
+    }
+
+
+    // =====================================
+    // PRINTER MODEL VALIDATION
+    // =====================================
+
+    function validateModel() {
+
+        const value = model.value.trim();
+
+        if (!value) {
+            model.setCustomValidity('Please enter your printer model or cartridge code.');
+        }
+        else if (value.length < 2) {
+            model.setCustomValidity('Printer model must contain at least 2 characters.');
+        }
+        else {
+            model.setCustomValidity('');
+        }
+    }
+
+
+    // =====================================
+    // ADDRESS VALIDATION (OPTIONAL)
+    // =====================================
+
+    function validateAddress() {
+
+        const value = address.value.trim();
+
+        if (value && value.length < 5) {
+            address.setCustomValidity('Please enter a valid address with at least 5 characters.');
+        }
+        else {
+            address.setCustomValidity('');
+        }
+    }
+
+
+    // =====================================
+    // NOTES VALIDATION (OPTIONAL)
+    // =====================================
+
+    function validateNotes() {
+
+        const value = notes.value.trim();
+
+        if (value && value.length < 5) {
+            notes.setCustomValidity('Please enter at least 5 characters.');
+        }
+        else {
+            notes.setCustomValidity('');
+        }
+    }
+
+
+    // =====================================
+    // LIVE VALIDATION
+    // =====================================
+
+    name.addEventListener('input', validateName);
+    company.addEventListener('input', validateCompany);
+    phone.addEventListener('input', validatePhone);
+    email.addEventListener('input', validateEmail);
+    model.addEventListener('input', validateModel);
+    address.addEventListener('input', validateAddress);
+    notes.addEventListener('input', validateNotes);
+
+
+    // =====================================
+    // FORM SUBMISSION
+    // =====================================
+
+    form.addEventListener('submit', (e) => {
+
+        e.preventDefault();
+
+        // Validate every field
+        validateName();
+        validateCompany();
+        validatePhone();
+        validateEmail();
+        validateModel();
+        validateAddress();
+        validateNotes();
+
+
+        // Check all HTML required fields and custom validation
+        if (!form.checkValidity()) {
+
+            form.reportValidity();
+
+            showToast(
+                'Please correct the highlighted fields before submitting.',
+                'warning'
+            );
+
+            return;
+        }
+
+
+        // Get valid form values
+        const customerName = name.value.trim();
+
+        const service = form.querySelector('[name="serviceType"]')?.value || 'Refill';
+
+
+        // Success notification
+        showToast(
+            `Thank you, ${customerName}! Your refill request for ${service} has been received. Our technician will contact you within 15 minutes!`,
+            'success'
+        );
+
+
+        // Reset form
+        form.reset();
+
+
+        // Clear custom validation messages
+        [
+            name,
+            company,
+            phone,
+            email,
+            model,
+            address,
+            notes
+        ].forEach(field => {
+            field.setCustomValidity('');
+        });
+
+
+        // Display success message
+        const confirmationBox = document.getElementById('formSuccessMessage');
+
+        if (confirmationBox) {
+
+            confirmationBox.style.display = 'block';
+
+            confirmationBox.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+
+        }
+
+    });
+
 }
 
 /* --- TOAST NOTIFICATION UTILITY --- */
@@ -1203,3 +1439,4 @@ function initBlog() {
     }
   }
 }
+ 

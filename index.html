@@ -93,9 +93,7 @@
         <!-- Navbar Controls & Action -->
         <div class="nav-actions">
           <!-- RTL to LTR Mode Button with Icon -->
-          <button id="rtlToggleBtn" class="icon-btn" title="Toggle RTL / LTR text direction" aria-label="Toggle Text Direction">
-            <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
-          </button>
+     <button id="rtlToggleBtn" class="icon-btn">RTL</button>
 
           <!-- Dark to Light Mode Button with Icon -->
           <button id="themeToggleBtn" class="icon-btn" title="Toggle Dark / Light mode" aria-label="Toggle Theme Mode">
@@ -229,26 +227,27 @@
         landfills.
       </p>
 
-      <div
-        class="hero-actions"
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 1rem;
-          margin-bottom: 3rem;
-        "
-      >
-        <a href="contact.html#enquiry-form" class="btn btn-primary btn-lg">
-          <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
-          Book Doorstep Pickup
-        </a>
+   <div
+    class="hero-actions"
+    style="
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        gap:1rem;
+        margin-bottom:3rem;
+    "
+>
+    <a href="contact.html#enquiry-form" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+        Book Doorstep Pickup
+    </a>
 
-        <a href="#refill-finder" class="btn btn-secondary btn-lg">
-          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-          Check My Printer Price
-        </a>
-      </div>
+    <a href="#refill-finder" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        Check My Printer Price
+    </a>
+</div>
 
       <div
         class="hero-stats"
@@ -288,85 +287,423 @@
     <!-- ==========================================================================
          SECTION 2: INSTANT REFILL FINDER (Interactive Tool)
          ========================================================================== -->
-    <section class="section-py" id="refill-finder">
-      <div class="container">
+    <section class="section-py" id="refill-finder"
+    style="width:100%; overflow:hidden;">
+
+    <div class="container">
+
+        <!-- Section Header -->
         <div class="section-header">
-          <div class="section-badge">
-            <i class="fa-solid fa-bolt"></i> Instant Quote
-          </div>
-          <h2 class="section-title">Find Compatible Refills for Your Printer</h2>
-          <p class="section-subtitle">Select your printer model to view exact refill pricing, OEM price comparison, and turn-around time.</p>
+            <div class="section-badge">
+                <i class="fa-solid fa-bolt"></i> Instant Quote
+            </div>
+
+            <h2 class="section-title">
+                Find Compatible Refills for Your Printer
+            </h2>
+
+            <p class="section-subtitle">
+                Select your printer model to view exact refill pricing,
+                OEM price comparison, and turn-around time.
+            </p>
         </div>
 
-        <div class="refill-finder-box">
-          <div class="finder-grid">
-            <div class="form-group">
-              <label class="form-label" for="finderBrand"><i class="fa-solid fa-tag"></i> Printer Brand</label>
-              <select id="finderBrand" class="form-select">
-                <option value="HP">HP (Hewlett-Packard)</option>
-                <option value="Canon">Canon</option>
-                <option value="Epson">Epson</option>
-                <option value="Brother">Brother</option>
-                <option value="Xerox">Xerox</option>
-                <option value="Samsung">Samsung</option>
-                <option value="Ricoh">Ricoh</option>
-              </select>
+        <!-- Refill Finder Box -->
+        <div class="refill-finder-box"
+            style="
+                width:100%;
+                max-width:100%;
+                padding:35px;
+                box-sizing:border-box;
+                border-radius:18px;
+            ">
+
+            <!-- Finder Grid -->
+            <div class="finder-grid"
+                style="
+                    display:grid;
+                    grid-template-columns:1fr 1fr 1.1fr 1fr 170px;
+                    gap:18px;
+                    align-items:end;
+                    width:100%;
+                ">
+
+                <!-- Printer Brand -->
+                <div class="form-group"
+                    style="min-width:0; margin:0;">
+
+                    <label class="form-label"
+                        for="finderBrand"
+                        style="
+                            display:block;
+                            margin-bottom:12px;
+                            white-space:nowrap;
+                        ">
+                        <i class="fa-solid fa-tag"></i>
+                        Printer Brand
+                    </label>
+
+                    <select id="finderBrand"
+                        class="form-select"
+                        style="
+                            width:100%;
+                            height:54px;
+                            box-sizing:border-box;
+                        ">
+                        <option value="HP">HP (Hewlett-Packard)</option>
+                        <option value="Canon">Canon</option>
+                        <option value="Epson">Epson</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Xerox">Xerox</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Ricoh">Ricoh</option>
+                    </select>
+
+                </div>
+
+                <!-- Cartridge Category -->
+                <div class="form-group"
+                    style="min-width:0; margin:0;">
+
+                    <label class="form-label"
+                        for="finderType"
+                        style="
+                            display:block;
+                            margin-bottom:12px;
+                            white-space:nowrap;
+                        ">
+                        <i class="fa-solid fa-palette"></i>
+                        Cartridge Category
+                    </label>
+
+                    <select id="finderType"
+                        class="form-select"
+                        style="
+                            width:100%;
+                            height:54px;
+                            box-sizing:border-box;
+                        ">
+                        <option value="Laser Toner Black">
+                            Black Laser Toner
+                        </option>
+
+                        <option value="Laser Toner Color">
+                            Color Laser Toner (CMYK)
+                        </option>
+
+                        <option value="Inkjet Cartridge">
+                            Inkjet Cartridge (Tri-color/Black)
+                        </option>
+
+                        <option value="EcoTank Bulk Inks">
+                            EcoTank / MegaTank Ink Bottle
+                        </option>
+                    </select>
+
+                </div>
+
+                <!-- Printer Model -->
+                <div class="form-group"
+                    style="min-width:0; margin:0;">
+
+                    <label class="form-label"
+                        for="finderModel"
+                        style="
+                            display:block;
+                            margin-bottom:12px;
+                            white-space:nowrap;
+                            font-size:14px;
+                        ">
+                        <i class="fa-solid fa-print"></i>
+                        Printer Model or Cartridge Code
+                    </label>
+
+                    <input type="text"
+                        id="finderModel"
+                        class="form-input"
+                        placeholder="e.g. LaserJet M404 / 12A / PG-245"
+                        style="
+                            width:100%;
+                            height:54px;
+                            min-width:0;
+                            box-sizing:border-box;
+                        ">
+
+                </div>
+
+                <!-- Delivery Option -->
+                <div class="form-group"
+                    style="min-width:0; margin:0;">
+
+                    <label class="form-label"
+                        for="finderLocation"
+                        style="
+                            display:block;
+                            margin-bottom:12px;
+                            white-space:nowrap;
+                        ">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Delivery Option
+                    </label>
+
+                    <select id="finderLocation"
+                        class="form-select"
+                        style="
+                            width:100%;
+                            height:54px;
+                            box-sizing:border-box;
+                        ">
+                        <option value="pickup">
+                            Doorstep Pickup & Return
+                        </option>
+
+                        <option value="walkin">
+                            Walk-in Express Lab (30 min)
+                        </option>
+                    </select>
+
+                </div>
+
+                <!-- Calculate Button -->
+                <div class="form-group"
+                    style="min-width:0; margin:0;">
+
+                    <button id="findRefillBtn"
+                        class="btn btn-primary"
+                        style="
+                            width:100%;
+                            height:54px;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            gap:9px;
+                            white-space:nowrap;
+                            box-sizing:border-box;
+                        ">
+
+                        <i class="fa-solid fa-calculator"></i>
+                        Calculate
+
+                    </button>
+
+                </div>
+
             </div>
 
-            <div class="form-group">
-              <label class="form-label" for="finderType"><i class="fa-solid fa-palette"></i> Cartridge Category</label>
-              <select id="finderType" class="form-select">
-                <option value="Laser Toner Black">Black Laser Toner</option>
-                <option value="Laser Toner Color">Color Laser Toner (CMYK)</option>
-                <option value="Inkjet Cartridge">Inkjet Cartridge (Tri-color/Black)</option>
-                <option value="EcoTank Bulk Inks">EcoTank / MegaTank Ink Bottle</option>
-              </select>
+            <!-- Finder Result Display Card -->
+            <div id="finderResultBox"
+                class="finder-result"
+                style="
+                    margin-top:28px;
+                    box-sizing:border-box;
+                ">
+
+                <!-- Result Information -->
+                <div style="flex:1; min-width:0;">
+
+                    <div class="cmyk-dot-row">
+
+                        <span class="cmyk-dot cyan"></span>
+                        <span class="cmyk-dot magenta"></span>
+                        <span class="cmyk-dot yellow"></span>
+                        <span class="cmyk-dot black"></span>
+
+                        <span id="resultSavingsBadge"
+                            class="product-savings-tag"
+                            style="
+                                position:static;
+                                margin-left:8px;
+                            ">
+                            Save 73%
+                        </span>
+
+                    </div>
+
+                    <h3 id="resultCartridgeTitle"
+                        style="
+                            margin:0.25rem 0;
+                            font-size:1.25rem;
+                            color:var(--text-main);
+                        ">
+                        HP LaserJet 12A / Pro M404 Toner Refill
+                    </h3>
+
+                    <p style="
+                        margin:0;
+                        color:var(--text-muted);
+                        font-size:0.9rem;
+                        line-height:1.7;
+                    ">
+                        Includes complete vacuum de-dusting, OPC drum
+                        inspection, smart chip reset, and 2,500-page
+                        high-yield toner reload.
+                    </p>
+
+                </div>
+
+                <!-- Result Pricing -->
+                <div style="
+                    text-align:right;
+                    min-width:170px;
+                    flex-shrink:0;
+                ">
+
+                    <div id="resultRefillPrice"
+                        class="refill-price">
+                        $18.50
+                    </div>
+
+                    <div id="resultOemPrice"
+                        class="oem-price">
+                        OEM Price: $68.00
+                    </div>
+
+                    <a href="contact.html#enquiry-form"
+                        class="btn btn-primary btn-sm"
+                        style="margin-top:0.5rem;">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Book Now
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="form-group">
-              <label class="form-label" for="finderModel"><i class="fa-solid fa-print"></i> Printer Model or Cartridge Code</label>
-              <input type="text" id="finderModel" class="form-input" placeholder="e.g. LaserJet M404 / 12A / PG-245">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="finderLocation"><i class="fa-solid fa-location-dot"></i> Delivery Option</label>
-              <select id="finderLocation" class="form-select">
-                <option value="pickup">Doorstep Pickup & Return</option>
-                <option value="walkin">Walk-in Express Lab (30 min)</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <button id="findRefillBtn" class="btn btn-primary" style="height: 48px; width: 100%;">
-                <i class="fa-solid fa-calculator"></i> Calculate
-              </button>
-            </div>
-          </div>
-
-          <!-- Finder Result Display Card -->
-          <div id="finderResultBox" class="finder-result">
-            <div>
-              <div class="cmyk-dot-row">
-                <span class="cmyk-dot cyan"></span>
-                <span class="cmyk-dot magenta"></span>
-                <span class="cmyk-dot yellow"></span>
-                <span class="cmyk-dot black"></span>
-                <span id="resultSavingsBadge" class="product-savings-tag" style="position: static; margin-left: 8px;">Save 73%</span>
-              </div>
-              <h3 id="resultCartridgeTitle" style="margin: 0.25rem 0; font-size: 1.25rem; color: var(--text-main);">HP LaserJet 12A / Pro M404 Toner Refill</h3>
-              <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Includes complete vacuum de-dusting, OPC drum inspection, smart chip reset, and 2,500-page high-yield toner reload.</p>
-            </div>
-            <div style="text-align: right; min-width: 170px;">
-              <div id="resultRefillPrice" class="refill-price">$18.50</div>
-              <div id="resultOemPrice" class="oem-price">OEM Price: $68.00</div>
-              <a href="contact.html#enquiry-form" class="btn btn-primary btn-sm" style="margin-top: 0.5rem;">
-                <i class="fa-solid fa-calendar-check"></i> Book Now
-              </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+
+    </div>
+
+</section>
+
+
+<!-- Responsive Styling -->
+<style>
+
+/* =================================
+   REFILL FINDER RESPONSIVE DESIGN
+================================= */
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    #refill-finder .finder-grid {
+        grid-template-columns:
+            1fr 1fr 1.1fr 1fr 170px !important;
+        gap: 18px !important;
+    }
+
+}
+
+/* Small Desktop / Laptop */
+@media (max-width: 1199px) {
+
+    #refill-finder .refill-finder-box {
+        padding: 25px !important;
+    }
+
+    #refill-finder .finder-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+    }
+
+    #refill-finder .finder-grid .form-label {
+        white-space: normal !important;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    #refill-finder .refill-finder-box {
+        padding: 22px !important;
+    }
+
+    #refill-finder .finder-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+    }
+
+    #refill-finder .finder-result {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    #refill-finder .finder-result > div:last-child {
+        text-align: left !important;
+        min-width: 0 !important;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    #refill-finder .refill-finder-box {
+        padding: 18px 15px !important;
+    }
+
+    #refill-finder .finder-grid {
+        grid-template-columns: 1fr !important;
+        gap: 17px !important;
+    }
+
+    #refill-finder .finder-grid .form-group {
+        width: 100%;
+    }
+
+    #refill-finder .finder-grid .form-label {
+        white-space: normal !important;
+        font-size: 14px;
+    }
+
+    #refill-finder .finder-grid .form-select,
+    #refill-finder .finder-grid .form-input,
+    #refill-finder .finder-grid button {
+        width: 100% !important;
+        height: 50px !important;
+    }
+
+    #refill-finder .finder-result {
+        padding: 16px !important;
+        margin-top: 20px !important;
+    }
+
+    #refill-finder #resultCartridgeTitle {
+        font-size: 1.05rem !important;
+        line-height: 1.5;
+    }
+
+    #refill-finder .finder-result > div:last-child {
+        text-align: left !important;
+    }
+
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+
+    #refill-finder .refill-finder-box {
+        padding: 15px 12px !important;
+    }
+
+    #refill-finder .finder-result {
+        padding: 13px !important;
+    }
+
+    #refill-finder .finder-grid {
+        gap: 15px !important;
+    }
+
+}
+
+</style>
 
     <!-- ==========================================================================
          SECTION 3: CORE REFILL SERVICES

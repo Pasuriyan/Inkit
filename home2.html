@@ -91,9 +91,7 @@
         <!-- Navbar Controls & Action -->
         <div class="nav-actions">
           <!-- RTL to LTR Mode Button with Icon -->
-          <button id="rtlToggleBtn" class="icon-btn" title="Toggle RTL / LTR text direction" aria-label="Toggle Text Direction">
-            <svg class="svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
-          </button>
+         <button id="rtlToggleBtn" class="icon-btn">RTL</button>
 
           <!-- Dark to Light Mode Button with Icon -->
           <button id="themeToggleBtn" class="icon-btn" title="Toggle Dark / Light mode" aria-label="Toggle Theme Mode">
@@ -224,26 +222,27 @@
         emergency rapid dispatch, and walk-in 30-minute refilling.
       </p>
 
-      <div
-        class="hero-actions"
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 1rem;
-          margin-bottom: 3rem;
-        "
-      >
-        <a href="bulk-plans.html" class="btn btn-primary btn-lg">
-          <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-          View Corporate Plans
-        </a>
+    <div
+    class="hero-actions"
+    style="
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        gap:1rem;
+        margin-bottom:3rem;
+    "
+>
+    <a href="bulk-plans.html" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+        View Corporate Plans
+    </a>
 
-        <a href="contact.html#enquiry-form" class="btn btn-secondary btn-lg">
-          <i class="fa-solid fa-headset" aria-hidden="true"></i>
-          Request Free Trial Toner
-        </a>
-      </div>
+    <a href="contact.html#enquiry-form" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-headset" aria-hidden="true"></i>
+        Request Free Trial Toner
+    </a>
+</div>
 
       <div
         class="hero-stats"
@@ -680,14 +679,23 @@
               <p>
                 Experience the print density and high yield in your own office before signing any contract. We will deliver a free remanufactured sample toner matched to your primary workhorse printer.
               </p>
-              <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-                <a href="contact.html#enquiry-form" class="btn btn-primary">
-                  <i class="fa-solid fa-box-open"></i> Request Free for Samples
-                </a>
-                <a href="bulk-plans.html" class="btn btn-secondary" style="background: rgba(255, 255, 255, 0.1); color: #ffffff !important; border-color: rgba(255, 255, 255, 0.2);">
-                  <i class="fa-solid fa-calculator"></i> Compare Corporate Tiers
-                </a>
-              </div>
+             <div style="
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-items:center;
+    gap:1rem;
+">
+    <a href="contact.html#enquiry-form" class="btn btn-primary"
+       style="white-space:nowrap;">
+        <i class="fa-solid fa-box-open"></i> Request Free for Samples
+    </a>
+
+    <a href="bulk-plans.html" class="btn btn-primary"
+       style="white-space:nowrap;">
+        <i class="fa-solid fa-calculator"></i> Compare Corporate Tiers
+    </a>
+</div>
             </div>
 
             <div style="text-align: center;">
